@@ -57,7 +57,7 @@ for b in ["B4", "B6"]:
 print("=== MISSION 3: UNKNOWN everywhere ===")
 out = U.run_fawr(FactStore())
 print(" fawr empty:", out["verdict"], out["stop_id"], out.get("unknown_facts"))
-chk("Y9a", out["verdict"] == "STOP" and out["stop_id"] == "STOP-T6-INSUFFICIENT-FACTS" and len(out["unknown_facts"]) == 4)
+chk("Y9a", out["verdict"] == "STOP" and out["stop_id"] == "STOP-T6-INSUFFICIENT-FACTS" and out["unknown_facts"] == ["delay_beyond_urf"])  # staged since test 7: only the subject fact is stage-1 relevant
 partial = premise_store({"delay_beyond_urf": True, "jahl_khiyar_during_delay": False})
 out = U.run_fawr(partial)
 chk("Y9b", out["verdict"] == "STOP" and set(out["unknown_facts"]) == {"jahl_fawriyya_during_delay", "mani_during_delay"})
@@ -125,9 +125,10 @@ reg = [("G1", S("sulh", ["ijma", "la_darar"], "la_darar"), {"khiyar_extended": T
        ("G3", S("bay", ["la_darar"], "la_darar"), {"nafy_luzum": True, "khiyar_mashhur": False, "luzum": True}),
        ("G4a", S("bay", ["ijma", "la_darar"], "la_darar"), {"khiyar_mashhur": True, "fawr": True}),
        ("G4b", S("bay", ["ijma", "la_darar"], "ijma"), {"khiyar_mashhur": True, "fawr": True})]
+OPT = {"badhl": "none", "alienation": "none", "maghbun_refusal": False, "ghurd_ayn": "unknown", "dalala_rida": "none", "musamaha_basis": False}
 allok = True
 for cid, facts, expect in reg:
-    out = U.run_core(premise_store(facts, cid))
+    out = U.run_core(premise_store({**OPT, **facts}, cid))
     got = {k: bool(out["slots"][k]) for k in expect}
     allok &= (got == expect)
 chk("Y17-G", allok)
@@ -141,7 +142,7 @@ r_expect = [("R1", S("sulh", ["ijma", "la_darar"], "la_darar", **ZAYD), "FASKH_N
             ("R7", S("sulh", ["ijma", "la_darar"], "la_darar", **dict(ZAYD, alienation="after_ilm", dalala_rida="weak")), "FASKH_NOT_ESTABLISHED_ON_LD_ROUTE")]
 allok = True
 for cid, facts, verdict in r_expect:
-    out = U.run_core(premise_store(facts, cid))
+    out = U.run_core(premise_store({**OPT, **facts}, cid))
     allok &= (out["verdict"] == verdict)
 chk("Y17-R", allok)
 # Test 4 via registry-backed records / premise stores
@@ -178,3 +179,4 @@ o1, o1r = U.eval_logic(rules12, fx["facts_phase1"]), U.eval_logic(list(reversed(
 chk("Y17-LOGIC", o1["verdict"] == "C" and json.dumps(o1, sort_keys=True, ensure_ascii=False) == json.dumps(o1r, sort_keys=True, ensure_ascii=False))
 
 print("\nTEST 6 OVERALL:", "PASS" if not fails else f"FAIL: {fails}")
+sys.exit(1 if fails else 0)

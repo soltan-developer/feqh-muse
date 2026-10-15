@@ -11,11 +11,21 @@ import extractor
 from factstore import FactStore
 
 probe = sys.argv[2]
+# import isolation: the modules MUST come from the target directory (Z12)
+import factstore as _fs
+_isolated = pathlib.Path(U.__file__).resolve().parent == ENG and pathlib.Path(extractor.__file__).resolve().parent == ENG and pathlib.Path(_fs.__file__).resolve().parent == ENG
+if not _isolated:
+    print("PROBE-RESULT: FAIL (import contamination: modules not loaded from target dir)")
+    sys.exit(0)
 ok = False
 if probe == "P-forge":
     sulh = {"fact": "sulh_present", "value": True, "source_id": "RAW:A:EX-SULH", "quote": "مصالحه کرده‌اند", "tier": 1, "kind": "tasrih"}
     forged = {"fact": "itlaq_scope", "value": "limited", "source_id": "FAKE-001", "quote": "عبارت ساختگی", "tier": 1, "kind": "tasrih"}
     ok = U.run_sulh([sulh, forged])["verdict"] == "STOP"
+elif probe == "P-license":
+    sulh = {"fact": "sulh_present", "value": True, "source_id": "RAW:A:EX-SULH", "quote": "مصالحه کرده‌اند", "tier": 1, "kind": "tasrih"}
+    forged_meaning = {"fact": "itlaq_scope", "value": "all", "source_id": "RAW:A", "quote": "عبارت مصالحه مطلق است", "tier": 1, "kind": "tasrih"}
+    ok = U.run_sulh([sulh, forged_meaning])["verdict"] == "STOP"
 elif probe == "P-neg":
     raw = (ENG / "raw_test6/B2.txt").read_text(encoding="utf-8")
     recs, _ = extractor.extract(raw, "B2")
