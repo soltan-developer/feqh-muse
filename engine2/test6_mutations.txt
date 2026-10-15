@@ -1,0 +1,15 @@
+baseline (unmutated engine):
+  P-forge: PASS
+  P-neg: PASS
+  P-fawr: PASS
+  P-hyp: PASS
+  P-order: PASS
+
+mutation table:
+  M1-admission-off: sabotage in engine_unified.py -> probe P-forge FAILS (caught)
+  M2-guards-off: sabotage in extractor.py -> probe P-neg FAILS (caught)
+  M3-fawr-default: sabotage in engine_unified.py -> probe P-fawr FAILS (caught)
+  M4-hypothesis-admissible: sabotage in factstore.py -> probe P-hyp FAILS (caught)
+  M5-order-dependent: sabotage in engine_unified.py -> probe P-order FAILS (caught)
+
+MUTATION BATTERY: PASS — every sabotage caught, baseline green

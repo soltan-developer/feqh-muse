@@ -1,0 +1,17 @@
+BEFORE-LOG — defect demonstrations on the CURRENT (test-5) code
+
+[D1] Forged record WITH a source_id (mission 1):
+  verdict: SIHHA_MUTAZALZILA_AQWA | scope: {'value': 'limited', 'status': 'established'}  <-- FAKE ACCEPTED
+
+[D2] Negated sentence through the current extractor (mission 2):
+  extracted: [('itlaq_scope', 'limited')]  <-- 'limited' from a NEGATED sentence
+
+[D3] run_fawr with EMPTY facts (mission 3):
+  verdict: NO_DELAY_ISSUE  <-- absence of data silently became 'no delay issue'
+
+[D4] run_core with EMPTY facts (mission 3):
+  verdict: NO_GHABN_SUBJECT | slots: {'luzum': False, 'khiyar_mashhur': False, 'nafy_luzum': False}  <-- silent routing on unknowns
+
+[D5] X13 in run_test5.py is chk('X13', True) — vacuous by construction (see source).
+
+[D6] engine3.run_case branches on case_id (A/B/C/D/E/F/G) — verdict selection by test ID, not facts alone.

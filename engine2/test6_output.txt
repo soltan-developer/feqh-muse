@@ -1,0 +1,59 @@
+=== MISSION 1: forged credibility ===
+ forged-with-id: STOP | log: ["REJECTED itlaq_scope: REJECTED_UNREGISTERED_SOURCE (source_id='FAKE-001')"]
+  Y1: PASS
+ real-id-fake-quote: STOP | log: ["REJECTED itlaq_scope: REJECTED_QUOTE_NOT_IN_SOURCE (source_id='RAW:B:EX-INSIRAF-WITNESS')"]
+  Y2: PASS
+ makaseb quote: QUOTE_VERIFIED verified_evidence | altered quote: REJECTED_QUOTE_NOT_IN_SOURCE
+  Y3: PASS
+  Y4: PASS
+=== MISSION 2: meaning-inversion battery ===
+ B1: scope_records=[('limited', None)] report=[]
+ B2: scope_records=[] report=['ABSTAIN:نمی\u200cدهد']
+ B3: scope_records=[('limited', 'hypothesis')] report=['DOWNGRADE_TO_HYPOTHESIS:بر فرض']
+ B4: scope_records=[] report=['ABSTAIN:تردید است']
+ B5: scope_records=[('limited', 'hypothesis')] report=['DOWNGRADE_TO_HYPOTHESIS:نقل شده است']
+ B6: scope_records=[] report=['ABSTAIN:مگر ']
+ B7: scope_records=[('all', None)] report=[]
+  Y5a: PASS
+  Y5b: PASS
+  Y6: PASS
+ B3 via engine: STOP STOP-T4-CONDITION-UNKNOWN
+  Y7-B3: PASS
+ B5 via engine: STOP STOP-T4-CONDITION-UNKNOWN
+  Y7-B5: PASS
+  Y8-B4: PASS
+  Y8-B6: PASS
+=== MISSION 3: UNKNOWN everywhere ===
+ fawr empty: STOP STOP-T6-INSUFFICIENT-FACTS ['delay_beyond_urf', 'jahl_khiyar_during_delay', 'jahl_fawriyya_during_delay', 'mani_during_delay']
+  Y9a: PASS
+  Y9b: PASS
+  Y9c: PASS
+ core empty: STOP STOP-T6-CORE-FACTS-UNKNOWN
+  Y10: PASS
+=== MISSION 4: case-ID independence (fact-driven t3) ===
+  Y11a: PASS
+  t3[BASE] -> KHIYAR_ESTABLISHED_SULTANA_FROM_ILM (stop=None) ok
+  t3[A] -> STOP (stop=STOP-T3-A) ok
+  t3[B] -> SUQUT_VALID (stop=None) ok
+  t3[C] -> CONTESTED_OPEN_T3C (stop=None) ok
+  t3[D] -> SUQUT_VALID (stop=None) ok
+  t3[G] -> KHIYAR_PERSISTS_PRICE_AT_AQD (stop=None) ok
+  Y11b: PASS
+  composite (pre-zuhur + mistaken martaba, never branched): CONTESTED_OPEN_T3C
+  Y12: PASS
+=== MISSION 5: single input contract ===
+ fawr with hypothesis-as-false: STOP ['jahl_khiyar_during_delay']
+  Y13: PASS
+  Y14: PASS
+=== MISSION 6: REAL X13 (gate presence + sabotage sensitivity) ===
+ gate on: STOP | gate sabotaged: SIHHA_MUTAZALZILA_AQWA
+  Y15: PASS
+=== REGRESSION (Y17) ===
+  Y17-G: PASS
+  Y17-R: PASS
+  Y17-T4: PASS
+ T3-F (tasrih, fact-driven sulh path): SIHHA_LAZIM
+  Y17-T5+T3F: PASS
+  Y17-LOGIC: PASS
+
+TEST 6 OVERALL: PASS
