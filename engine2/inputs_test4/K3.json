@@ -1,0 +1,14 @@
+{
+ "case": "K3",
+ "case_kind": "fawr",
+ "ilm_ghabn_day": 5,
+ "faskh_day": 8,
+ "delay_beyond_urf": true,
+ "knows_ghabn": true,
+ "knows_khiyar": true,
+ "knows_fawriyya": false,
+ "able_throughout": true,
+ "jahl_khiyar_during_delay": false,
+ "jahl_fawriyya_during_delay": true,
+ "mani_during_delay": false
+}

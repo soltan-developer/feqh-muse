@@ -1,0 +1,24 @@
+{
+ "case": "E1",
+ "verdict": "SIHHA_MUTAZALZILA_AQWA",
+ "stop_id": null,
+ "rule_status": {
+  "SULH-ITLAQ": "FIRED",
+  "SULH-UMUM": "BLOCKED_UNKNOWN",
+  "FAWR-DELAY": "BLOCKED_UNKNOWN",
+  "EXC-JAHL-KHIYAR": "BLOCKED_UNKNOWN",
+  "EXC-MANI": "BLOCKED_UNKNOWN",
+  "OPEN-JAHL-FAWRIYYA": "BLOCKED_UNKNOWN"
+ },
+ "ablated_build": true,
+ "trace": [
+  "input facts: {\"case\": \"E1\", \"case_kind\": \"sulh\", \"sulh_present\": true, \"sulh_iwad\": 1, \"belief_martaba\": \"4-5 customary guess\", \"actual_martaba\": 18, \"insiraf_limited_customary\": null, \"scope_all_maratib\": null, \"scope_provenance\": null}",
+  "  [SULH-ITLAQ] gate has_urf_insiraf BYPASSED by ablation flag",
+  "  [SULH-ITLAQ] FIRED | sulh_present: verified = True; insiraf_limited_customary: CHECK BYPASSED (ablation build) — treated as satisfied",
+  "  [SULH-UMUM] BLOCKED_UNKNOWN | sulh_present: verified = True; scope_all_maratib: UNKNOWN (no evidence in input)",
+  "  [FAWR-DELAY] BLOCKED_UNKNOWN | delay_beyond_urf: UNKNOWN (no evidence in input); jahl_khiyar_during_delay: UNKNOWN (no evidence in input); jahl_fawriyya_during_delay: UNKNOWN (no evidence in input); mani_during_delay: UNKNOWN (no evidence in input)",
+  "  [EXC-JAHL-KHIYAR] BLOCKED_UNKNOWN | jahl_khiyar_during_delay: UNKNOWN (no evidence in input)",
+  "  [EXC-MANI] BLOCKED_UNKNOWN | mani_during_delay: UNKNOWN (no evidence in input)",
+  "  [OPEN-JAHL-FAWRIYYA] BLOCKED_UNKNOWN | jahl_fawriyya_during_delay: UNKNOWN (no evidence in input)"
+ ]
+}

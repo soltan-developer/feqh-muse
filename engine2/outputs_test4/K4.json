@@ -1,0 +1,23 @@
+{
+ "case": "K4",
+ "verdict": "KHIYAR_PERSISTS_EXCUSED_MANI",
+ "stop_id": null,
+ "rule_status": {
+  "SULH-ITLAQ": "BLOCKED_UNKNOWN",
+  "SULH-UMUM": "BLOCKED_UNKNOWN",
+  "FAWR-DELAY": "BLOCKED_FALSE",
+  "EXC-JAHL-KHIYAR": "BLOCKED_FALSE",
+  "EXC-MANI": "FIRED",
+  "OPEN-JAHL-FAWRIYYA": "BLOCKED_FALSE"
+ },
+ "ablated_build": false,
+ "trace": [
+  "input facts: {\"case\": \"K4\", \"case_kind\": \"fawr\", \"ilm_ghabn_day\": 5, \"faskh_day\": 8, \"delay_beyond_urf\": true, \"knows_ghabn\": true, \"knows_khiyar\": true, \"knows_fawriyya\": true, \"able_throughout\": false, \"tamakkun_from_day\": 8, \"jahl_khiyar_during_delay\": false, \"jahl_fawriyya_during_delay\": false, \"mani_during_delay\": true}",
+  "  [SULH-ITLAQ] BLOCKED_UNKNOWN | sulh_present: UNKNOWN (no evidence in input); insiraf_limited_customary: UNKNOWN (no evidence in input)",
+  "  [SULH-UMUM] BLOCKED_UNKNOWN | sulh_present: UNKNOWN (no evidence in input); scope_all_maratib: UNKNOWN (no evidence in input)",
+  "  [FAWR-DELAY] BLOCKED_FALSE | delay_beyond_urf: verified = True; jahl_khiyar_during_delay: verified = False; jahl_fawriyya_during_delay: verified = False; mani_during_delay: NEGATED (=True, expected False)",
+  "  [EXC-JAHL-KHIYAR] BLOCKED_FALSE | jahl_khiyar_during_delay: NEGATED (=False, expected True)",
+  "  [EXC-MANI] FIRED | mani_during_delay: verified = True",
+  "  [OPEN-JAHL-FAWRIYYA] BLOCKED_FALSE | jahl_fawriyya_during_delay: NEGATED (=False, expected True)"
+ ]
+}

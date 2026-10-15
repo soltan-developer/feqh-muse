@@ -1,0 +1,12 @@
+{
+ "case": "E2",
+ "case_kind": "sulh",
+ "sulh_present": true,
+ "sulh_iwad": 1,
+ "belief_martaba": "4-5",
+ "actual_martaba": 18,
+ "insiraf_limited_customary": true,
+ "insiraf_evidence": "valid evidence: in this transaction type the customary probable disparity is 4-5 of 20",
+ "scope_all_maratib": false,
+ "scope_provenance": null
+}
