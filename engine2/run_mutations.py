@@ -6,7 +6,7 @@ import pathlib, shutil, subprocess, sys
 
 SRC = pathlib.Path(__file__).parent
 MUTS = [
-    ("M1-license-off", "factstore.py", "lic = check_license(rec)", 'lic = "sabotaged"', "P-license"),
+    ("M1-license-off", "factstore.py", "license_info = licensed_evidence(rec)", 'license_info = ("sabotaged", 1, "tasrih", False)', "P-license"),
     ("M2-guards-off", "extractor.py", "GUARDS_ENABLED = True", "GUARDS_ENABLED = False", "P-neg"),
     ("M3-fawr-default", "engine_unified.py", '"verdict": "STOP", "stop_id": "STOP-T6-INSUFFICIENT-FACTS"', '"verdict": "NO_DELAY_ISSUE", "stop_id": None', "P-fawr"),
     ("M4-hypothesis-admissible", "factstore.py", 'live = [e for e in es if e["origin"] != "unverified_hypothesis"]', "live = list(es)", "P-hyp"),

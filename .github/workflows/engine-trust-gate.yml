@@ -1,0 +1,25 @@
+name: Feqh-Muse engine trust gate
+on:
+  pull_request:
+    paths:
+      - 'engine2/**'
+      - '.github/workflows/engine-trust-gate.yml'
+  workflow_dispatch:
+
+jobs:
+  trust-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax validation
+        run: python -m compileall -q engine2
+      - name: Test 8 semantic admission and unknowns
+        run: python engine2/run_test8.py
+      - name: Test 6 historical regression
+        run: python engine2/run_test6.py
+      - name: Mutation sensitivity
+        run: python engine2/run_mutations.py
