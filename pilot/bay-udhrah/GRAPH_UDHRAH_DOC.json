@@ -1,1 +1,256 @@
-{"edges":[["N-UDH-R1","conflicts-with","N-UDH-R2"],["N-UDH-TAARUD","treated-by","N-UDH-JAM-TUSI"],["N-UDH-JAM-TUSI","rationalized-by","N-UDH-NASS-ZAHIR"],["N-UDH-QARINA-SAMAA","supports","N-UDH-JAM-TUSI"],["N-UDH-QARINA-SAMAA","demotes","N-UDH-TAARUD"],["N-UDH-QARINA-SAMAA","repels","N-UDH-ISHKAL-MURAJJIHAT"],["N-UDH-RIVAL-KARAHA","competes-with","N-UDH-JAM-TUSI"],["N-UDH-RIVAL-PLACE","competes-with","N-UDH-JAM-TUSI"],["N-UDH-RIVAL-TAQIYYA","competes-with","N-UDH-JAM-TUSI"],["N-UDH-TARJIH","prefers","N-UDH-JAM-TUSI"],["N-UDH-TARJIH","fallback-to","N-UDH-UNSTATED"],["N-UDH-SCOPE-WORD","conditions","N-UDH-IJMA-JABIR"],["N-UDH-IJMA-JABIR","supports","N-UDH-QAWL-MASHHUR"],["N-UDH-ISTIZHAR-ISTIBSAR","challenges","N-UDH-QAWL-MASHHUR"],["X-UDH-1","cross-volume-link","N-UDH-JAM-TUSI"]],"graph":"UDHRAH-DOC-V1","nodes":[{"activation":"mas'ala opening","blockers":[],"grade":"reported status, not yet Ansari's verdict","id":"N-UDH-QAWL-MASHHUR","label":"prohibition of selling najis 'adhara of every animal (mashhur; claimed ijma' on sarjin najis)","type":"qawl"},{"grade":"specific text; wording variant noted","id":"N-UDH-R1","label":"Ya'qub b. Shu'ayb: 'thaman al-'adhara min al-suht' (prohibition)","type":"riwaya"},{"grade":"specific text; narrator-name variant (mudarib/musadif) affects sanad identification","id":"N-UDH-R2","label":"Muhammad b. al-Mudarib: 'la ba'sa bi-bay' al-'adhara' (permission)","type":"riwaya"},{"activation":"both riwayat admitted as opposing specifics","blockers":["demoted to dalala-level by N-UDH-QARINA-SAMAA"],"id":"N-UDH-TAARUD","label":"ta'arud of R1 and R2","type":"conflict"},{"activation":"specification by species","attribution":"Tusi, NOT Ansari until U8","id":"N-UDH-JAM-TUSI","label":"Tusi (Istibsar): prohibition->human, permission->animals","type":"jam'"},{"grade":"Ansari's reconstruction of Tusi's rationale ('la'alla')","id":"N-UDH-NASS-ZAHIR","label":"each khabar is nass in one species, zahir in the other; zahir of each dropped by the nass of the other","type":"dalala-structure"},{"grade":"Ansari's explicit argument ('yadullu 'ala')","id":"N-UDH-QARINA-SAMAA","label":"Sama'a: both rulings in one utterance to one addressee => conflict is dalala-only; no sanad/external murajjihat","type":"qarina"},{"id":"N-UDH-ISHKAL-MURAJJIHAT","label":"for total conflict the cure is external murajjihat then takhyir/tawaqquf, not cancelling both zuhurs","status":"raised and repelled via Sama'a qarinah","type":"objection"},{"id":"N-UDH-RIVAL-KARAHA","label":"Sabzawari: prohibition khabar carried on karaha","status":"rejected by Ansari ('ma la yukhfa min al-bu'd')","type":"ihtimal"},{"id":"N-UDH-RIVAL-PLACE","label":"Majlisi I: prohibition for lands without benefit-use","status":"rejected ('ab'ad minhu')","type":"ihtimal"},{"id":"N-UDH-RIVAL-TAQIYYA","label":"Majlisi I: prohibition khabar as taqiyya (madhhab of most 'amma)","status":"placed in the same remoteness rank ('wa-nahwuh')","type":"ihtimal"},{"grade":"istizhar, conditional","id":"N-UDH-TARJIH","label":"al-azhar: Tusi's jam', conditional on volunteering the haml (jam' preferred over tarh)","type":"verdict-node"},{"id":"N-UDH-UNSTATED","label":"fallback: permission riwaya not actionable 'min wujuh la tukhfa' — grounds NOT stated in text","ref":"S-UDH-1","status":"STOP; no inference permitted","type":"blocked-node"},{"id":"N-UDH-SCOPE-WORD","label":"IF 'adhara is zahir in human 'adhara (lexicographers), other animals' prohibition rests on general akhbar + ijma' on sarjin","ref":"S-UDH-2","status":"premise posed as supposition, not proven in situ","type":"conditional-premise"},{"grade":"Ansari explicit ('huwa al-jabir'); scope-bound to this locus","id":"N-UDH-IJMA-JABIR","label":"manqul ijma' as jabir of the sanad weakness of the general akhbar","type":"ijma'"},{"id":"N-UDH-ISTIZHAR-ISTIBSAR","label":"inferred permission for non-human 'adhara from Istibsar's wording","ref":"S-UDH-3","status":"'fihi nazar' — neither adopted nor categorically refuted","type":"istizhar"},{"grade":"al-aqwa","id":"N-UDH-FAR-ARWATH","label":"tahir arwath with lawful intended benefit: al-aqwa permissibility; Mufid/Sallar prohibition rebutted (khaba'ith = eating; nabawi requires hurmat al-'ayn over dominant benefits)","type":"far'"},{"id":"X-UDH-1","label":"Faraid v2 p.356 treats the same takhsis-jam' as 'not acting on both' in the usul protocol, while Makaseb adopts it as al-azhar via Sama'a — unresolved in this package","status":"OPEN; human adjudication priority 1","type":"open-tension"}],"source":"Makaseb v1 (corpus file 1571), mas'ala 2, DB pp.71-74","status":"documentation-only; no engine rules derived; no verdicts computed"}
+{
+  "edges": [
+    [
+      "N-UDH-R1",
+      "conflicts-with",
+      "N-UDH-R2"
+    ],
+    [
+      "N-UDH-TAARUD",
+      "treated-by",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-JAM-TUSI",
+      "rationalized-by",
+      "N-UDH-NASS-ZAHIR"
+    ],
+    [
+      "N-UDH-QARINA-SAMAA",
+      "supports",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-QARINA-SAMAA",
+      "demotes",
+      "N-UDH-TAARUD"
+    ],
+    [
+      "N-UDH-QARINA-SAMAA",
+      "repels",
+      "N-UDH-ISHKAL-MURAJJIHAT"
+    ],
+    [
+      "N-UDH-RIVAL-KARAHA",
+      "competes-with",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-RIVAL-PLACE",
+      "competes-with",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-RIVAL-TAQIYYA",
+      "competes-with",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-TARJIH",
+      "prefers",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "N-UDH-TARJIH",
+      "fallback-to",
+      "N-UDH-UNSTATED"
+    ],
+    [
+      "N-UDH-SCOPE-WORD",
+      "conditions",
+      "N-UDH-IJMA-JABIR"
+    ],
+    [
+      "N-UDH-IJMA-JABIR",
+      "supports",
+      "N-UDH-QAWL-MASHHUR"
+    ],
+    [
+      "N-UDH-ISTIZHAR-ISTIBSAR",
+      "challenges",
+      "N-UDH-QAWL-MASHHUR"
+    ],
+    [
+      "X-UDH-1",
+      "cross-volume-link",
+      "N-UDH-JAM-TUSI"
+    ],
+    [
+      "X-UDH-2",
+      "refers-to",
+      "N-UDH-UNSTATED"
+    ],
+    [
+      "X-UDH-3",
+      "compares-evidential-role",
+      "N-UDH-IJMA-JABIR"
+    ],
+    [
+      "X-UDH-3",
+      "compares-evidential-role",
+      "N-UDH-QAWL-MASHHUR"
+    ],
+    [
+      "X-UDH-4",
+      "refers-to",
+      "N-UDH-ISTIZHAR-ISTIBSAR"
+    ]
+  ],
+  "graph": "UDHRAH-DOC-V1",
+  "nodes": [
+    {
+      "activation": "mas'ala opening",
+      "blockers": [],
+      "grade": "reported status, not yet Ansari's verdict",
+      "id": "N-UDH-QAWL-MASHHUR",
+      "label": "prohibition of selling najis 'adhara of every animal (mashhur; claimed ijma' on sarjin najis)",
+      "type": "qawl"
+    },
+    {
+      "grade": "specific text; wording variant noted",
+      "id": "N-UDH-R1",
+      "label": "Ya'qub b. Shu'ayb: 'thaman al-'adhara min al-suht' (prohibition)",
+      "type": "riwaya"
+    },
+    {
+      "grade": "specific text; narrator-name variant (mudarib/musadif) affects sanad identification",
+      "id": "N-UDH-R2",
+      "label": "Muhammad b. al-Mudarib: 'la ba'sa bi-bay' al-'adhara' (permission)",
+      "type": "riwaya"
+    },
+    {
+      "activation": "both riwayat admitted as opposing specifics",
+      "blockers": [
+        "demoted to dalala-level by N-UDH-QARINA-SAMAA"
+      ],
+      "id": "N-UDH-TAARUD",
+      "label": "ta'arud of R1 and R2",
+      "type": "conflict"
+    },
+    {
+      "activation": "specification by species",
+      "attribution": "Tusi, NOT Ansari until U8",
+      "id": "N-UDH-JAM-TUSI",
+      "label": "Tusi (Istibsar): prohibition->human, permission->animals",
+      "type": "jam'"
+    },
+    {
+      "grade": "Ansari's reconstruction of Tusi's rationale ('la'alla')",
+      "id": "N-UDH-NASS-ZAHIR",
+      "label": "each khabar is nass in one species, zahir in the other; zahir of each dropped by the nass of the other",
+      "type": "dalala-structure"
+    },
+    {
+      "grade": "Ansari's explicit argument ('yadullu 'ala')",
+      "id": "N-UDH-QARINA-SAMAA",
+      "label": "Sama'a: both rulings in one utterance to one addressee => conflict is dalala-only; no sanad/external murajjihat",
+      "type": "qarina"
+    },
+    {
+      "id": "N-UDH-ISHKAL-MURAJJIHAT",
+      "label": "for total conflict the cure is external murajjihat then takhyir/tawaqquf, not cancelling both zuhurs",
+      "status": "raised and repelled via Sama'a qarinah",
+      "type": "objection"
+    },
+    {
+      "id": "N-UDH-RIVAL-KARAHA",
+      "label": "Sabzawari: prohibition khabar carried on karaha",
+      "status": "rejected by Ansari ('ma la yukhfa min al-bu'd')",
+      "type": "ihtimal"
+    },
+    {
+      "id": "N-UDH-RIVAL-PLACE",
+      "label": "Majlisi I: prohibition for lands without benefit-use",
+      "status": "rejected ('ab'ad minhu')",
+      "type": "ihtimal"
+    },
+    {
+      "id": "N-UDH-RIVAL-TAQIYYA",
+      "label": "Majlisi I: prohibition khabar as taqiyya (madhhab of most 'amma)",
+      "status": "placed in the same remoteness rank ('wa-nahwuh')",
+      "type": "ihtimal"
+    },
+    {
+      "grade": "istizhar, conditional",
+      "id": "N-UDH-TARJIH",
+      "label": "al-azhar: Tusi's jam', conditional on volunteering the haml (jam' preferred over tarh)",
+      "type": "verdict-node"
+    },
+    {
+      "id": "N-UDH-UNSTATED",
+      "label": "fallback: permission riwaya not actionable 'min wujuh la tukhfa' — grounds NOT stated in text",
+      "ref": "S-UDH-1",
+      "status": "STOP; no inference permitted",
+      "type": "blocked-node"
+    },
+    {
+      "id": "N-UDH-SCOPE-WORD",
+      "label": "IF 'adhara is zahir in human 'adhara (lexicographers), other animals' prohibition rests on general akhbar + ijma' on sarjin",
+      "ref": "S-UDH-2",
+      "status": "premise posed as supposition, not proven in situ",
+      "type": "conditional-premise"
+    },
+    {
+      "grade": "Ansari explicit ('huwa al-jabir'); scope-bound to this locus",
+      "id": "N-UDH-IJMA-JABIR",
+      "label": "manqul ijma' as jabir of the sanad weakness of the general akhbar",
+      "type": "ijma'"
+    },
+    {
+      "id": "N-UDH-ISTIZHAR-ISTIBSAR",
+      "label": "inferred permission for non-human 'adhara from Istibsar's wording",
+      "ref": "S-UDH-3",
+      "status": "'fihi nazar' — neither adopted nor categorically refuted",
+      "type": "istizhar"
+    },
+    {
+      "grade": "al-aqwa",
+      "id": "N-UDH-FAR-ARWATH",
+      "label": "tahir arwath with lawful intended benefit: al-aqwa permissibility; Mufid/Sallar prohibition rebutted (khaba'ith = eating; nabawi requires hurmat al-'ayn over dominant benefits)",
+      "type": "far'"
+    },
+    {
+      "id": "X-UDH-1",
+      "label": "Unresolved comparison: Makaseb reports Tusi's human/animal division and invokes Sama'a as corroborating context; Fara'id criticizes an unlicensed split into non-edible/edible animal. The taxonomies differ, and it is not yet established whether the same evidential premises or kind of reconciliation are in play.",
+      "status": "OPEN; compare textual variants, source edition, available Sama'a evidence, and conditional status before any resolution",
+      "type": "open-tension",
+      "source_links": [
+        "https://ablibrary.net/book_content/b/1571/71",
+        "https://ablibrary.net/book_content/b/1571/72",
+        "https://lib.rafed.net/view.php?b_id=4231&page=227&type=c_fbook"
+      ]
+    },
+    {
+      "id": "X-UDH-2",
+      "type": "open-evidence-gap",
+      "label": "Reasons hidden under 'min wujuh la takhfa' are not specified by Ansari at this locus; no supplied reconstruction counts as textual evidence",
+      "source": "Makaseb v1, printed p.25, database key /73; event U8",
+      "status": "OPEN; explicit evidence absence; must not derive missing grounds",
+      "activation": "Claim that permission report cannot be used if reconciliation is rejected",
+      "blockers": [
+        "No explicit list of reasons in the cited passage"
+      ]
+    },
+    {
+      "id": "X-UDH-3",
+      "type": "open-ijma-identity",
+      "label": "Identity/scope of reported ijma invoked in opening prohibition and as corroboration (jabir) of general narrations is not independently established",
+      "source": "Makaseb v1, printed pp.23 and 25; events U1 and U10",
+      "status": "OPEN; human evidence comparison required",
+      "activation": "Attempt to infer identity and independent probative standing of two uses of ijma",
+      "blockers": [
+        "Unverified identity of transmission and scope"
+      ]
+    },
+    {
+      "id": "X-UDH-4",
+      "type": "open-istizhar",
+      "label": "Wa-fihi nazar: objection to inferring broad permissibility from wording of Istibsar, without specified decisive rebuttal",
+      "source": "Makaseb v1, printed p.25; event U11",
+      "status": "OPEN; objection recorded, not converted to a categorical counter-fatwa"
+    }
+  ],
+  "source": "Makaseb v1 (corpus file 1571), mas'ala 2, DB pp.71-74",
+  "status": "documentation-only; no engine rules derived; no verdicts computed",
+  "review_note": "Evidence/documentation graph only. No rule issued, no inference graph admitted to locked engine. Nodes X-UDH-2, 3, 4 explicitly materialize unresolved issues without resolving them."
+}
