@@ -1,0 +1,39 @@
+=== EXP 1: raw-text extraction -> evidence -> gated sulh ===
+ A: extracted=[('sulh_present', True, 'EX-SULH'), ('wording', 'itlaq', 'EX-ITLAQ'), ('explicit_no_further_info', True, 'EX-NO-INFO')]
+     scope={'value': None, 'status': 'unknown'} verdict=STOP stop=STOP-T4-CONDITION-UNKNOWN
+  X1: PASS
+  X4-A: PASS
+ B: extracted=[('sulh_present', True, 'EX-SULH'), ('wording', 'itlaq', 'EX-ITLAQ'), ('itlaq_scope', 'limited', 'EX-INSIRAF-WITNESS')]
+     scope={'value': 'limited', 'status': 'established'} verdict=SIHHA_MUTAZALZILA_AQWA stop=None
+  X2: PASS
+  X4-B: PASS
+ C: extracted=[('sulh_present', True, 'EX-SULH'), ('wording', 'itlaq', 'EX-ITLAQ'), ('itlaq_scope', 'all', 'EX-SCOPEALL-QARINA')]
+     scope={'value': 'all', 'status': 'established'} verdict=SIHHA_LAZIM_CONDITIONAL_ON_QARAIN_TASRIH_EQUATION stop=None
+  X3: PASS
+  X4-C: PASS
+=== EXP 2: conflicting evidence ===
+ D: {'value': None, 'status': 'conflict'} STOP STOP-T5-EVIDENCE-CONFLICT
+  X5: PASS
+ D2 (+expert urf report tier2): {'value': 'limited', 'status': 'established'} SIHHA_MUTAZALZILA_AQWA
+  X6: PASS
+=== EXP 3: two independent paths (abstract logic) ===
+ phase1: C via ['LB']
+  X7: PASS
+  X8: PASS
+ phase2 (+LC prio2): NOT_C via ['LC']
+  X9a: PASS
+ phase3 (tie): CONFLICTED_STOP
+  X9b: PASS
+=== EXP 4: forged input resistance ===
+ forged: STOP STOP-T4-CONDITION-UNKNOWN | log: ["REJECTED evidence for fact 'itlaq_scope': no source_id (a bare claim/flag is not evidence) -> contributes nothing", "fact sulh_present: established = True (evidence: ['CASE:FORGED-DEMO'])"]
+  X10: PASS
+=== EXP 5: regression on the unified engine ===
+  X11-G: PASS
+  X11-R: PASS
+  X11-T4: PASS
+  X11-T3: PASS
+ E-premised (test3 as run): SIHHA_MUTAZALZILA_AQWA | E-as-posed (test3 as written): STOP STOP-T4-CONDITION-UNKNOWN
+  X12: PASS
+  X13: PASS
+
+TEST 5 OVERALL: PASS

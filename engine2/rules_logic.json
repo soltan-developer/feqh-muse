@@ -1,0 +1,1 @@
+{"facts_phase1":{"a1":null,"b1":true,"b2":true},"rules":[{"conclusion":"C","conditions":[{"expect":true,"fact":"a1"}],"id":"LA","priority":1},{"conclusion":"C","conditions":[{"expect":true,"fact":"b1"},{"expect":true,"fact":"b2"}],"id":"LB","priority":1},{"conclusion":"NOT_C","conditions":[{"expect":true,"fact":"b1"}],"id":"LC","priority":2}]}
