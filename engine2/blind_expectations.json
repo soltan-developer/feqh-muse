@@ -1,0 +1,42 @@
+{
+ "BC1": {
+  "kind": "core",
+  "predicted": "FASKH_NOT_ESTABLISHED_ON_LD_ROUTE",
+  "reasoning": "bay' + ijma/LD grounds, extension=la_darar, tender ACCEPTED by maghbun (refusal=False): tadarak achieved; on the LD route the badhl branch yields not-established (same verdict string as R1 route)."
+ },
+ "BC2": {
+  "kind": "fawr",
+  "predicted": "SUQUT_LATE_FASKH_INEFFECTIVE",
+  "reasoning": "EXPECTED SCIENTIFIC FAILURE, pre-declared: Zayd FORGOT (nasi) during the delay. Makaseb p.215 puts al-nasi in the hukm of al-jahil (excused), but the v4 fawr rules have no nasi variable, so the engine is predicted to fire FAWR-DELAY and declare suqut. Classification if so: rule-coverage gap (naqs dar qawa'id). NO post-hoc fix in this test."
+ },
+ "BC3": {
+  "kind": "t3",
+  "predicted": "SUQUT_VALID",
+  "reasoning": "isqat post-zuhur with umum wording and WITH iwad: ISQAT-UMUM fires; the mistake node needs wording=specific, so iwad does not open it."
+ },
+ "BC4": {
+  "kind": "sulh",
+  "predicted": "STOP:STOP-T5-EVIDENCE-CONFLICT",
+  "reasoning": "extractor records from raw B (limited, tier3) and raw C (all, tier3) in one case: same-tier conflict on itlaq_scope must stop as CONFLICT, not resolve by order."
+ },
+ "BC5": {
+  "kind": "core",
+  "predicted": "UNDETERMINED_IJMA_BADHL_SCOPE",
+  "reasoning": "bay' + ijma/LD, extension=ijma, badhl tendered and REFUSED: ijma route live in bay'; badhl persistence on the ijma route is the open node IJ-SCOPE-BADHL."
+ },
+ "BC6": {
+  "kind": "fawr",
+  "predicted": "STOP:STOP-T6-INSUFFICIENT-FACTS",
+  "reasoning": "delay=True, jahl_khiyar=False, mani=False, jahl_fawriyya ABSENT: stage-2 pivotal unknown must stop, naming jahl_fawriyya_during_delay."
+ },
+ "BC7": {
+  "kind": "core",
+  "predicted": "UNDETERMINED_PIVOTAL",
+  "reasoning": "bay' with la_darar-only grounds and NO optional facts stated: completions diverge on badhl (none -> established-via-LD-conditional; tendered -> not-established), so dependency analysis must stop and name badhl pivotal."
+ },
+ "BC8": {
+  "kind": "sulh",
+  "predicted": "STOP:STOP-T4-CONDITION-UNKNOWN",
+  "reasoning": "novel phrasing 'شهادت کارشناس عرف تأیید می‌کند اطلاق این معامله به غبن متعارف محدود بوده است' matches NO extractor pattern (the expert pattern requires گزارش کارشناسی عرف...منصرف است): correct abstention -> scope unknown -> STOP. Coverage limit, not an error."
+ }
+}

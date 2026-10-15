@@ -1,0 +1,20 @@
+BEFORE-LOG — Test 7 defects on the CURRENT (test-6) code
+
+[B1] Real quote, forged MEANING (evaluator's record):
+  verdict: SIHHA_LAZIM | scope: {'value': 'all', 'status': 'established'} <-- 'all' established from a quote that does NOT entail it
+
+[B2] Hidden defaults in the core (no badhl/alienation data at all):
+  verdict: FASKH_ESTABLISHED_VIA_LD_CONDITIONAL <-- produced silently although badhl/alienation were never stated (defaults none)
+
+[B3] FactStore trust bypass:
+  assert_fact(verified_evidence) ACCEPTED without any verification <-- minting trust by label
+
+[B4] Loser contamination of provenance:
+  verdict: SIHHA_LAZIM <-- winner is expert_urf (qarain) but a LOSING tasrih record made it look like tasrih
+
+[B5] Fawr subject precedence (evaluator's exact facts):
+  verdict: KHIYAR_PERSISTS_EXCUSED_JAHL_KHIYAR <-- NO delay occurred, yet an excuse verdict was returned
+
+[B6] run_test6.py / run_mutations.py contain no sys.exit on failure (grep):
+  run_test6.py: sys.exit present = False
+  run_mutations.py: sys.exit present = False

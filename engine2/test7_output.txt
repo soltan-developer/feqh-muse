@@ -1,0 +1,32 @@
+=== MISSION 1: citation license ===
+ forged-meaning: STOP | log: ['ADMITTED_LICENSED sulh_present = True (src=RAW:A:EX-SULH)', "ATTRIBUTED_UNLICENSED itlaq_scope = 'all' (src=RAW:A)"] | claims preserved: 1
+  Z1: PASS
+  Z2: PASS
+  Z3: PASS
+=== MISSION 2: dependency analysis (no hidden defaults) ===
+ minimal core, no badhl data: UNDETERMINED_PIVOTAL | pivotal: ['badhl', 'alienation', 'dalala_rida', 'musamaha_basis'] | completions: 144
+  Z4: PASS
+   note: maghbun_refusal is SLOT-pivotal here, not verdict-pivotal: []
+ ijma-only sulh (musamaha stated False), no badhl data: LUZUM | dep: {'completions_checked': 72, 'irrelevant_unknowns': ['badhl', 'alienation', 'maghbun_refusal', 'ghurd_ayn', 'dalala_rida'], 'slot_variance_across_completions': False}
+  Z5: PASS
+ same but musamaha UNKNOWN: UNDETERMINED_PIVOTAL | pivotal: ['musamaha_basis'] | nonpivotal: ['badhl', 'alienation', 'maghbun_refusal', 'ghurd_ayn', 'dalala_rida']
+  Z5b: PASS
+=== MISSION 3: FactStore trust boundary ===
+  Z6: PASS
+=== MISSION 4: winner-only provenance + multi-evidence store ===
+ winner=expert_urf/all (tier2) + loser tasrih/limited (tier3): SIHHA_LAZIM_CONDITIONAL_ON_QARAIN_TASRIH_EQUATION | log: ['ADMITTED_LICENSED sulh_present = True (src=RAW:A:EX-SULH)', "ADMITTED_LICENSED itlaq_scope = 'all' (src=RAW:C)", "ADMITTED_LICENSED itlaq_scope = 'limited' (src=RAW:B)"]
+  Z7: PASS
+  Z8: PASS
+=== MISSION 5: fawr staging ===
+  Z9: PASS
+  Z10a: PASS
+  Z10b: PASS
+=== MISSION 6+REGRESSION: harness hygiene (Z11/Z12) + test 6 suite (Z15) ===
+ run_test6 exit code: 0 | tail: TEST 6 OVERALL: PASS
+  Z15a: PASS
+ run_mutations exit code: 0 | tail: MUTATION BATTERY: PASS — every sabotage caught, baseline green
+  Z15b: PASS
+ sabotaged suite exit code: 1
+  Z11: PASS
+
+TEST 7 (missions 1-6) OVERALL: PASS
