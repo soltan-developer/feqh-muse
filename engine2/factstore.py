@@ -57,21 +57,45 @@ def verify_record(rec):
     origin = "stated_premise" if REGISTRY[key]["kind"] == "case_statement" else "verified_evidence"
     return "QUOTE_VERIFIED", origin
 
-def check_license(rec):
-    """Does this quote license this (fact, value)? Returns a license id or None."""
+def licensed_evidence(rec):
+    """Return (license_id, canonical_tier, canonical_kind, downgraded).
+
+    A claimed extractor_rule is NOT proof. Re-run the actual extractor with
+    all its semantic guards against the registered whole source. The quote
+    must be the exact extracted span, and the fact/value must agree.
+    """
+    key = resolve_key(rec.get("source_id"))
+    if key is None:
+        return None
     if rec.get("extractor_rule"):
+        if REGISTRY[key]["kind"] != "case_statement":
+            return None
         import extractor
-        pats = {p[0]: p for p in extractor.PATTERNS}
-        p = pats.get(rec["extractor_rule"])
-        if p and p[1] == rec.get("fact") and p[2] == rec.get("value") and re.search(p[5], rec.get("quote", "")):
-            return f"extractor:{rec['extractor_rule']}"
-    key = resolve_key(rec.get("source_id", ""))
-    kind = REGISTRY[key]["kind"] if key else None
+        extracted, _ = extractor.extract(source_text(key), key)
+        for item in extracted:
+            if (item["extractor_rule"] == rec["extractor_rule"]
+                    and item["fact"] == rec.get("fact")
+                    and item["value"] == rec.get("value")
+                    and _norm(item["quote"]) == _norm(rec.get("quote"))):
+                return ("extractor:" + item["extractor_rule"],
+                        item["tier"], item["kind"],
+                        item.get("downgraded") == "hypothesis")
+        return None
+    kind = REGISTRY[key]["kind"]
     for lic in LICENSES:
-        if lic["fact"] == rec.get("fact") and lic["value"] == rec.get("value") \
-           and lic["source_kind"] == kind and re.search(lic["quote_regex"], rec.get("quote", "")):
-            return f"registry:{lic['fact']}={lic['value']}"
+        if (lic["fact"] == rec.get("fact")
+                and lic["value"] == rec.get("value")
+                and lic["source_kind"] == kind
+                and re.search(lic["quote_regex"], rec.get("quote", ""))):
+            return ("registry:" + lic["fact"] + "=" + str(lic["value"]),
+                    lic["tier"], lic["kind"], False)
     return None
+
+
+def check_license(rec):
+    """Compatibility: a license id alone never makes source metadata trusted."""
+    info = licensed_evidence(rec)
+    return info[0] if info else None
 
 ORIGINS = ("stated_premise", "verified_evidence", "derived", "unverified_hypothesis")
 
@@ -81,8 +105,8 @@ class FactStore:
         self.claims = []    # attributed-but-unlicensed records (inert, preserved)
     # --- premise path ---
     def assert_fact(self, name, value, origin, ref=None):
-        if origin == "verified_evidence":
-            raise ValueError("trust boundary: verified_evidence can only enter via admit_record()")
+        if origin in ("verified_evidence", "derived"):
+            raise ValueError("trust boundary: verified/derived claims require their specialized admission paths")
         assert origin in ORIGINS, origin
         self.entries.setdefault(name, []).append({"value": value, "origin": origin, "ref": ref, "resolution": False, "meta": None})
     def derive(self, name, value, rule_id):
@@ -97,11 +121,18 @@ class FactStore:
         if rec.get("downgraded") == "hypothesis":
             self.entries.setdefault(rec["fact"], []).append({"value": rec["value"], "origin": "unverified_hypothesis", "ref": rec.get("source_id"), "resolution": False, "meta": rec})
             return "HYPOTHESIS_ONLY", "unverified_hypothesis"
-        lic = check_license(rec)
-        if lic is None:
+        license_info = licensed_evidence(rec)
+        if license_info is None:
             self.claims.append(rec)
             return "ATTRIBUTED_UNLICENSED", None
-        self.entries.setdefault(rec["fact"], []).append({"value": rec["value"], "origin": origin, "ref": rec.get("source_id"), "resolution": False, "meta": rec})
+        license_id, canonical_tier, canonical_kind, guard_hypothesis = license_info
+        if guard_hypothesis:
+            self.entries.setdefault(rec["fact"], []).append({"value": rec["value"], "origin": "unverified_hypothesis", "ref": rec.get("source_id"), "resolution": False, "meta": rec})
+            return "HYPOTHESIS_ONLY", "unverified_hypothesis"
+        # Never trust the claimed tier/kind; derive them from the reviewed license.
+        meta = dict(rec)
+        meta.update({"tier": canonical_tier, "kind": canonical_kind, "license": license_id})
+        self.entries.setdefault(rec["fact"], []).append({"value": rec["value"], "origin": origin, "ref": rec.get("source_id"), "resolution": False, "meta": meta})
         return "ADMITTED_LICENSED", origin
     # --- reads ---
     def entry(self, name):
