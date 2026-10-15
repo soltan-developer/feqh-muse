@@ -6,7 +6,7 @@ DECLARE
   t1 uuid; t2 uuid; issue1 uuid; issue2 uuid; wrong_variant uuid;
   scholar1 uuid; scholar2 uuid; profile1 uuid; profile2 uuid;
   work1 uuid; edition1 uuid; passage1 uuid; rule1 uuid; rule2 uuid;
-  rs1 uuid; c1 uuid; ev1 uuid; pos1 uuid; blocked boolean;
+  rs1 uuid; c1 uuid; ev1 uuid; pos1 uuid; blocked boolean; i integer;
 BEGIN
   INSERT INTO fiqh.topics(stable_key,name,kind) VALUES ('test-bay','بیع','bab') RETURNING id INTO t1;
   INSERT INTO fiqh.topics(stable_key,name,kind) VALUES ('test-contemporary','فقه معاصر','contemporary') RETURNING id INTO t2;
