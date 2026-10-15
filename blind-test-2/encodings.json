@@ -1,0 +1,149 @@
+[
+ {
+  "case_no": 1,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "zuhur",
+     "ruling": "اقتصار الحكم على مورد النص وعدم التعدي"
+    },
+    {
+     "type": "qiyas",
+     "ruling": "تعدي التحريم إلى غير أعداء الدين"
+    }
+   ]
+  }
+ },
+ {
+  "case_no": 2,
+  "unencodable": true,
+  "reason": "مسئله کلامیِ کفر/عدم کفر اعتقاد؛ ساختار اماره/اصل قابل کدگذاری ندارد."
+ },
+ {
+  "case_no": 3,
+  "case": {
+   "qat": true,
+   "qat_ruling": "حرمت غش"
+  }
+ },
+ {
+  "case_no": 4,
+  "unencodable": true,
+  "reason": "تعیین معنای لغوی لغو/لعب/لهو؛ سؤال تفسیری معنا."
+ },
+ {
+  "case_no": 5,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "ijma_manqul",
+     "ruling": "عدم جواز تقديم القبول بلفظ اشتريت"
+    },
+    {
+     "type": "zuhur",
+     "ruling": "جواز تقديم القبول بلفظ اشتريت"
+    }
+   ]
+  }
+ },
+ {
+  "case_no": 6,
+  "unencodable": true,
+  "reason": "موازنه احتمالات در زمان اعتبار قیمت مثل متعذر بر پایه اطلاق ادله ضمان؛ شاخه قابل کدگذاری نیست."
+ },
+ {
+  "case_no": 7,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "zuhur",
+     "ruling": "بطلان بيع الفضولي وعدم وقوعه"
+    },
+    {
+     "type": "zuhur",
+     "ruling": "وقوع البيع للمالك مع إجازته"
+    }
+   ],
+   "conflict": {
+    "jam_possible": true,
+    "jam_ruling": "وقوع البيع للمالك مع إجازته",
+    "azhar": false,
+    "murajjih": null
+   }
+  }
+ },
+ {
+  "case_no": 8,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "ijma_manqul",
+     "ruling": "فساد بيع ما ليس عنده مطلقا"
+    },
+    {
+     "type": "zuhur",
+     "ruling": "اختصاص فساد به مورد الروايات: البيع لنفسه غير المترقب للإجازة"
+    }
+   ]
+  }
+ },
+ {
+  "case_no": 9,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "zuhur",
+     "ruling": "وقوف بر اجازه"
+    }
+   ]
+  }
+ },
+ {
+  "case_no": 10,
+  "case": {
+   "fahs_done": true,
+   "amaras": [
+    {
+     "type": "zuhur",
+     "ruling": "ثبوت الخيار والرد بالعيب"
+    },
+    {
+     "type": "zuhur",
+     "ruling": "عدم ثبوت الخيار والرد لنفي السبيل"
+    }
+   ],
+   "conflict": {
+    "jam_possible": false,
+    "azhar": true,
+    "azhar_ruling": "عدم ثبوت الخيار والرد بالعيب",
+    "murajjih": null
+   },
+   "sabiqa": {
+    "continuity_established": true,
+    "doubt_in_rafi": true,
+    "subject_survives": true,
+    "ruling": "بقاء الملك وعدم زواله بالفسخ"
+   }
+  }
+ },
+ {
+  "case_no": 11,
+  "case": {
+   "fahs_done": true,
+   "asl_mawdui": {
+    "name": "أصالة عدم تأثير البيع",
+    "ruling": "بقاء ملك المشتري على الثمن"
+   }
+  }
+ },
+ {
+  "case_no": 12,
+  "unencodable": true,
+  "reason": "تعیین معنای «تصرف» مسقط خیار و نقد جمع میان اخبار؛ سؤال تفسیری دامنه لفظ."
+ }
+]
