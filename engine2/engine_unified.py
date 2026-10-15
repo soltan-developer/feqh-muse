@@ -107,11 +107,11 @@ def run_fawr(store):
         raise TypeError("contract: run_fawr accepts a FactStore only")
     trace = []
     delay, _ = store.effective("delay_beyond_urf")
-    if delay is None:
+    if delay is None or delay == "CONFLICT":
         return _fawr_stop(["delay_beyond_urf"], trace)
     if delay is False:
         return {"module": "fawr_audit_v4", "verdict": "NO_DELAY_ISSUE", "stop_id": None, "trace": trace}
-    unknowns = [f for f in ("jahl_khiyar_during_delay", "jahl_fawriyya_during_delay", "mani_during_delay") if store.effective(f)[0] is None]
+    unknowns = [f for f in ("jahl_khiyar_during_delay", "jahl_fawriyya_during_delay", "mani_during_delay") if store.effective(f)[0] is None or store.effective(f)[0] == "CONFLICT"]
     if unknowns:
         return _fawr_stop(unknowns, trace)
     st = {rid: eval_rule(V4[rid], store, trace) for rid in ("FAWR-DELAY", "EXC-JAHL-KHIYAR", "EXC-MANI", "OPEN-JAHL-FAWRIYYA")}
@@ -130,11 +130,20 @@ OPTIONAL_DOMAINS = {"badhl": ["none", "tendered_gharama"], "alienation": ["none"
 def run_core(store):
     if not isinstance(store, FactStore):
         raise TypeError("contract: run_core accepts a FactStore only")
+    conflicts = [f for f in CORE_REQUIRED if store.effective(f)[0] == "CONFLICT"]
+    if conflicts:
+        return {"verdict": "STOP", "stop_id": "STOP-T8-CORE-FACTS-CONFLICT", "conflict_facts": conflicts}
     unknowns = [f for f in CORE_REQUIRED if store.effective(f)[0] is None]
     if unknowns:
         return {"verdict": "STOP", "stop_id": "STOP-T6-CORE-FACTS-UNKNOWN", "unknown_facts": unknowns}
     base = store.plain()
-    absent = [f for f in OPTIONAL_DOMAINS if store.entry(f) is None]
+    unsupported = [f for f in OPTIONAL_DOMAINS if f in base and base[f] not in OPTIONAL_DOMAINS[f]]
+    if unsupported:
+        return {"verdict": "STOP", "stop_id": "STOP-T8-UNSUPPORTED-FACT-DOMAIN", "facts": unsupported}
+    # An entry is not an established fact: hypotheses and conflicting
+    # evidence must be enumerated as unknowns, never defaulted to "none".
+    unresolved_conflicts = [f for f in OPTIONAL_DOMAINS if store.effective(f)[0] == "CONFLICT"]
+    absent = [f for f in OPTIONAL_DOMAINS if store.effective(f)[0] is None or f in unresolved_conflicts]
     if not absent:
         return engine2_1.run21(base)
     results, slot_sets = {}, {}
@@ -148,7 +157,10 @@ def run_core(store):
         rep = next(iter(results))
         facts = dict(base); facts.update(dict(zip(absent, rep)))
         out = engine2_1.run21(facts)
-        out["dependency"] = {"completions_checked": len(results), "irrelevant_unknowns": absent,
+        out["dependency"] = {"completions_checked": len(results),
+                             "verdict_invariant_unknowns": absent,
+                             "irrelevant_unknowns": absent,
+                             "conflicting_unknowns": unresolved_conflicts,
                              "slot_variance_across_completions": len(set(slot_sets.values())) > 1}
         return out
     pivotal, slot_pivotal = [], []
@@ -164,6 +176,7 @@ def run_core(store):
             slot_pivotal.append(f)
     return {"verdict": "UNDETERMINED_PIVOTAL", "stop_id": "STOP-T7-PIVOTAL-UNKNOWN",
             "pivotal_facts": pivotal, "slot_pivotal_facts": slot_pivotal,
+            "conflicting_unknowns": unresolved_conflicts,
             "nonpivotal_unknowns": [f for f in absent if f not in pivotal and f not in slot_pivotal],
             "completions_checked": len(results)}
 
