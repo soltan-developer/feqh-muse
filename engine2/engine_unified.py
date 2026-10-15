@@ -1,111 +1,105 @@
 # -*- coding: utf-8 -*-
-"""Unified engine (Test 5) — one entry point, shared semantics.
+"""Unified engine v2 (Test 6) — one input contract for every module.
 
-Architecture (declared, not hidden):
-- Evidence layer: every fact enters ONLY as an evidence record
-  {fact, value, source_id, quote, tier, kind}. Records without a source_id
-  are REJECTED by the validation layer (a bare verified=true flag is not
-  evidence). Per-fact resolution yields one of: established value /
-  UNKNOWN / CONFLICT (both sides preserved; a higher evidence tier wins,
-  a same-tier clash stays CONFLICT). Tier policy is this engine's declared
-  design policy for the audit tests: 1=tasrih/text of agreement,
-  2=expert 'urf determination, 3=witness/party claim.
-- Rule evaluation is three-state (+conflict): FIRED / BLOCKED_FALSE /
-  BLOCKED_UNKNOWN / BLOCKED_CONFLICT. Stops are per-path, never global,
-  unless the stopped path is the only one to the verdict.
-- Modules: ghabn core = engine2_1.run21 imported unchanged (hash in the
-  manifest); sulh audit = rules_v4 evaluated here; test-3 module =
-  engine3.run_case imported for non-sulh cases, with the sulh case (E)
-  SUPERSEDED by the gated v4 path (supersession recorded in the trace).
-"""
+Changes vs v1 (each traced to an audit finding):
+- Evidence admission now verifies against the source REGISTRY: the quote
+  must actually occur in the registered source (factstore.verify_record).
+  A source_id alone admits nothing. Probative standing (level 3) is
+  reported as UNVERIFIED — the engine machine-checks levels 1-2 only.
+- Every module takes a FactStore (origins: stated_premise /
+  verified_evidence / derived / unverified_hypothesis). Raw dicts are
+  refused by contract. A hypothesis never satisfies a condition.
+- UNKNOWN is a stop everywhere: run_fawr and run_core halt with named
+  stop ids instead of defaulting on missing facts.
+- The test-3 module is FACT-DRIVEN (rules_t3.json): no case_id exists in
+  its signature or body; verdicts compose from rules over facts alone.
+- ABLATE_GATE (default False) exists ONLY as the documented seam for the
+  real X13 test and the mutation battery."""
 import json, pathlib, sys
-sys.path.insert(0, "/home/hatch/workspace/ansari-engine/engine2")
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import engine2_1
-import engine3
+from factstore import FactStore, verify_record
 
 D = pathlib.Path(__file__).parent
 V4 = {r["rule_id"]: r for r in json.loads((D / "rules_v4.json").read_text(encoding="utf-8"))["nodes"]}
+T3 = {r["rule_id"]: r for r in json.loads((D / "rules_t3.json").read_text(encoding="utf-8"))["nodes"]}
+ABLATE_GATE = False
 
-# ---------- evidence layer ----------
-def validate_evidence(records, log):
-    valid = []
-    for rec in records:
-        if not rec.get("source_id"):
-            log.append(f"REJECTED evidence for fact '{rec.get('fact')}': no source_id "
-                       f"(a bare claim/flag is not evidence) -> contributes nothing")
-            continue
-        valid.append(rec)
-    return valid
+def _admit(status):
+    return status == "QUOTE_VERIFIED"
 
-def resolve_fact(records, fact, log):
-    """Return (value, status, winners) with status in
-    established / unknown / conflict."""
-    rs = [r for r in records if r["fact"] == fact]
-    if not rs:
-        return None, "unknown", []
-    by_val = {}
-    for r in rs:
-        by_val.setdefault(json.dumps(r["value"], ensure_ascii=False, sort_keys=True), []).append(r)
-    if len(by_val) == 1:
-        v = rs[0]["value"]
-        log.append(f"fact {fact}: established = {v} (evidence: {[r['source_id'] for r in rs]})")
-        return v, "established", rs
-    best_tier = min(r["tier"] for r in rs)
-    top = [r for r in rs if r["tier"] == best_tier]
-    top_vals = {json.dumps(r["value"], ensure_ascii=False, sort_keys=True) for r in top}
-    if len(top_vals) == 1:
-        v = top[0]["value"]
-        log.append(f"fact {fact}: CONFLICT resolved by tier — tier {best_tier} record(s) win -> {v} "
-                   f"(losing evidence preserved: {[r['source_id'] for r in rs if r['tier'] != best_tier]})")
-        return v, "established", top
-    log.append(f"fact {fact}: CONFLICT at tier {best_tier} — both sides preserved, no valid murajjih: "
-               f"{[(r['source_id'], r['value']) for r in top]}")
-    return None, "conflict", top
-
-# ---------- three-state rule evaluation ----------
-def eval_rule(rule, facts, trace):
+# ---------- evaluation over a FactStore ----------
+def eval_rule(rule, store, trace):
     rid = rule["rule_id"]; status = "FIRED"
     for cond in rule["conditions"]:
         fact, expect = cond["fact"], cond["expect"]
-        val = facts.get(fact)
-        if val == "CONFLICT":
+        val, origin = store.effective(fact)
+        if isinstance(val, str) and val == "CONFLICT":
             if status == "FIRED": status = "BLOCKED_CONFLICT"
-            trace.append(f"  [{rid}] {fact}: CONFLICT (unresolved evidence)")
+            trace.append(f"  [{rid}] {fact}: CONFLICT")
         elif val is None:
             if status == "FIRED": status = "BLOCKED_UNKNOWN"
-            trace.append(f"  [{rid}] {fact}: UNKNOWN")
+            trace.append(f"  [{rid}] {fact}: UNKNOWN" + (" (hypothesis not admissible)" if origin == "unverified_hypothesis" else ""))
         elif val == expect:
-            trace.append(f"  [{rid}] {fact}: verified = {val}")
+            trace.append(f"  [{rid}] {fact}: verified = {val} (origin {origin})")
         else:
             status = "BLOCKED_FALSE"
             trace.append(f"  [{rid}] {fact}: NEGATED (={val})")
     trace.append(f"  [{rid}] => {status}")
     return status
 
-# ---------- sulh audit module (rules_v4, gated) ----------
-def run_sulh(records, extra_facts=None):
-    log = []
-    valid = validate_evidence(records, log)
-    scope_val, scope_status, winners = resolve_fact(valid, "itlaq_scope", log)
-    sulh_val, _, _ = resolve_fact(valid, "sulh_present", log)
-    facts = {"sulh_present": sulh_val if sulh_val is not None else (extra_facts or {}).get("sulh_present"),
-             "scope_provenance": None}
+# ---------- sulh module: records in, registry-verified ----------
+def run_sulh(records, rules=None):
+    rules = rules or V4
+    log, admitted, hyp = [], [], []
+    for rec in records:
+        status, origin = verify_record(rec)
+        if ABLATE_GATE:
+            admitted.append((rec, "stated_premise")) if rec.get("source_id") else None
+            continue
+        if not _admit(status):
+            log.append(f"REJECTED {rec.get('fact')}: {status} (source_id={rec.get('source_id')!r})")
+            continue
+        if rec.get("downgraded") == "hypothesis":
+            hyp.append(rec)
+            log.append(f"HYPOTHESIS-ONLY {rec.get('fact')}: downgraded by extractor guard — cannot establish")
+            continue
+        admitted.append((rec, origin))
+        log.append(f"ADMITTED {rec.get('fact')} = {rec.get('value')} [{status}, origin={origin}, src={rec.get('source_id')}]")
+    # resolve itlaq_scope over admitted records (tier policy as declared in test 5)
+    scope_recs = [r for r, o in admitted if r["fact"] == "itlaq_scope"]
+    store = FactStore()
+    for r, o in admitted:
+        if r["fact"] == "sulh_present":
+            store.assert_fact("sulh_present", r["value"], o, r.get("source_id"))
+    scope_val, scope_status = None, "unknown"
+    if scope_recs:
+        vals = {json.dumps(r["value"], sort_keys=True) for r in scope_recs}
+        if len(vals) == 1:
+            scope_val, scope_status = scope_recs[0]["value"], "established"
+        else:
+            best = min(r["tier"] for r in scope_recs)
+            top = [r for r in scope_recs if r["tier"] == best]
+            if len({json.dumps(r["value"], sort_keys=True) for r in top}) == 1:
+                scope_val, scope_status = top[0]["value"], "established"
+            else:
+                scope_status = "conflict"
     if scope_status == "established":
-        facts["insiraf_limited_customary"] = (scope_val == "limited")
-        facts["scope_all_maratib"] = (scope_val == "all")
-        if scope_val == "all":
-            kinds = {w["kind"] for w in winners}
-            facts["scope_provenance"] = "tasrih" if "tasrih" in kinds else "qarain"
+        store.derive("insiraf_limited_customary", scope_val == "limited", "scope-resolution")
+        store.derive("scope_all_maratib", scope_val == "all", "scope-resolution")
+        kinds = {r["kind"] for r in scope_recs}
+        store.derive("scope_provenance", "tasrih" if "tasrih" in kinds else "qarain", "scope-resolution")
     elif scope_status == "conflict":
-        facts["insiraf_limited_customary"] = "CONFLICT"
-        facts["scope_all_maratib"] = "CONFLICT"
+        store.assert_fact("insiraf_limited_customary", "CONFLICT", "derived", "scope-resolution")
+        store.assert_fact("scope_all_maratib", "CONFLICT", "derived", "scope-resolution")
     trace = list(log)
-    st = {rid: eval_rule(V4[rid], facts, trace) for rid in ("SULH-ITLAQ", "SULH-UMUM")}
+    st = {rid: eval_rule(rules[rid], store, trace) for rid in ("SULH-ITLAQ", "SULH-UMUM")}
     verdict, stop = None, None
     if st["SULH-ITLAQ"] == "FIRED":
         verdict = "SIHHA_MUTAZALZILA_AQWA"
     elif st["SULH-UMUM"] == "FIRED":
-        verdict = "SIHHA_LAZIM" if facts.get("scope_provenance") == "tasrih" else "SIHHA_LAZIM_CONDITIONAL_ON_QARAIN_TASRIH_EQUATION"
+        prov, _ = store.effective("scope_provenance")
+        verdict = "SIHHA_LAZIM" if prov == "tasrih" else "SIHHA_LAZIM_CONDITIONAL_ON_QARAIN_TASRIH_EQUATION"
     elif "BLOCKED_CONFLICT" in st.values():
         verdict, stop = "STOP", "STOP-T5-EVIDENCE-CONFLICT"
     elif "BLOCKED_UNKNOWN" in st.values():
@@ -114,24 +108,69 @@ def run_sulh(records, extra_facts=None):
         verdict, stop = "STOP", "STOP-T4-ITLAQ-NO-INSIRAF"
     return {"module": "sulh_audit_v4", "verdict": verdict, "stop_id": stop,
             "scope": {"value": scope_val, "status": scope_status},
-            "rule_status": st, "validation_log": log, "trace": trace}
+            "rule_status": st, "admission_log": log,
+            "probative_validation": "UNVERIFIED (engine verifies claim-id and quote-in-source only)",
+            "trace": trace}
 
-# ---------- fawr audit module (rules_v4) ----------
-def run_fawr(facts):
+# ---------- fawr module: FactStore only, UNKNOWN = stop ----------
+FAWR_REQUIRED = ("delay_beyond_urf", "jahl_khiyar_during_delay", "jahl_fawriyya_during_delay", "mani_during_delay")
+def run_fawr(store):
+    if not isinstance(store, FactStore):
+        raise TypeError("contract: run_fawr accepts a FactStore only")
     trace = []
-    st = {rid: eval_rule(V4[rid], facts, trace) for rid in ("FAWR-DELAY", "EXC-JAHL-KHIYAR", "EXC-MANI", "OPEN-JAHL-FAWRIYYA")}
+    unknowns = [f for f in FAWR_REQUIRED if store.effective(f)[0] is None]
+    if unknowns:
+        return {"module": "fawr_audit_v4", "verdict": "STOP", "stop_id": "STOP-T6-INSUFFICIENT-FACTS", "unknown_facts": unknowns, "trace": trace}
+    st = {rid: eval_rule(V4[rid], store, trace) for rid in ("FAWR-DELAY", "EXC-JAHL-KHIYAR", "EXC-MANI", "OPEN-JAHL-FAWRIYYA")}
     if st["EXC-JAHL-KHIYAR"] == "FIRED": verdict = "KHIYAR_PERSISTS_EXCUSED_JAHL_KHIYAR"
     elif st["EXC-MANI"] == "FIRED": verdict = "KHIYAR_PERSISTS_EXCUSED_MANI"
     elif st["OPEN-JAHL-FAWRIYYA"] == "FIRED": verdict = "CONTESTED_EXCUSE_JAHL_FAWRIYYA"
     elif st["FAWR-DELAY"] == "FIRED": verdict = "SUQUT_LATE_FASKH_INEFFECTIVE"
     else: verdict = "NO_DELAY_ISSUE"
-    return {"module": "fawr_audit_v4", "verdict": verdict, "rule_status": st, "trace": trace}
+    return {"module": "fawr_audit_v4", "verdict": verdict, "stop_id": None, "rule_status": st, "trace": trace}
 
-# ---------- generic logic evaluator (Experiment 3) ----------
+# ---------- core module: FactStore only, routing facts must be known ----------
+CORE_REQUIRED = ("txn", "ground_active", "extension_ground", "jahl", "fahish", "iqdam_alim")
+def run_core(store):
+    if not isinstance(store, FactStore):
+        raise TypeError("contract: run_core accepts a FactStore only")
+    unknowns = [f for f in CORE_REQUIRED if store.effective(f)[0] is None]
+    if unknowns:
+        return {"verdict": "STOP", "stop_id": "STOP-T6-CORE-FACTS-UNKNOWN", "unknown_facts": unknowns}
+    return engine2_1.run21(store.plain())
+
+# ---------- test-3 module: fact-driven, NO case id ----------
+def run_t3(store):
+    if not isinstance(store, FactStore):
+        raise TypeError("contract: run_t3 accepts a FactStore only")
+    b, _ = store.effective("belief_martaba"); a, _ = store.effective("actual_martaba")
+    if b is not None and a is not None:
+        store.derive("martaba_mismatch", b != a, "T3-DERIVE-MISMATCH")
+    trace = []
+    st = {rid: eval_rule(T3[rid], store, trace) for rid in T3}
+    act, _ = store.effective("act")
+    if act == "sulh":
+        return {"module": "t3_fact_driven", "verdict": "ROUTE_TO_SULH_MODULE", "rule_status": st, "trace": trace}
+    if st["T3-FASKH-PRE-DALIL"] == "BLOCKED_UNKNOWN":
+        verdict, stop = "STOP", "STOP-T3-A"
+    elif st["T3-ISQAT-MISTAKE"] == "FIRED":
+        verdict, stop = "CONTESTED_OPEN_T3C", None
+        if st["T3-ISQAT-PRE"] == "FIRED":
+            trace.append("  composition: pre-zuhur validity (mana 2) established, but the mistaken-martaba node stays open -> overall CONTESTED")
+    elif st["T3-ISQAT-UMUM"] == "FIRED":
+        verdict, stop = "SUQUT_VALID", None
+        if st["T3-ISQAT-PRE"] == "FIRED":
+            trace.append("  composition: umum wording + pre-zuhur timing; validity rests on mana 2 (thubut haqq)")
+    elif st["T3-PRICE-AT-AQD"] == "FIRED":
+        verdict, stop = "KHIYAR_PERSISTS_PRICE_AT_AQD", None
+    elif st["T3-BASE"] == "FIRED":
+        verdict, stop = "KHIYAR_ESTABLISHED_SULTANA_FROM_ILM", None
+    else:
+        verdict, stop = "STOP", "STOP-T6-NO-RULE-FIRED"
+    return {"module": "t3_fact_driven", "verdict": verdict, "stop_id": stop, "rule_status": st, "trace": trace}
+
+# ---------- generic logic evaluator (unchanged semantics from v1) ----------
 def eval_logic(rules, facts):
-    """Rules: {id, conditions[{fact,expect}], conclusion, priority}.
-    Deterministic regardless of rule order: outcomes resolved by
-    (priority desc, conclusion) after evaluating every rule."""
     trace, fired = [], []
     for r in sorted(rules, key=lambda x: x["id"]):
         status = "FIRED"
@@ -153,7 +192,6 @@ def eval_logic(rules, facts):
         c = next(iter(by_conc))
         return {"verdict": c, "via": [r["id"] for r in by_conc[c]], "trace": trace, "fired": [r["id"] for r in fired]}
     best = max(r["priority"] for r in fired)
-    winners = [c for c, rs in by_conc.items() if any(r["priority"] == best for r in rs)]
     top = {c: [r for r in rs if r["priority"] == best] for c, rs in by_conc.items() if any(r["priority"] == best for r in rs)}
     if len(top) == 1:
         c = next(iter(top))
@@ -161,12 +199,3 @@ def eval_logic(rules, facts):
         return {"verdict": c, "via": [r["id"] for r in top[c]], "conflict_resolved_by": "priority", "trace": trace, "fired": [r["id"] for r in fired]}
     trace.append("  CONFLICT at equal priority — no valid murajjih: STOP")
     return {"verdict": "CONFLICTED_STOP", "trace": trace, "fired": [r["id"] for r in fired]}
-
-# ---------- core + test3 passthrough (unchanged modules) ----------
-def run_core(facts):
-    return engine2_1.run21(facts)
-
-def run_test3_case(case_id, facts):
-    if case_id == "E":
-        raise ValueError("E is superseded by the gated sulh module (X13)")
-    return engine3.run_case(case_id, facts)
