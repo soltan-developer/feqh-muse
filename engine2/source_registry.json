@@ -1,0 +1,86 @@
+{
+ "MAKASEB-V5": {
+  "kind": "book_text",
+  "path": "../ghabn-case/source_makaseb_v5_ghabn.md"
+ },
+ "RAW:A": {
+  "kind": "case_statement",
+  "path": "raw_test5/A.txt"
+ },
+ "RAW:B": {
+  "kind": "case_statement",
+  "path": "raw_test5/B.txt"
+ },
+ "RAW:C": {
+  "kind": "case_statement",
+  "path": "raw_test5/C.txt"
+ },
+ "RAW:D": {
+  "kind": "case_statement",
+  "path": "raw_test5/D.txt"
+ },
+ "RAW:D2": {
+  "kind": "case_statement",
+  "path": "raw_test5/D2.txt"
+ },
+ "T4:E1": {
+  "kind": "case_statement",
+  "path": "inputs_test4/E1.json"
+ },
+ "T4:E2": {
+  "kind": "case_statement",
+  "path": "inputs_test4/E2.json"
+ },
+ "T4:E3": {
+  "kind": "case_statement",
+  "path": "inputs_test4/E3.json"
+ },
+ "T4:K1": {
+  "kind": "case_statement",
+  "path": "inputs_test4/K1.json"
+ },
+ "T4:K2": {
+  "kind": "case_statement",
+  "path": "inputs_test4/K2.json"
+ },
+ "T4:K3": {
+  "kind": "case_statement",
+  "path": "inputs_test4/K3.json"
+ },
+ "T4:K4": {
+  "kind": "case_statement",
+  "path": "inputs_test4/K4.json"
+ },
+ "RAW:B1": {
+  "kind": "case_statement",
+  "path": "raw_test6/B1.txt"
+ },
+ "RAW:B2": {
+  "kind": "case_statement",
+  "path": "raw_test6/B2.txt"
+ },
+ "RAW:B3": {
+  "kind": "case_statement",
+  "path": "raw_test6/B3.txt"
+ },
+ "RAW:B4": {
+  "kind": "case_statement",
+  "path": "raw_test6/B4.txt"
+ },
+ "RAW:B5": {
+  "kind": "case_statement",
+  "path": "raw_test6/B5.txt"
+ },
+ "RAW:B6": {
+  "kind": "case_statement",
+  "path": "raw_test6/B6.txt"
+ },
+ "RAW:B7": {
+  "kind": "case_statement",
+  "path": "raw_test6/B7.txt"
+ },
+ "RAW:F": {
+  "kind": "case_statement",
+  "path": "raw_test6/F.txt"
+ }
+}
