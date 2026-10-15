@@ -113,10 +113,13 @@ def run21(facts):
     if f["alienation"] == "none":
         sub["execution"] = "ayn"
     # stage 4: verdict synthesis
-    if sub["tasarruf"] == "suqut_conditional":
+    if sub["tasarruf"] == "suqut_conditional" and (ij_route or ld_reaches):
         if f["badhl"] != "none":
             moot.append("badhl_node (suqut by tasarruf precedes it)")
         return done("SUQUT_VIA_TASARRUF_CONDITIONAL")
+    if sub["tasarruf"] == "suqut_conditional":
+        moot.append("tasarruf_suqut (no live khiyar route: suqut presupposes thubut)")
+        trace.append("TAS-BAD result moot: no khiyar route reaches this case, so there is nothing to fall")
     if ij_route:
         if f["badhl"] != "none":
             open_nodes.append("IJ-SCOPE-BADHL")

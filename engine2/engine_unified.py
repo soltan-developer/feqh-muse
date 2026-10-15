@@ -1,34 +1,30 @@
 # -*- coding: utf-8 -*-
-"""Unified engine v2 (Test 6) — one input contract for every module.
+"""Unified engine v3 (Test 7) — trust boundary + dependency analysis.
 
-Changes vs v1 (each traced to an audit finding):
-- Evidence admission now verifies against the source REGISTRY: the quote
-  must actually occur in the registered source (factstore.verify_record).
-  A source_id alone admits nothing. Probative standing (level 3) is
-  reported as UNVERIFIED — the engine machine-checks levels 1-2 only.
-- Every module takes a FactStore (origins: stated_premise /
-  verified_evidence / derived / unverified_hypothesis). Raw dicts are
-  refused by contract. A hypothesis never satisfies a condition.
-- UNKNOWN is a stop everywhere: run_fawr and run_core halt with named
-  stop ids instead of defaulting on missing facts.
-- The test-3 module is FACT-DRIVEN (rules_t3.json): no case_id exists in
-  its signature or body; verdicts compose from rules over facts alone.
-- ABLATE_GATE (default False) exists ONLY as the documented seam for the
-  real X13 test and the mutation battery."""
-import json, pathlib, sys
+Changes vs v2 (each traced to the Test 7 audit):
+- Evidence admission goes through FactStore.admit_record ONLY: source
+  authenticity + quote existence + citation LICENSE (the quote must
+  license the claimed fact/value). Unlicensed claims are preserved as
+  inert claims, never established facts.
+- Scope provenance derives from the WINNING evidence only.
+- Fawr is staged: the subject (delay) is established first; excuse facts
+  are irrelevant — and cannot stop the case — when no delay occurred.
+- The core no longer inherits silent defaults: unknown optional facts are
+  resolved by DEPENDENCY ANALYSIS (enumerate completions; a verdict is
+  returned only if every completion agrees; otherwise the pivotal
+  unknowns are named and the case stops as UNDETERMINED_PIVOTAL).
+- ABLATE_GATE (default False) remains the documented seam for the X13
+  sabotage-sensitivity test."""
+import itertools, json, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import engine2_1
-from factstore import FactStore, verify_record
+from factstore import FactStore
 
 D = pathlib.Path(__file__).parent
 V4 = {r["rule_id"]: r for r in json.loads((D / "rules_v4.json").read_text(encoding="utf-8"))["nodes"]}
 T3 = {r["rule_id"]: r for r in json.loads((D / "rules_t3.json").read_text(encoding="utf-8"))["nodes"]}
 ABLATE_GATE = False
 
-def _admit(status):
-    return status == "QUOTE_VERIFIED"
-
-# ---------- evaluation over a FactStore ----------
 def eval_rule(rule, store, trace):
     rid = rule["rule_id"]; status = "FIRED"
     for cond in rule["conditions"]:
@@ -48,50 +44,40 @@ def eval_rule(rule, store, trace):
     trace.append(f"  [{rid}] => {status}")
     return status
 
-# ---------- sulh module: records in, registry-verified ----------
+# ---------- sulh ----------
 def run_sulh(records, rules=None):
     rules = rules or V4
-    log, admitted, hyp = [], [], []
+    log, store = [], FactStore()
     for rec in records:
-        status, origin = verify_record(rec)
         if ABLATE_GATE:
-            admitted.append((rec, "stated_premise")) if rec.get("source_id") else None
+            if rec.get("source_id"):
+                store.entries.setdefault(rec["fact"], []).append({"value": rec["value"], "origin": "stated_premise", "ref": rec.get("source_id"), "resolution": False, "meta": rec})
+                log.append(f"ADMITTED (gate ablated) {rec.get('fact')}")
             continue
-        if not _admit(status):
-            log.append(f"REJECTED {rec.get('fact')}: {status} (source_id={rec.get('source_id')!r})")
-            continue
-        if rec.get("downgraded") == "hypothesis":
-            hyp.append(rec)
-            log.append(f"HYPOTHESIS-ONLY {rec.get('fact')}: downgraded by extractor guard — cannot establish")
-            continue
-        admitted.append((rec, origin))
-        log.append(f"ADMITTED {rec.get('fact')} = {rec.get('value')} [{status}, origin={origin}, src={rec.get('source_id')}]")
-    # resolve itlaq_scope over admitted records (tier policy as declared in test 5)
-    scope_recs = [r for r, o in admitted if r["fact"] == "itlaq_scope"]
-    store = FactStore()
-    for r, o in admitted:
-        if r["fact"] == "sulh_present":
-            store.assert_fact("sulh_present", r["value"], o, r.get("source_id"))
-    scope_val, scope_status = None, "unknown"
-    if scope_recs:
-        vals = {json.dumps(r["value"], sort_keys=True) for r in scope_recs}
+        status, origin = store.admit_record(rec)
+        log.append(f"{status} {rec.get('fact')} = {rec.get('value')!r} (src={rec.get('source_id')})")
+    live = [e for e in store.all_entries("itlaq_scope") if e["origin"] != "unverified_hypothesis"]
+    scope_val, scope_status, winners = None, "unknown", []
+    if live:
+        vals = {json.dumps(e["value"], sort_keys=True) for e in live}
         if len(vals) == 1:
-            scope_val, scope_status = scope_recs[0]["value"], "established"
+            scope_val, scope_status, winners = live[0]["value"], "established", live
         else:
-            best = min(r["tier"] for r in scope_recs)
-            top = [r for r in scope_recs if r["tier"] == best]
-            if len({json.dumps(r["value"], sort_keys=True) for r in top}) == 1:
+            best = min((e["meta"] or {}).get("tier", 3) for e in live)
+            top = [e for e in live if (e["meta"] or {}).get("tier", 3) == best]
+            if len({json.dumps(e["value"], sort_keys=True) for e in top}) == 1:
                 scope_val, scope_status = top[0]["value"], "established"
+                winners = [e for e in top if e["value"] == scope_val]
             else:
                 scope_status = "conflict"
     if scope_status == "established":
         store.derive("insiraf_limited_customary", scope_val == "limited", "scope-resolution")
         store.derive("scope_all_maratib", scope_val == "all", "scope-resolution")
-        kinds = {r["kind"] for r in scope_recs}
-        store.derive("scope_provenance", "tasrih" if "tasrih" in kinds else "qarain", "scope-resolution")
+        kinds = {(e["meta"] or {}).get("kind") for e in winners}
+        store.derive("scope_provenance", "tasrih" if kinds == {"tasrih"} else "qarain", "scope-resolution")
     elif scope_status == "conflict":
-        store.assert_fact("insiraf_limited_customary", "CONFLICT", "derived", "scope-resolution")
-        store.assert_fact("scope_all_maratib", "CONFLICT", "derived", "scope-resolution")
+        store.derive("insiraf_limited_customary", "CONFLICT", "scope-resolution")
+        store.derive("scope_all_maratib", "CONFLICT", "scope-resolution")
     trace = list(log)
     st = {rid: eval_rule(rules[rid], store, trace) for rid in ("SULH-ITLAQ", "SULH-UMUM")}
     verdict, stop = None, None
@@ -108,19 +94,26 @@ def run_sulh(records, rules=None):
         verdict, stop = "STOP", "STOP-T4-ITLAQ-NO-INSIRAF"
     return {"module": "sulh_audit_v4", "verdict": verdict, "stop_id": stop,
             "scope": {"value": scope_val, "status": scope_status},
-            "rule_status": st, "admission_log": log,
-            "probative_validation": "UNVERIFIED (engine verifies claim-id and quote-in-source only)",
+            "rule_status": st, "admission_log": log, "claims_preserved": len(store.claims),
+            "probative_validation": "UNVERIFIED (engine verifies source, quote, and citation license only)",
             "trace": trace}
 
-# ---------- fawr module: FactStore only, UNKNOWN = stop ----------
-FAWR_REQUIRED = ("delay_beyond_urf", "jahl_khiyar_during_delay", "jahl_fawriyya_during_delay", "mani_during_delay")
+# ---------- fawr (staged) ----------
+def _fawr_stop(unknowns, trace):
+    return {"module": "fawr_audit_v4", "verdict": "STOP", "stop_id": "STOP-T6-INSUFFICIENT-FACTS", "unknown_facts": unknowns, "trace": trace}
+
 def run_fawr(store):
     if not isinstance(store, FactStore):
         raise TypeError("contract: run_fawr accepts a FactStore only")
     trace = []
-    unknowns = [f for f in FAWR_REQUIRED if store.effective(f)[0] is None]
+    delay, _ = store.effective("delay_beyond_urf")
+    if delay is None:
+        return _fawr_stop(["delay_beyond_urf"], trace)
+    if delay is False:
+        return {"module": "fawr_audit_v4", "verdict": "NO_DELAY_ISSUE", "stop_id": None, "trace": trace}
+    unknowns = [f for f in ("jahl_khiyar_during_delay", "jahl_fawriyya_during_delay", "mani_during_delay") if store.effective(f)[0] is None]
     if unknowns:
-        return {"module": "fawr_audit_v4", "verdict": "STOP", "stop_id": "STOP-T6-INSUFFICIENT-FACTS", "unknown_facts": unknowns, "trace": trace}
+        return _fawr_stop(unknowns, trace)
     st = {rid: eval_rule(V4[rid], store, trace) for rid in ("FAWR-DELAY", "EXC-JAHL-KHIYAR", "EXC-MANI", "OPEN-JAHL-FAWRIYYA")}
     if st["EXC-JAHL-KHIYAR"] == "FIRED": verdict = "KHIYAR_PERSISTS_EXCUSED_JAHL_KHIYAR"
     elif st["EXC-MANI"] == "FIRED": verdict = "KHIYAR_PERSISTS_EXCUSED_MANI"
@@ -129,17 +122,52 @@ def run_fawr(store):
     else: verdict = "NO_DELAY_ISSUE"
     return {"module": "fawr_audit_v4", "verdict": verdict, "stop_id": None, "rule_status": st, "trace": trace}
 
-# ---------- core module: FactStore only, routing facts must be known ----------
+# ---------- core (dependency analysis over unknown optionals) ----------
 CORE_REQUIRED = ("txn", "ground_active", "extension_ground", "jahl", "fahish", "iqdam_alim")
+OPTIONAL_DOMAINS = {"badhl": ["none", "tendered_gharama"], "alienation": ["none", "before_ilm", "after_ilm"],
+                    "maghbun_refusal": [False, True], "ghurd_ayn": ["unknown", "absent"],
+                    "dalala_rida": ["none", "weak", "strong"], "musamaha_basis": [False, True]}
 def run_core(store):
     if not isinstance(store, FactStore):
         raise TypeError("contract: run_core accepts a FactStore only")
     unknowns = [f for f in CORE_REQUIRED if store.effective(f)[0] is None]
     if unknowns:
         return {"verdict": "STOP", "stop_id": "STOP-T6-CORE-FACTS-UNKNOWN", "unknown_facts": unknowns}
-    return engine2_1.run21(store.plain())
+    base = store.plain()
+    absent = [f for f in OPTIONAL_DOMAINS if store.entry(f) is None]
+    if not absent:
+        return engine2_1.run21(base)
+    results, slot_sets = {}, {}
+    for combo in itertools.product(*[OPTIONAL_DOMAINS[f] for f in absent]):
+        facts = dict(base); facts.update(dict(zip(absent, combo)))
+        out = engine2_1.run21(facts)
+        results[combo] = out["verdict"]
+        slot_sets[combo] = json.dumps(out["slots"], sort_keys=True, default=str)
+    verdicts = set(results.values())
+    if len(verdicts) == 1:
+        rep = next(iter(results))
+        facts = dict(base); facts.update(dict(zip(absent, rep)))
+        out = engine2_1.run21(facts)
+        out["dependency"] = {"completions_checked": len(results), "irrelevant_unknowns": absent,
+                             "slot_variance_across_completions": len(set(slot_sets.values())) > 1}
+        return out
+    pivotal, slot_pivotal = [], []
+    for i, f in enumerate(absent):
+        groups, sgroups = {}, {}
+        for combo, v in results.items():
+            key = combo[:i] + combo[i + 1:]
+            groups.setdefault(key, set()).add(v)
+            sgroups.setdefault(key, set()).add(slot_sets[combo])
+        if any(len(s) > 1 for s in groups.values()):
+            pivotal.append(f)
+        elif any(len(s) > 1 for s in sgroups.values()):
+            slot_pivotal.append(f)
+    return {"verdict": "UNDETERMINED_PIVOTAL", "stop_id": "STOP-T7-PIVOTAL-UNKNOWN",
+            "pivotal_facts": pivotal, "slot_pivotal_facts": slot_pivotal,
+            "nonpivotal_unknowns": [f for f in absent if f not in pivotal and f not in slot_pivotal],
+            "completions_checked": len(results)}
 
-# ---------- test-3 module: fact-driven, NO case id ----------
+# ---------- test-3 module (fact-driven, unchanged semantics) ----------
 def run_t3(store):
     if not isinstance(store, FactStore):
         raise TypeError("contract: run_t3 accepts a FactStore only")
@@ -169,7 +197,7 @@ def run_t3(store):
         verdict, stop = "STOP", "STOP-T6-NO-RULE-FIRED"
     return {"module": "t3_fact_driven", "verdict": verdict, "stop_id": stop, "rule_status": st, "trace": trace}
 
-# ---------- generic logic evaluator (unchanged semantics from v1) ----------
+# ---------- generic logic evaluator ----------
 def eval_logic(rules, facts):
     trace, fired = [], []
     for r in sorted(rules, key=lambda x: x["id"]):
