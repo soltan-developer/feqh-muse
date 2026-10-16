@@ -1,0 +1,51 @@
+name: Fiqh multischolar data model
+on:
+  pull_request:
+    paths:
+      - 'architecture/**'
+      - '.github/workflows/multischolar-architecture.yml'
+  workflow_dispatch:
+
+jobs:
+  schema-integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: feqh_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d feqh_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: feqh_test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure psql is available
+        run: |
+          if ! command -v psql >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y postgresql-client
+          fi
+      - name: Apply initial knowledge schema
+        run: psql -v ON_ERROR_STOP=1 -f architecture/migrations/001_issue_centric_multischolar.sql
+      - name: Apply cross-scholar integrity rules
+        run: psql -v ON_ERROR_STOP=1 -f architecture/migrations/002_cross_scholar_integrity.sql
+      - name: Run synthetic relational integrity tests
+        run: psql -v ON_ERROR_STOP=1 -f architecture/tests/001_smoke.sql
+      - name: Count installed knowledge tables
+        run: |
+          count="$(psql -Atc "SELECT count(*) FROM information_schema.tables WHERE table_schema='fiqh' AND table_type='BASE TABLE'")"
+          echo "Installed fiqh tables: $count"
+          test "$count" -ge 48

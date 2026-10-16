@@ -1,0 +1,26 @@
+name: Feqh-Muse multi-scholar schema contract
+on:
+  pull_request:
+    paths:
+      - 'architecture/issue-centric-v1/**'
+      - 'docs/ADR_001_ISSUE_CENTRIC_MULTI_SCHOLAR_FA.md'
+      - '.github/workflows/architecture-schema-contract.yml'
+  workflow_dispatch:
+
+jobs:
+  reference-schema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate reference schema and 2-scholar case
+        run: python3 architecture/issue-centric-v1/test_schema.py
+      - name: Confirm historical engine untouched
+        run: |
+          git diff --exit-code 68e3aa07f35f8348dac4bce7bec0bee3d0549294 HEAD -- engine2/
+          python3 engine2/run_test8.py
