@@ -1,0 +1,40 @@
+name: Feqh-Muse Phase C5 canonical research intake
+on:
+  pull_request:
+    paths:
+      - 'research/phase-c4-canonical-evidence/**'
+      - 'phase_c/**'
+      - '.github/workflows/phase-c5-canonical-intake.yml'
+  workflow_dispatch:
+
+jobs:
+  c5-technical-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run original Muse C4 structural checks (note optional corpus)
+        run: python research/phase-c4-canonical-evidence/validate_c4_package.py
+      - name: Produce hold-only technical report without pretending to see external books
+        run: python -m phase_c.c5_canonical_intake --check --output /tmp/phase_c5_intake_review.json
+      - name: Exercise C5 adversarial mutation and C2/C3 regression contracts
+        run: python -m unittest phase_c.test_c5_canonical_intake phase_c.test_c3_research_audit phase_c.test_c2 -v
+      - name: Validate existing Muse research package integrity
+        run: python research/phase-c-final-ansari-qualification/validate_package.py
+      - name: Source syntax check
+        run: python -m compileall -q phase_c
+      - name: Frozen engine and all original research bundles unchanged
+        run: |
+          git diff --exit-code c0b3aec123941d75f7f1d0bfc2263ba1fe1d4912 HEAD -- engine2/
+          git diff --exit-code c0b3aec123941d75f7f1d0bfc2263ba1fe1d4912 HEAD -- research/
+          git diff --exit-code c0b3aec123941d75f7f1d0bfc2263ba1fe1d4912 HEAD -- architecture/migrations/
+      - name: Legacy engine Test 6 / Test 8 / Mutations
+        run: |
+          python engine2/run_test6.py
+          python engine2/run_test8.py
+          python engine2/run_mutations.py

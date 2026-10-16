@@ -28,10 +28,10 @@ jobs:
         run: python -m unittest phase_c.test_c3_research_audit phase_c.test_c2 -v
       - name: Compile Phase C sources
         run: python -m compileall -q phase_c
-      - name: Preserve locked original engine, C1, C2, Muse C3 research
+      - name: Preserve frozen engine and the complete Muse C4 research baseline
         run: |
           git diff --exit-code 6a70fc9caf83451b963f0b7a144deb55129bb666 HEAD -- engine2/
-          git diff --exit-code 6a70fc9caf83451b963f0b7a144deb55129bb666 HEAD -- research/
+          git diff --exit-code c0b3aec123941d75f7f1d0bfc2263ba1fe1d4912 HEAD -- research/
       - name: Locked engine Test 6
         run: python engine2/run_test6.py
       - name: Locked engine Test 8
