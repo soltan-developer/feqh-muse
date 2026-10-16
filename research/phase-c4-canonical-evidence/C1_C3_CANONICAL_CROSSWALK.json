@@ -1,0 +1,658 @@
+{
+ "generated": "2026-10-16",
+ "rows": [
+  {
+   "legacy_id": "P-01",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R994-S01",
+   "book_id": "12228",
+   "db_record_id": 994,
+   "db_page": 352,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-02",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R994-S02",
+   "book_id": "12228",
+   "db_record_id": 994,
+   "db_page": 352,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-03",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R997-S01",
+   "book_id": "12228",
+   "db_record_id": 997,
+   "db_page": 355,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-04",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R997-S02",
+   "book_id": "12228",
+   "db_record_id": 997,
+   "db_page": 355,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-05",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R998-S01",
+   "book_id": "12228",
+   "db_record_id": 998,
+   "db_page": 356,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-06",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R998-S02",
+   "book_id": "12228",
+   "db_record_id": 998,
+   "db_page": 356,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-07",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R999-S01",
+   "book_id": "12228",
+   "db_record_id": 999,
+   "db_page": 357,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-08",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1000-S01",
+   "book_id": "12228",
+   "db_record_id": 1000,
+   "db_page": 358,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-09",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1000-S02",
+   "book_id": "12228",
+   "db_record_id": 1000,
+   "db_page": 358,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-10",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1010-S01",
+   "book_id": "12228",
+   "db_record_id": 1010,
+   "db_page": 364,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-11",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1011-S01",
+   "book_id": "12228",
+   "db_record_id": 1011,
+   "db_page": 365,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": "C1 locus corrected: stated record 1010 / DB p.364; text actually at record 1011 / DB p.365 (adjacent record, same discussion)."
+  },
+  {
+   "legacy_id": "P-12",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1016-S01",
+   "book_id": "12228",
+   "db_record_id": 1016,
+   "db_page": 367,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-13",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1025-S02",
+   "book_id": "12228",
+   "db_record_id": 1025,
+   "db_page": 371,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-14",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1042-S01",
+   "book_id": "12228",
+   "db_record_id": 1042,
+   "db_page": 381,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-15",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1044-S01",
+   "book_id": "12228",
+   "db_record_id": 1044,
+   "db_page": 383,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-16",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1048-S01",
+   "book_id": "12228",
+   "db_record_id": 1048,
+   "db_page": 385,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-17",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1054-S01",
+   "book_id": "12228",
+   "db_record_id": 1054,
+   "db_page": 386,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-18",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1056-S01",
+   "book_id": "12228",
+   "db_record_id": 1056,
+   "db_page": 388,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-19",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1058-S01",
+   "book_id": "12228",
+   "db_record_id": 1058,
+   "db_page": 390,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-20",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1060-S01",
+   "book_id": "12228",
+   "db_record_id": 1060,
+   "db_page": 392,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-21",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R256-S01",
+   "book_id": "12228",
+   "db_record_id": 256,
+   "db_page": 79,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": "C1 stated 'records 235+'; anchor located at record 256 within DB pp.78-80."
+  },
+  {
+   "legacy_id": "P-22",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R1025-S01",
+   "book_id": "12228",
+   "db_record_id": 1025,
+   "db_page": 371,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "P-23",
+   "legacy_document": "C1 FARAID_PASSAGES.md",
+   "canonical_passage_id": "ANS-1571-R125-S01",
+   "book_id": "1571",
+   "db_record_id": 125,
+   "db_page": 72,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-01",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R955-S01",
+   "book_id": "12228",
+   "db_record_id": 955,
+   "db_page": 336,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-02",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R954-S01",
+   "book_id": "12228",
+   "db_record_id": 954,
+   "db_page": 335,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-03",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R968-S01",
+   "book_id": "12228",
+   "db_record_id": 968,
+   "db_page": 339,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-04",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R981-S01",
+   "book_id": "12228",
+   "db_record_id": 981,
+   "db_page": 345,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-05",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R984-S01",
+   "book_id": "12228",
+   "db_record_id": 984,
+   "db_page": 348,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-06",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R987-S01",
+   "book_id": "12228",
+   "db_record_id": 987,
+   "db_page": 348,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-07",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R990-S01",
+   "book_id": "12228",
+   "db_record_id": 990,
+   "db_page": 349,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-08",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12227-R299-S01",
+   "book_id": "12227",
+   "db_record_id": 299,
+   "db_page": 89,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-09",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12227-R308-S01",
+   "book_id": "12227",
+   "db_record_id": 308,
+   "db_page": 94,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-10",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12228-R942-S01",
+   "book_id": "12228",
+   "db_record_id": 942,
+   "db_page": 332,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "NP-11",
+   "legacy_document": "Final package ADDITIONAL_SOURCE_PASSAGES.md",
+   "canonical_passage_id": "ANS-12227-R282-S01",
+   "book_id": "12227",
+   "db_record_id": 282,
+   "db_page": 83,
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "anchor quote found RAW inside the stated record(s)",
+   "corrections": ""
+  },
+  {
+   "legacy_id": "AUDIT-P-02",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R994-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit anchor is the second clause of C1 P-01; C1 P-02 (hukuma dabit, R994-S02) was never audited in that pass"
+  },
+  {
+   "legacy_id": "AUDIT-P-03",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R997-S02"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's jam'-qa'ida claim is C1 P-04"
+  },
+  {
+   "legacy_id": "AUDIT-P-04",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R998-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's sadd-bab anchor sits inside C1 P-05"
+  },
+  {
+   "legacy_id": "AUDIT-P-05",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R998-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's laysa-'amalan anchor sits inside C1 P-05"
+  },
+  {
+   "legacy_id": "AUDIT-P-06",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R999-S01",
+    "ANS-12228-R1000-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's 'urfi-imkan claim spans C1 P-07 and P-08"
+  },
+  {
+   "legacy_id": "AUDIT-P-07",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1010-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's takhyir claim is C1 P-10"
+  },
+  {
+   "legacy_id": "AUDIT-P-08",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [],
+   "match_class": "NOT_A_C1_PASSAGE",
+   "match_reason": "istihsan discussion adjacent to C1 P-10's argument unit (DB pp.362-363); no separate C1 passage id"
+  },
+  {
+   "legacy_id": "AUDIT-P-09",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1011-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's tawqquf-haml claim is C1 P-11"
+  },
+  {
+   "legacy_id": "AUDIT-P-10",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1025-S02"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's tarjih-obligation claim is C1 P-13"
+  },
+  {
+   "legacy_id": "AUDIT-P-11",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1044-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's open-criterion claim is C1 P-15"
+  },
+  {
+   "legacy_id": "AUDIT-P-12",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1000-S02",
+    "ANS-12228-R1056-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's nass/zahir claim spans C1 P-09 (division 2) and C1 P-18"
+  },
+  {
+   "legacy_id": "AUDIT-P-13",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1011-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's marfu'a claim sits inside the P-10/P-11 discussion at record 1011"
+  },
+  {
+   "legacy_id": "AUDIT-P-14",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1054-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's dalala-strength claim is the discussion of C1 P-17"
+  },
+  {
+   "legacy_id": "AUDIT-P-15a",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [],
+   "match_class": "NOT_A_C1_PASSAGE",
+   "match_reason": "Faraid v1 paraphrase anchor; no C1 passage; string remains NOT_VERIFIED"
+  },
+  {
+   "legacy_id": "AUDIT-P-15b",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1044-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's aqall-ihtimalan anchor is C1 P-15"
+  },
+  {
+   "legacy_id": "AUDIT-P-16",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1054-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's aqwa-dalala claim is C1 P-17"
+  },
+  {
+   "legacy_id": "AUDIT-P-17",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1058-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's mahal-al-ishkal claim is C1 P-19"
+  },
+  {
+   "legacy_id": "AUDIT-P-18",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1044-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's ab'ad-'an-al-batil anchor is C1 P-15"
+  },
+  {
+   "legacy_id": "AUDIT-P-19",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R1056-S01",
+    "ANS-12228-R1060-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "audit's Tusi-ziyada claim spans C1 P-18 (exception) and C1 P-20"
+  },
+  {
+   "legacy_id": "AUDIT-P-20",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [],
+   "match_class": "NOT_FOUND_WITHIN_SEARCH_SCOPE",
+   "match_reason": "the Persian sentence was a researcher gloss in the audit, never a C1 passage; C1 P-20 is tarh al-sanad (R1060-S01). Claim retired."
+  },
+  {
+   "legacy_id": "AUDIT-P-21",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [],
+   "match_class": "NOT_A_C1_PASSAGE",
+   "match_reason": "Faraid v1 ihtiyat paraphrase; related canonical neighbor: C1 P-11 (R1011-S01) carries the v1 cross-reference"
+  },
+  {
+   "legacy_id": "AUDIT-P-22",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [],
+   "match_class": "NOT_A_C1_PASSAGE",
+   "match_reason": "Faraid v1 paraphrase; substance neighbor: C1 P-21 juz'iyya (R256-S01)"
+  },
+  {
+   "legacy_id": "AUDIT-P-23",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-1571-R125-S01"
+   ],
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "the only drift-free audit row besides P-01"
+  },
+  {
+   "legacy_id": "AUDIT-P-01",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R994-S01"
+   ],
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "audit and C1 agree"
+  },
+  {
+   "legacy_id": "LOG-NP-02",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R968-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "verification-log anchor for NP-02 actually quotes NP-03's passage (sababi)"
+  },
+  {
+   "legacy_id": "LOG-NP-03",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R981-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "log anchor for NP-03 actually quotes NP-04's passage (tasaqut)"
+  },
+  {
+   "legacy_id": "LOG-NP-04",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R984-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "log anchor for NP-04 actually quotes NP-05's passage (ruju')"
+  },
+  {
+   "legacy_id": "LOG-NP-05",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12227-R299-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "log anchor for NP-05 actually quotes NP-08's passage (zuhur)"
+  },
+  {
+   "legacy_id": "LOG-NP-06",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12227-R308-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "log anchor for NP-06 actually quotes NP-09's passage (ijma' manqul)"
+  },
+  {
+   "legacy_id": "LOG-NP-07",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12227-R299-S01"
+   ],
+   "match_class": "FOUND_ELSEWHERE_WRONG_ID",
+   "match_reason": "log anchor for NP-07 actually quotes NP-08's second anchor (shuhra)"
+  },
+  {
+   "legacy_id": "LOG-NP-01",
+   "legacy_document": "Phase-C-final C1_CRITICAL_AUDIT / SOURCE_VERIFICATION_LOG",
+   "canonical_passage_id": [
+    "ANS-12228-R955-S01"
+   ],
+   "match_class": "EXACT_TEXT_AND_ID_MATCH",
+   "match_reason": "log anchor correct"
+  }
+ ],
+ "summary": {
+  "true_passages_exact": 34,
+  "audit_claim_rows": 31,
+  "found_elsewhere_wrong_id": 23,
+  "not_a_c1_passage": 4,
+  "not_found": 1
+ }
+}

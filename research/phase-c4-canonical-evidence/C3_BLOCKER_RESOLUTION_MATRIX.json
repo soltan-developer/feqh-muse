@@ -1,0 +1,294 @@
+{
+ "note": "Reconstructed blocker set: every reference C3's gate flagged (audit claim rows + NP log anchors + locus corrections). The exact machine list lives in phase_c/c3_research_audit.py output on the C3 branch.",
+ "items": [
+  {
+   "blocker": "AUDIT-P-02",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit anchor is the second clause of C1 P-01; C1 P-02 (hukuma dabit, R994-S02) was never audited in that pass",
+   "canonical": [
+    "ANS-12228-R994-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-03",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's jam'-qa'ida claim is C1 P-04",
+   "canonical": [
+    "ANS-12228-R997-S02"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-04",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's sadd-bab anchor sits inside C1 P-05",
+   "canonical": [
+    "ANS-12228-R998-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-05",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's laysa-'amalan anchor sits inside C1 P-05",
+   "canonical": [
+    "ANS-12228-R998-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-06",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's 'urfi-imkan claim spans C1 P-07 and P-08",
+   "canonical": [
+    "ANS-12228-R999-S01",
+    "ANS-12228-R1000-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-07",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's takhyir claim is C1 P-10",
+   "canonical": [
+    "ANS-12228-R1010-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-08",
+   "class": "NOT_A_C1_PASSAGE",
+   "resolution": "istihsan discussion adjacent to C1 P-10's argument unit (DB pp.362-363); no separate C1 passage id",
+   "canonical": [],
+   "status": "RETIRED_OR_OPEN"
+  },
+  {
+   "blocker": "AUDIT-P-09",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's tawqquf-haml claim is C1 P-11",
+   "canonical": [
+    "ANS-12228-R1011-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-10",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's tarjih-obligation claim is C1 P-13",
+   "canonical": [
+    "ANS-12228-R1025-S02"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-11",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's open-criterion claim is C1 P-15",
+   "canonical": [
+    "ANS-12228-R1044-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-12",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's nass/zahir claim spans C1 P-09 (division 2) and C1 P-18",
+   "canonical": [
+    "ANS-12228-R1000-S02",
+    "ANS-12228-R1056-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-13",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's marfu'a claim sits inside the P-10/P-11 discussion at record 1011",
+   "canonical": [
+    "ANS-12228-R1011-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-14",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's dalala-strength claim is the discussion of C1 P-17",
+   "canonical": [
+    "ANS-12228-R1054-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-15a",
+   "class": "NOT_A_C1_PASSAGE",
+   "resolution": "Faraid v1 paraphrase anchor; no C1 passage; string remains NOT_VERIFIED",
+   "canonical": [],
+   "status": "RETIRED_OR_OPEN"
+  },
+  {
+   "blocker": "AUDIT-P-15b",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's aqall-ihtimalan anchor is C1 P-15",
+   "canonical": [
+    "ANS-12228-R1044-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-16",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's aqwa-dalala claim is C1 P-17",
+   "canonical": [
+    "ANS-12228-R1054-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-17",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's mahal-al-ishkal claim is C1 P-19",
+   "canonical": [
+    "ANS-12228-R1058-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-18",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's ab'ad-'an-al-batil anchor is C1 P-15",
+   "canonical": [
+    "ANS-12228-R1044-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-19",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "audit's Tusi-ziyada claim spans C1 P-18 (exception) and C1 P-20",
+   "canonical": [
+    "ANS-12228-R1056-S01",
+    "ANS-12228-R1060-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-20",
+   "class": "NOT_FOUND_WITHIN_SEARCH_SCOPE",
+   "resolution": "the Persian sentence was a researcher gloss in the audit, never a C1 passage; C1 P-20 is tarh al-sanad (R1060-S01). Claim retired.",
+   "canonical": [],
+   "status": "RETIRED_OR_OPEN"
+  },
+  {
+   "blocker": "AUDIT-P-21",
+   "class": "NOT_A_C1_PASSAGE",
+   "resolution": "Faraid v1 ihtiyat paraphrase; related canonical neighbor: C1 P-11 (R1011-S01) carries the v1 cross-reference",
+   "canonical": [],
+   "status": "RETIRED_OR_OPEN"
+  },
+  {
+   "blocker": "AUDIT-P-22",
+   "class": "NOT_A_C1_PASSAGE",
+   "resolution": "Faraid v1 paraphrase; substance neighbor: C1 P-21 juz'iyya (R256-S01)",
+   "canonical": [],
+   "status": "RETIRED_OR_OPEN"
+  },
+  {
+   "blocker": "AUDIT-P-23",
+   "class": "EXACT_TEXT_AND_ID_MATCH",
+   "resolution": "the only drift-free audit row besides P-01",
+   "canonical": [
+    "ANS-1571-R125-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "AUDIT-P-01",
+   "class": "EXACT_TEXT_AND_ID_MATCH",
+   "resolution": "audit and C1 agree",
+   "canonical": [
+    "ANS-12228-R994-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-02",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "verification-log anchor for NP-02 actually quotes NP-03's passage (sababi)",
+   "canonical": [
+    "ANS-12228-R968-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-03",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "log anchor for NP-03 actually quotes NP-04's passage (tasaqut)",
+   "canonical": [
+    "ANS-12228-R981-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-04",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "log anchor for NP-04 actually quotes NP-05's passage (ruju')",
+   "canonical": [
+    "ANS-12228-R984-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-05",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "log anchor for NP-05 actually quotes NP-08's passage (zuhur)",
+   "canonical": [
+    "ANS-12227-R299-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-06",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "log anchor for NP-06 actually quotes NP-09's passage (ijma' manqul)",
+   "canonical": [
+    "ANS-12227-R308-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-07",
+   "class": "FOUND_ELSEWHERE_WRONG_ID",
+   "resolution": "log anchor for NP-07 actually quotes NP-08's second anchor (shuhra)",
+   "canonical": [
+    "ANS-12227-R299-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "LOG-NP-01",
+   "class": "EXACT_TEXT_AND_ID_MATCH",
+   "resolution": "log anchor correct",
+   "canonical": [
+    "ANS-12228-R955-S01"
+   ],
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "C1 P-11 locus",
+   "class": "SAME_DISCUSSION_ADJACENT_RECORD",
+   "resolution": "record corrected 1010->1011, DB page 364->365",
+   "status": "RESOLVED_BY_CROSSWALK"
+  },
+  {
+   "blocker": "E-C1-10 parallel coding",
+   "class": "CODING_VARIANT",
+   "resolution": "kept as coding_variant_of pilot U1-U12",
+   "status": "RESOLVED"
+  }
+ ],
+ "summary": {
+  "total_blockers_reconstructed": 33,
+  "resolved": 28,
+  "retired_or_open": 5
+ }
+}

@@ -1,0 +1,482 @@
+{
+ "edges": [
+  {
+   "from": "MR-ANS-TAARUD-UNITY.scope",
+   "legacy_ref": "P-01",
+   "canonical_ref": "ANS-12228-R994-S01"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.activation",
+   "legacy_ref": "P-01",
+   "canonical_ref": "ANS-12228-R994-S01"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.defeaters",
+   "legacy_ref": "P-01",
+   "canonical_ref": "ANS-12228-R994-S01"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.defeaters",
+   "legacy_ref": "P-02",
+   "canonical_ref": "ANS-12228-R994-S02"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.exceptions",
+   "legacy_ref": "P-21",
+   "canonical_ref": "ANS-12228-R256-S01"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.conflict_policy",
+   "legacy_ref": "P-02",
+   "canonical_ref": "ANS-12228-R994-S02"
+  },
+  {
+   "from": "MR-ANS-TAARUD-UNITY.principle",
+   "legacy_ref": "P-01",
+   "canonical_ref": "ANS-12228-R994-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.scope",
+   "legacy_ref": "P-04",
+   "canonical_ref": "ANS-12228-R997-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.scope",
+   "legacy_ref": "P-05",
+   "canonical_ref": "ANS-12228-R998-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.activation",
+   "legacy_ref": "P-05",
+   "canonical_ref": "ANS-12228-R998-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.activation",
+   "legacy_ref": "P-07",
+   "canonical_ref": "ANS-12228-R999-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.defeaters",
+   "legacy_ref": "P-08",
+   "canonical_ref": "ANS-12228-R1000-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.defeaters",
+   "legacy_ref": "P-09",
+   "canonical_ref": "ANS-12228-R1000-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.exceptions",
+   "legacy_ref": "P-09",
+   "canonical_ref": "ANS-12228-R1000-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.conflict_policy",
+   "legacy_ref": "P-05",
+   "canonical_ref": "ANS-12228-R998-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.conflict_policy",
+   "legacy_ref": "P-08",
+   "canonical_ref": "ANS-12228-R1000-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.principle",
+   "legacy_ref": "P-05",
+   "canonical_ref": "ANS-12228-R998-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-NO-UNIVERSAL.principle",
+   "legacy_ref": "P-06",
+   "canonical_ref": "ANS-12228-R998-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.scope",
+   "legacy_ref": "P-07",
+   "canonical_ref": "ANS-12228-R999-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.scope",
+   "legacy_ref": "P-09",
+   "canonical_ref": "ANS-12228-R1000-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.scope",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.activation",
+   "legacy_ref": "P-09",
+   "canonical_ref": "ANS-12228-R1000-S02"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.activation",
+   "legacy_ref": "P-23",
+   "canonical_ref": "ANS-1571-R125-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.defeaters",
+   "legacy_ref": "P-05",
+   "canonical_ref": "ANS-12228-R998-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.defeaters",
+   "legacy_ref": "P-19",
+   "canonical_ref": "ANS-12228-R1058-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.exceptions",
+   "legacy_ref": "P-23",
+   "canonical_ref": "ANS-1571-R125-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.exceptions",
+   "legacy_ref": "CE-01",
+   "canonical_ref": null,
+   "basket": "adverse"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.conflict_policy",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.principle",
+   "legacy_ref": "P-07",
+   "canonical_ref": "ANS-12228-R999-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.principle",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.scope",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.scope",
+   "legacy_ref": "P-18",
+   "canonical_ref": "ANS-12228-R1056-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.activation",
+   "legacy_ref": "P-18",
+   "canonical_ref": "ANS-12228-R1056-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.defeaters",
+   "legacy_ref": "P-18",
+   "canonical_ref": "ANS-12228-R1056-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.defeaters",
+   "legacy_ref": "CE-06",
+   "canonical_ref": null,
+   "basket": "adverse"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.exceptions",
+   "legacy_ref": "P-18",
+   "canonical_ref": "ANS-12228-R1056-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.conflict_policy",
+   "legacy_ref": "P-16",
+   "canonical_ref": "ANS-12228-R1048-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.conflict_policy",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.principle",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.scope",
+   "legacy_ref": "P-13",
+   "canonical_ref": "ANS-12228-R1025-S02"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.scope",
+   "legacy_ref": "P-14",
+   "canonical_ref": "ANS-12228-R1042-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.scope",
+   "legacy_ref": "P-15",
+   "canonical_ref": "ANS-12228-R1044-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.activation",
+   "legacy_ref": "P-13",
+   "canonical_ref": "ANS-12228-R1025-S02"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.defeaters",
+   "legacy_ref": "P-13",
+   "canonical_ref": "ANS-12228-R1025-S02"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.defeaters",
+   "legacy_ref": "P-16",
+   "canonical_ref": "ANS-12228-R1048-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.exceptions",
+   "legacy_ref": "P-14",
+   "canonical_ref": "ANS-12228-R1042-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.conflict_policy",
+   "legacy_ref": "P-15",
+   "canonical_ref": "ANS-12228-R1044-S01"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.principle",
+   "legacy_ref": "P-13",
+   "canonical_ref": "ANS-12228-R1025-S02"
+  },
+  {
+   "from": "MR-ANS-TARJIH-OPEN.principle",
+   "legacy_ref": "P-15",
+   "canonical_ref": "ANS-12228-R1044-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.scope",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.scope",
+   "legacy_ref": "P-12",
+   "canonical_ref": "ANS-12228-R1016-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.activation",
+   "legacy_ref": "P-12",
+   "canonical_ref": "ANS-12228-R1016-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.defeaters",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.exceptions",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.exceptions",
+   "legacy_ref": "P-21",
+   "canonical_ref": "ANS-12228-R256-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.conflict_policy",
+   "legacy_ref": "P-12",
+   "canonical_ref": "ANS-12228-R1016-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.conflict_policy",
+   "legacy_ref": "P-13",
+   "canonical_ref": "ANS-12228-R1025-S02"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.principle",
+   "legacy_ref": "P-12",
+   "canonical_ref": "ANS-12228-R1016-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.scope",
+   "legacy_ref": "P-11",
+   "canonical_ref": "ANS-12228-R1011-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.activation",
+   "legacy_ref": "P-11",
+   "canonical_ref": "ANS-12228-R1011-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.activation",
+   "legacy_ref": "P-19",
+   "canonical_ref": "ANS-12228-R1058-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.defeaters",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.defeaters",
+   "legacy_ref": "P-11",
+   "canonical_ref": "ANS-12228-R1011-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.exceptions",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.conflict_policy",
+   "legacy_ref": "P-11",
+   "canonical_ref": "ANS-12228-R1011-S01"
+  },
+  {
+   "from": "MR-ANS-STOP-BOUND.principle",
+   "legacy_ref": "P-11",
+   "canonical_ref": "ANS-12228-R1011-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.scope",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.scope",
+   "legacy_ref": "P-21",
+   "canonical_ref": "ANS-12228-R256-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.activation",
+   "legacy_ref": "P-01",
+   "canonical_ref": "ANS-12228-R994-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.activation",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.defeaters",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.conflict_policy",
+   "legacy_ref": "P-21",
+   "canonical_ref": "ANS-12228-R256-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-A.principle",
+   "legacy_ref": "P-10",
+   "canonical_ref": "ANS-12228-R1010-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.scope",
+   "legacy_ref": "P-15",
+   "canonical_ref": "ANS-12228-R1044-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.scope",
+   "legacy_ref": "P-16",
+   "canonical_ref": "ANS-12228-R1048-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.scope",
+   "legacy_ref": "P-20",
+   "canonical_ref": "ANS-12228-R1060-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.activation",
+   "legacy_ref": "P-16",
+   "canonical_ref": "ANS-12228-R1048-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.defeaters",
+   "legacy_ref": "P-20",
+   "canonical_ref": "ANS-12228-R1060-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.exceptions",
+   "legacy_ref": "P-18",
+   "canonical_ref": "ANS-12228-R1056-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.exceptions",
+   "legacy_ref": "CE-05",
+   "canonical_ref": null,
+   "basket": "adverse"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.conflict_policy",
+   "legacy_ref": "P-14",
+   "canonical_ref": "ANS-12228-R1042-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.conflict_policy",
+   "legacy_ref": "P-17",
+   "canonical_ref": "ANS-12228-R1054-S01"
+  },
+  {
+   "from": "MR-ANS-JIHA-BOUND.principle",
+   "legacy_ref": "P-20",
+   "canonical_ref": "ANS-12228-R1060-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.scope",
+   "legacy_ref": "NP-02",
+   "canonical_ref": "ANS-12228-R954-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.activation",
+   "legacy_ref": "NP-03",
+   "canonical_ref": "ANS-12228-R968-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.activation",
+   "legacy_ref": "NP-04",
+   "canonical_ref": "ANS-12228-R981-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.defeaters",
+   "legacy_ref": "NP-03",
+   "canonical_ref": "ANS-12228-R968-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.exceptions",
+   "legacy_ref": "NP-06",
+   "canonical_ref": "ANS-12228-R987-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.exceptions",
+   "legacy_ref": "NP-07",
+   "canonical_ref": "ANS-12228-R990-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.conflict_policy",
+   "legacy_ref": "NP-01",
+   "canonical_ref": "ANS-12228-R955-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.conflict_policy",
+   "legacy_ref": "NP-04",
+   "canonical_ref": "ANS-12228-R981-S01"
+  },
+  {
+   "from": "MR-ANS-AFTER-TASAQUT-B.principle",
+   "legacy_ref": "NP-05",
+   "canonical_ref": "ANS-12228-R984-S01"
+  },
+  {
+   "from": "MR-ANS-JAM-QARINA.additional",
+   "legacy_ref": "NP-08",
+   "canonical_ref": "ANS-12227-R299-S01"
+  },
+  {
+   "from": "MR-ANS-DALALA-FIRST.additional",
+   "legacy_ref": "NP-08",
+   "canonical_ref": "ANS-12227-R299-S01"
+  },
+  {
+   "from": "MR-ANS-TAKHYIR-LAST.additional",
+   "legacy_ref": "NP-11",
+   "canonical_ref": "ANS-12227-R282-S01"
+  }
+ ]
+}
