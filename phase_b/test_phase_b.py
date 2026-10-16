@@ -136,6 +136,57 @@ class PhaseB(unittest.TestCase):
             raise SyntheticRollback()
 
 
+    def test_10_original_graph_edges_and_review_states(self):
+        with self.conn.cursor() as c:
+            for issue, rel in [
+                ("khiyar.ghabn", "ghabn-case/GRAPH_V2.json"),
+                ("sale.adhrah", "pilot/bay-udhrah/GRAPH_UDHRAH_DOC.json")
+            ]:
+                edges = json.loads(file_text(rel))["edges"]
+                c.execute("""SELECT count(*) FROM fiqh.evidence_relations r
+                             JOIN fiqh.issues i ON i.id=r.issue_id
+                             WHERE i.stable_key=%s AND r.provenance_file=%s
+                             AND r.provenance_sha256=%s
+                             AND r.assessment_status='unverified'""",
+                          (issue, rel, digest(file_text(rel))))
+                self.assertEqual(c.fetchone()[0], len(edges))
+            c.execute("""SELECT count(*) FROM fiqh.evidence_assessments
+                         WHERE source_authenticity='unverified'
+                         AND quote_match='unverified'
+                         AND semantic_entailment='unverified'
+                         AND probative_authority='unverified'""")
+            self.assertEqual(c.fetchone()[0], sum(self.first["evidence_nodes"].values()))
+
+    def test_11_cross_issue_relation_rejected(self):
+        with self.conn.transaction():
+            with self.conn.cursor() as c:
+                c.execute("SELECT id FROM fiqh.issues WHERE stable_key='khiyar.ghabn'")
+                gh = c.fetchone()[0]
+                c.execute("""SELECT e.id FROM fiqh.evidence_items e
+                             JOIN fiqh.issues i ON i.id=e.issue_id
+                             WHERE i.stable_key='sale.adhrah' LIMIT 1""")
+                other = c.fetchone()[0]
+                with self.assertRaises(psycopg.Error):
+                    with self.conn.transaction():
+                        c.execute("""INSERT INTO fiqh.evidence_relations
+                             (issue_id,source_node_key,target_node_key,relation_original,
+                              provenance_file,provenance_sha256,from_evidence_id)
+                             VALUES (%s,'synthetic-qa-source','synthetic-qa-target','QA',
+                                     'SYNTHETIC-TEST-ONLY',%s,%s)""",
+                                  (gh, "f" * 64, other))
+
+    def test_12_unknowns_not_coerced_to_false(self):
+        from factstore import FactStore
+        import engine_unified as locked
+        empty = locked.run_core(FactStore())
+        self.assertEqual(empty["stop_id"], "STOP-T6-CORE-FACTS-UNKNOWN")
+        self.assertIn("jahl", empty["unknown_facts"])
+        absent = baseline_core({"txn": "sulh", "jahl": False})
+        self.assertIn("ground_active", absent["unknown_facts"])
+        self.assertNotIn("jahl", absent["unknown_facts"])
+
+
+
 class SyntheticRollback(Exception):
     pass
 
