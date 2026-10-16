@@ -1,0 +1,72 @@
+name: Feqh-Muse Phase C qualification
+on:
+  pull_request:
+    paths:
+      - 'phase_c/**'
+      - 'architecture/migrations/004_phase_c_qualification.sql'
+      - 'architecture/tests/004_qualification_smoke.sql'
+      - '.github/workflows/phase-c-qualification.yml'
+  workflow_dispatch:
+
+jobs:
+  phase-c-postgres:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: feqh_phase_c
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d feqh_phase_c"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/feqh_phase_c
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: feqh_phase_c
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PostgreSQL tools and psycopg
+        run: |
+          python -m pip install "psycopg[binary]>=3.2,<4"
+          if ! command -v psql >/dev/null 2>&1; then
+            sudo apt-get update && sudo apt-get install -y postgresql-client
+          fi
+      - name: Apply Phase B schema and historical tests
+        run: |
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/001_issue_centric_multischolar.sql
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/002_cross_scholar_integrity.sql
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/003_phase_b_evidence_relations.sql
+          psql -v ON_ERROR_STOP=1 -f architecture/tests/001_smoke.sql
+      - name: Seed real research records as unreviewed
+        run: python -m phase_b.pilot
+      - name: Add stricter Phase C scientific admission gate
+        run: psql -v ON_ERROR_STOP=1 -f architecture/migrations/004_phase_c_qualification.sql
+      - name: Test rejected and accepted structural promotions
+        run: psql -v ON_ERROR_STOP=1 -f architecture/tests/004_qualification_smoke.sql
+      - name: Show that all real pilot rules remain unqualified
+        run: python -m phase_c.qualification_report --assert-baseline
+      - name: Compile new contracts
+        run: python -m compileall -q phase_b phase_c
+      - name: Legacy engine Test 6
+        run: python engine2/run_test6.py
+      - name: Legacy engine Test 8
+        run: python engine2/run_test8.py
+      - name: Legacy mutation sensitivity
+        run: python engine2/run_mutations.py
+      - name: Ensure no frozen-engine code changed
+        run: git diff --exit-code ca7259a251743395bc8f2957509e7147446100dd HEAD -- engine2/

@@ -1,0 +1,170 @@
+{
+  "schema_version": "phase-c-neutral-operators-v1",
+  "status": "DESIGN_ONLY_NOT_AUTHORITATIVE",
+  "notice": "These are generic, typed software operations. They contain no Ansari jurisprudential ruling, priority, school preference or permission to infer historical views. Every use must be linked to an independently qualified scholar-specific MethodRule.",
+  "operators": [
+    {
+      "key": "issue-scope-check",
+      "family": "evidence",
+      "inputs": [
+        "issue_id",
+        "scenario_id",
+        "scholar_id",
+        "profile_id",
+        "rule_issue_scope"
+      ],
+      "outputs": [
+        "in_scope",
+        "out_of_scope",
+        "undetermined"
+      ],
+      "refuse_if": [
+        "missing profile",
+        "unreviewed scope"
+      ]
+    },
+    {
+      "key": "source-identity-check",
+      "family": "evidence",
+      "inputs": [
+        "edition",
+        "span",
+        "quote",
+        "attribution"
+      ],
+      "outputs": [
+        "quote_matched",
+        "quote_rejected",
+        "unknown"
+      ],
+      "refuse_if": [
+        "unverified edition",
+        "quotation mismatch"
+      ]
+    },
+    {
+      "key": "issuance-assessment",
+      "family": "sanad",
+      "inputs": [
+        "evidence_id",
+        "scholar_methodology",
+        "transmission_assessments"
+      ],
+      "outputs": [
+        "assessment_claims",
+        "unverified"
+      ],
+      "refuse_if": [
+        "missing scholar assessment"
+      ],
+      "note": "Never auto-translates a raw hadith quotation into probative authority."
+    },
+    {
+      "key": "dalala-scope-classifier",
+      "family": "dalala",
+      "inputs": [
+        "evidence_id",
+        "scholar_methodology",
+        "semantic_relation_claim",
+        "source_spans"
+      ],
+      "outputs": [
+        "candidate_relation",
+        "unknown"
+      ],
+      "refuse_if": [
+        "missing semantic license",
+        "counterexample not evaluated"
+      ]
+    },
+    {
+      "key": "evidence-relation-audit",
+      "family": "conflict",
+      "inputs": [
+        "two_evidence_ids",
+        "same_subject_test",
+        "same_time_test",
+        "same_respect_test"
+      ],
+      "outputs": [
+        "prima_facie_conflict",
+        "not_same_scope",
+        "unknown"
+      ],
+      "refuse_if": [
+        "subject/time/scope unknown"
+      ]
+    },
+    {
+      "key": "licensed-jam",
+      "family": "conflict",
+      "inputs": [
+        "prima_facie_conflict",
+        "specific_textual_qarina",
+        "scholar_rule"
+      ],
+      "outputs": [
+        "conditional_reconciliation",
+        "no_reconciliation",
+        "stop"
+      ],
+      "refuse_if": [
+        "no independently qualified scholar rule",
+        "missing qarina"
+      ],
+      "note": "Never applies al-jam mahma amkan or priority of remedies as a universal rule."
+    },
+    {
+      "key": "defeater-and-objection-trace",
+      "family": "other",
+      "inputs": [
+        "rule_id",
+        "objection_ids",
+        "replies",
+        "review_status"
+      ],
+      "outputs": [
+        "active",
+        "defeated",
+        "contested",
+        "unknown"
+      ],
+      "refuse_if": [
+        "unresolved defeater"
+      ]
+    },
+    {
+      "key": "practical-principle-domain",
+      "family": "practical_principle",
+      "inputs": [
+        "doubt_type",
+        "search_scope",
+        "binding_evidence_state",
+        "methodology"
+      ],
+      "outputs": [
+        "candidate_domain",
+        "stop"
+      ],
+      "refuse_if": [
+        "unknown search scope",
+        "binding evidence unresolved"
+      ],
+      "note": "No global numeric order for istishab/baraa/ihtiyat/takhyir."
+    },
+    {
+      "key": "safe-abstention",
+      "family": "other",
+      "inputs": [
+        "missing_premises",
+        "conflict_state",
+        "scope_state"
+      ],
+      "outputs": [
+        "stop_reason",
+        "open_questions"
+      ],
+      "refuse_if": []
+    }
+  ]
+}
