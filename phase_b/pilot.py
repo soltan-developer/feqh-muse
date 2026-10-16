@@ -125,7 +125,7 @@ def numbered_parts(raw):
 
 
 def seed(conn):
-    stats = {"issues": 2, "scholars": 1, "passages": 0, "events": {}, "evidence_nodes": {}, "evidence_relations": {}, "unverified_assessments": 0, "rule_candidates": 0}
+    stats = {"issues": 2, "scholars": 1, "passages": 0, "positions": 0, "events": {}, "evidence_nodes": {}, "evidence_relations": {}, "unverified_assessments": 0, "rule_candidates": 0}
     with conn.transaction():
         with conn.cursor() as c:
             scholar = frozen_insert(c, "scholars", SCHOLAR, {
@@ -184,6 +184,39 @@ def seed(conn):
                 "scholar_id": scholar, "profile_key": "ansari-development",
                 "revision": 1, "status": "hypothesis"
             })
+            # Minimal positions strictly anchored in verbatim imported corpus.
+            # They are UNREVIEWED interpretations, not sealed historical rulings.
+            for issue, ed, anchor, strength, statement in [
+                ("ghabn", "corpus-makasib-v5",
+                 "الظاهر ثبوت خيار الغبن في كل معاوضة مالية", "conditional",
+                 "الظاهر ثبوت خيار الغبن في كل معاوضة مالية — مقيد في النص بالاستناد إلى نفي الضرر"),
+                ("ghabn", "corpus-makasib-v5",
+                 "لا يستلزم ثبوت الخيار للمغبون", "contested",
+                 "انتفاء اللزوم لا يستلزم ثبوت الخيار للمغبون؛ إبقاء وجوه التدارك مفتوحة"),
+                ("udhrah", "corpus-makasib-v1",
+                 "والأظهر ما ذكره الشيخ", "conditional",
+                 "والأظهر ما ذكره الشيخ — مشروط بـ لو أريد التبرع بالحمل"),
+                ("udhrah", "corpus-makasib-v1",
+                 "الأقوى جواز بيع الأرواث الطاهرة", "aqwa",
+                 "الأقوى جواز بيع الأرواث الطاهرة — مع قيد المنفعة المحللة المقصودة"),
+            ]:
+                c.execute("""SELECT id FROM fiqh.source_passages
+                             WHERE edition_id=%s AND strpos(exact_text,%s)>0""",
+                          (edition_ids[ed], anchor))
+                matches = c.fetchall()
+                if len(matches) != 1:
+                    raise ValueError("Position anchor not uniquely captured: " + anchor)
+                position = frozen_insert(c, "positions", issue + "/" + digest(anchor), {
+                    "issue_id": issue_ids[issue], "scholar_id": scholar,
+                    "profile_id": profile, "statement": statement,
+                    "position_kind": "historical_interpretation",
+                    "strength": strength, "knowledge_status": "unreviewed",
+                    "valid_period_note": "date of underlying work not established by this import"
+                })
+                c.execute("""INSERT INTO fiqh.position_sources(position_id,passage_id,relation)
+                             VALUES (%s,%s,'textual_basis') ON CONFLICT DO NOTHING""",
+                          (position, matches[0][0]))
+                stats["positions"] += 1
             # Distinct snapshots of the two independent Ghabn codings and the 12 U-events.
             for issue, label, rel, expr in EVENTS:
                 raw = file_text(rel)
