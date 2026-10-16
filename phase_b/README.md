@@ -14,6 +14,7 @@ PostgreSQL 16+ پایگاه اصلی است. شِمای SQLite صرفاً مرج
 - یک عالم واقعی (شیخ مرتضی انصاری) و شناسنامه آثار مکاسب، رسائل فقهیه و فرائدالاصول؛ برای فرائد، چاپ یا متن جدیدی بدون پشتوانه ایجاد نمی‌شود.
 - قطعات *عین فایل‌های پیکره اولیه* در `ghabn-case/source_*.md` و `pilot/bay-udhrah/source_*.md`، همراه SHA-256 رشته و نشانی رکورد دیتابیس. **صفحه چاپی تأییدشده نداریم؛ `printed_page_label` عمداً خالی است.**
 - کدگذاری مستقل A و B از غبن و U1 تا U12 بیع عذره، با ۱۲ جایگاه داده برای هر رخداد؛ جایگاه‌های استخراج‌نشده با برچسب صریح عدم احراز باقی می‌مانند. A و B دو گرانولاریتی از یک متن‌اند؛ جمع تعدادشان به معنای دو برابر بودن رخداد تاریخی نیست.
+- یال‌های گراف بدون تحریف معنایی در جدول جدید `evidence_relations` با رابطه اصلی، شناسه دو گره، هش منشأ و ارزیابی `unverified` نگهداری می‌شوند. ارزیابی‌های ماشینی اولیه در `evidence_assessments` نیز هر چهار محور را `unverified` می‌گذارند.
 - گره‌های گراف موجود به صورت `evidence_items` پژوهشی با `category=other` وارد می‌شوند؛ اعتبار مستقل، تعارض و ارزیابی حجیت از این انتقال حاصل نمی‌شود.
 - گره‌های باز `IJ-SCOPE-BADHL`، `IJ-KHIYAR-SCOPE-BADHL` و `S-UDH-1..3` همچنان ادعاهای `unverified` هستند.
 - قواعد از `rules_v4.json` و `rules_t3.json` به همراه مشخصه هسته قدیمی فقط با `execution_layer=hypothesis`، `scientific_grade=C` و `reviewer_status=pending` وارد می‌شوند. هیچ قاعده‌ای در این import به `historical` ارتقا نمی‌یابد.
@@ -26,6 +27,7 @@ PostgreSQL 16+ پایگاه اصلی است. شِمای SQLite صرفاً مرج
 export DATABASE_URL='postgresql://postgres:postgres@localhost:5432/feqh_phase_b'
 psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f architecture/migrations/001_issue_centric_multischolar.sql
 psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f architecture/migrations/002_cross_scholar_integrity.sql
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f architecture/migrations/003_phase_b_evidence_relations.sql
 python -m pip install 'psycopg[binary]>=3.2,<4'
 python -m phase_b.pilot
 python -m phase_b.pilot  # آزمون عدم تکثیر
@@ -53,7 +55,7 @@ python engine2/run_mutations.py
 
 ۲. جدول‌های `positions` و `human_reviews` بدون استناد داوری جدید پر نمی‌شوند؛ وجود عبارت یا گره تحلیلی برای ساخت موضع تاریخی کافی نیست.
 
-۳. وابستگی‌های تحلیلی `GRAPH_V2.json` و `GRAPH_UDHRAH_DOC.json` در ستون properties گره‌ها با هش منشأ محافظت می‌شوند؛ تبدیل تک‌تک یال‌های غیرهم‌نام به روابط استاندارد `reasoning_edges` نیازمند نگاشت و داوری نوع رابطه است. نباید هر یال را به «supports» تحریف کرد.
+۳. یال‌های `GRAPH_V2.json` و `GRAPH_UDHRAH_DOC.json` در جدول `evidence_relations` بدون تفسیر معنایی حفظ شده‌اند؛ تبدیل آنها به عملگرهای معتبر استدلال یا `reasoning_edges` نیازمند داوری مستقل است.
 
 ۴. `engine_runs` و `run_steps` به‌صورت خودکار نوشته نمی‌شوند؛ Adapter عمداً فقط‌خواندنی است. ساخت ثبت append-only اجرا با شناسه نسخه و رعایت کنترل دسترسی وظیفه فاز تکمیلی است.
 
