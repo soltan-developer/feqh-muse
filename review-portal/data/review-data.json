@@ -1,0 +1,1566 @@
+{
+  "schema_version": "feqh-scholar-review-portal-v1",
+  "source_branch": "research/phase-c4-canonical-evidence-reconciliation-v1",
+  "source_sha": "c0b3aec123941d75f7f1d0bfc2263ba1fe1d4912",
+  "book_commit": "d88ce8a1f4c9ee1d2cdcca1e1630bcdc501a8f67",
+  "status": "RESEARCH_ONLY_NOT_INDEPENDENTLY_SCHOLARLY_APPROVED",
+  "notice": "This static bundle includes selected passages from a private research corpus. Publishing this site can make them public. Do not publish without permission.",
+  "sourceVerification": "C4 claimed exact local corpus span matches; this front-end does not independently fetch or verify entire database originals.",
+  "sources": [
+    {
+      "id": "ANS-12228-R994-S01",
+      "aliases": [
+        "P-01"
+      ],
+      "book": "12228",
+      "record": 994,
+      "page": 352,
+      "quote": "التعارض تنافي مدلولي الدليلين على وجه التناقض أو التضاد",
+      "before": " فلا بد من تعريف التعارض وبيانه وهو لغة من العرض بمعنى الإظهار وغلب في الاصطلاح على تنافي الدليلين وتمانعهما باعتبار مدلولهما ولذا ذكروا أن ",
+      "after": " وكيف كان فلا يتحقق إلا بعد اتحاد الموضوع وإلا لم يمتنع اجتماعهما .\nومنه يعلم أنه لا تعارض بين الأصول وما يحصله المجتهد من الأدلة الاجتهادية",
+      "hash": "4d3ff1db860b314789cbe3b5ace78b9cba0c22b6531b5dbf26747d2d82ed8223",
+      "span": {
+        "start": 175,
+        "end": 230
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R994-S02",
+      "aliases": [
+        "P-02"
+      ],
+      "book": "12228",
+      "record": 994,
+      "page": 352,
+      "quote": "ضابط الحكومة أن يكون أحد الدليلين بمدلوله اللفظي متعرضا لحال الدليل الآخر",
+      "before": "بمعنى أنه يحكم عليه بخروج مورده عن مجرى الأصل فالدليل العلمي المذكور وإن لم يرفع موضوعه أعني الشك إلا أنه يرفع حكم الشك أعني الاستصحاب .\n( و",
+      "after": " ورافعا",
+      "hash": "2433d7548561b1351aab2e5c2dafd01394ae83004e841d83048dfad939682f4f",
+      "span": {
+        "start": 1197,
+        "end": 1270
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R997-S01",
+      "aliases": [
+        "P-03"
+      ],
+      "book": "12228",
+      "record": 997,
+      "page": 355,
+      "quote": "من حيث إفادة نوعهما الظن",
+      "before": "تعارض سببان للظن الفعلي فإن بقي الظن في أحدهما فهو المعتبر وإلا تساقطا وقولهم إن التعارض لا يكون إلا في الظنين يريدون به الدليلين المعتبرين ",
+      "after": " .\nوإنما أطلقوا القول في ذلك لأن أغلب الأمارات بل جميعها عند جل العلماء بل ما عدا جمع ممن قارب عصرنا معتبرة من هذه الحيثية لا لإفادة الظن ال",
+      "hash": "8d42bf3a018a503c64a5dfbbfaa97ab3f41c0684a33d4ef669e51ca51ae867f0",
+      "span": {
+        "start": 176,
+        "end": 200
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R997-S02",
+      "aliases": [
+        "P-04"
+      ],
+      "book": "12228",
+      "record": 997,
+      "page": 355,
+      "quote": "القضية المشهورة وهي أن الجمع بين الدليلين مهما أمكن أولى من الطرح",
+      "before": "ن المتعارضين إما أن يكون لأحدهما مرجح على الآخر وإما أن لا يكون بل يكونان متعادلين متكافئين .\nوقبل الشروع في بيان حكمهما لا بد من الكلام في ",
+      "after": " والمراد بالطرح على الظاهر المصرح به في كلام بعضهم وفي معقد إجماع بعض آخر أعم من طرح أحدهما لمرجح في الآخر فيكون الجمع مع التعادل أولى من ال",
+      "hash": "9c784b44f68dad91c07ad43ed2fdeb02e6a9183a37bb95ed5a535b0ac8cf3550",
+      "span": {
+        "start": 887,
+        "end": 952
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari quoting the mashhur qa'ida (Ibn Abi Jumhur)"
+    },
+    {
+      "id": "ANS-12228-R998-S01",
+      "aliases": [
+        "P-05"
+      ],
+      "book": "12228",
+      "record": 998,
+      "page": 356,
+      "quote": "يوجب سد باب الترجيح والهرج في الفقه",
+      "before": "ة وعلى تقدير الجمع يلزم إهمال دلالة تبعية وهو أولى مما يلزم على تقدير عدمه وهو إهمال دلالة أصلية .\nولا يخفى أن العمل بهذه القضية على ظاهرها ",
+      "after": " كما لا يخفى ولا دليل عليه بل الدليل على خلافه من الإجماع والنص .\nأما عدم الدليل عليه فلأن ما ذكر من أن الأصل في الدليل الإعمال مسلم لكن الم",
+      "hash": "77975a487a188a4364353c8d961ec727563a6623d79f3cfdd7b9cf7f9965a74b",
+      "span": {
+        "start": 226,
+        "end": 261
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R998-S02",
+      "aliases": [
+        "P-06"
+      ],
+      "book": "12228",
+      "record": 998,
+      "page": 356,
+      "quote": "فيدور الأمر بين عدم التعبد بصدور ما عدا الواحد",
+      "before": "دور أحدهما المعين إذا كان هناك مرجح والمخير إذا لم يكن ثابت على تقدير الجمع وعدمه فالتعبد بظاهره واجب كما أن التعبد بصدور الآخر أيضا واجب .\n",
+      "after": " المتفق على التعبد به وبين عدم التعبد بظاهر الواحد المتفق على التعبد به ولا أولوية للثاني .\nبل قد يتخيل العكس فيه من حيث إن في الجمع ترك الت",
+      "hash": "b620645ab5099f88d0c84d5043822cdbefeeb6250f1c7d0e49bbe8a54d1ed431",
+      "span": {
+        "start": 986,
+        "end": 1032
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R999-S01",
+      "aliases": [
+        "P-07"
+      ],
+      "book": "12228",
+      "record": 999,
+      "page": 357,
+      "quote": "قيد به وجوب العمل بالخبرين هو العرف",
+      "before": " ما نحن فيه فإنا إذا طرحنا سند أحد الخبرين أمكننا العمل بظاهر الآخر ولا مرجح لعكس ذلك بل الظاهر هو الطرح لأن المرجح والمحكم في الإمكان الذي ",
+      "after": " ولا شك في حكم العرف وأهل اللسان بعدم إمكان العمل بقوله أكرم العلماء ولا تكرم العلماء نعم لو فرض علمهم بصدور كليهما حملوا أمر الأمر بالعمل ب",
+      "hash": "b5f548d97dafa0a47f11a412ca195aa3778fc2ca51f3ccd2e1b1e3169a7ccdf3",
+      "span": {
+        "start": 1594,
+        "end": 1629
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1000-S01",
+      "aliases": [
+        "P-08"
+      ],
+      "book": "12228",
+      "record": 1000,
+      "page": 358,
+      "quote": "لم يقع الجواب في شيء من تلك الأخبار العلاجية بوجوب الجمع بتأويلهما معا",
+      "before": "ركوز في ذهن كل أحد من أن كل دليل شرعي يجب العمل به مهما أمكن فلو لم يفهموا عدم الإمكان في المتعارضين لم يبق وجه للتحير الموجب للسؤال مع أنه ",
+      "after": " وحمل مورد السؤال على صورة تعذر تأويلهما ولو بعيدا تقييد بفرد غير واقع في الأخبار المتعارضة .\nوهذا دليل آخر على عدم كلية هذه القاعدة هذا كله",
+      "hash": "91602805e53f36aae965ba84f4ad8d26ef9bb0b04fb0830244718e2f629a24ef",
+      "span": {
+        "start": 147,
+        "end": 217
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1000-S02",
+      "aliases": [
+        "P-09"
+      ],
+      "book": "12228",
+      "record": 1000,
+      "page": 358,
+      "quote": "أن الجمع بين الخبرين المتنافيين بظاهرهما على أقسام ثلاثة",
+      "before": "ظن بصاحب العوالي ولا بمن هو دونه أن يقتصر في الترجيح على موارد لا يمكن تأويل كليهما فضلا عن دعواه الإجماع على ذلك .\nوالتحقيق الذي عليه أهله ",
+      "after": " أحدها ما يكون متوقفا على تأويلهما معا .\nوالثاني ما يتوقف على تأويل أحدهما المعين .\nوالثالث ما يتوقف على تأويل أحدهما لا بعينه .\nأما الأول ف",
+      "hash": "5b481615a1f654bc344cd49407ad556b7e6701669a3d82fa5ed3bb1067bc0a32",
+      "span": {
+        "start": 1145,
+        "end": 1201
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1010-S01",
+      "aliases": [
+        "P-10"
+      ],
+      "book": "12228",
+      "record": 1010,
+      "page": 364,
+      "quote": "يتجه الحكم حينئذ بالتوقف",
+      "before": " في كل منهما بحيث لو أمكن الجمع بينهما أراد الشارع إدراك المصلحتين بل وجود تلك المصلحة في كل منهما بخصوصه مقيد بعدم معارضته بمثله .\nومن هنا ",
+      "after": " لا بمعنى أن أحدهما المعين واقعا طريق ولا نعلمه بعينه كما لو اشتبه خبر صحيح بين خبرين بل بمعنى أن شيئا منهما ليس طريقا في مؤداه بالخصوص ومقت",
+      "hash": "af7ce9c0c44f99b32fa5b76b625d45ee6297f9eddfd4edea67db7f8bd3a61440",
+      "span": {
+        "start": 919,
+        "end": 943
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1011-S01",
+      "aliases": [
+        "P-11"
+      ],
+      "book": "12228",
+      "record": 1011,
+      "page": 365,
+      "quote": "محمولة على صورة التمكن من الوصول إلى الإمام",
+      "before": "ه في مقدمات الحدائق .\nوأما أخبار التوقف الدالة على الوجه الثالث من حيث إن التوقف في الفتوى يستلزم الاحتياط في العمل كما في ما لا نص فيه فهي ",
+      "after": " عليه السلام كما يظهر من بعضها فيظهر منها أن المراد ترك العمل وإرجاء الواقعة إلى لقاء الإمام عليه السلام لا العمل فيها بالاحتياط .\nثم إن حكم",
+      "hash": "f979fc2ea61f827959ef8ed4bd68b07c6b0c24b8c06b92145d803b1231381b41",
+      "span": {
+        "start": 209,
+        "end": 252
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1016-S01",
+      "aliases": [
+        "P-12"
+      ],
+      "book": "12228",
+      "record": 1016,
+      "page": 367,
+      "quote": "الرجوع إلى التخيير غير جائز إلا بعد الفحص التام عن المرجحات",
+      "before": ". وهو أن ",
+      "after": " لأن مأخذ التخيير إن كان هو العقل الحاكم بأن عدم إمكان الجمع في العمل لا يوجب إلا طرح البعض فهو لا يستقل بالتخيير في المأخوذ والمطروح إلا بع",
+      "hash": "3b10c598bbeb06dfeda1b6ce62574f980ada312917b9897e17039c9185f4c8e5",
+      "span": {
+        "start": 9,
+        "end": 68
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1025-S02",
+      "aliases": [
+        "P-13"
+      ],
+      "book": "12228",
+      "record": 1025,
+      "page": 371,
+      "quote": "فصار الأصل وجوب العمل بالمرجح وهو أصل ثانوي",
+      "before": " تكافؤ الخبرين .\nأما مع مزية أحدهما على الآخر من بعض الجهات فالمتيقن هو جواز العمل بالراجح .\nوأما العمل بالمرجوح فلم يثبت فلا يجوز الالتزام ",
+      "after": " بل الأصل فيما يحتمل كونه مرجحا الترجيح به إلا أن يرد عليه إطلاقات التخيير بناء على وجوب الاقتصار في تقييدها على ما علم كونه مرجحا .\nوقد يست",
+      "hash": "6087aebf2bba85ec745d01dae8f6115730469310da30a4282bc433832d5664e5",
+      "span": {
+        "start": 783,
+        "end": 826
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1042-S01",
+      "aliases": [
+        "P-14"
+      ],
+      "book": "12228",
+      "record": 1042,
+      "page": 381,
+      "quote": "الترجيح أولا بالشهرة والشذوذ ثم بالأعدلية والأوثقية ثم بمخالفة العامة ثم بمخالفة ميل الحكام",
+      "before": "غ عن تقديم الجمع المقبول على الطرح وبعد ما ذكرنا من أن الترجيح بالأعدلية وأخواتها إنما هو بين الحكمين مع قطع النظر عن ملاحظة مستندهما هو أن ",
+      "after": " .\nوأما الترجيح بموافقة الكتاب والسنة فهو من باب اعتضاد أحد الخبرين بدليل قطعي الصدور ولا إشكال في وجوب الأخذ به وكذا الترجيح بموافقة الأصل ",
+      "hash": "21b62ef8d4920f7ef8830e5ce31cdd656db6fed1ba04da663864832a2f4e062a",
+      "span": {
+        "start": 195,
+        "end": 286
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari (extracted from Maqbula, re-scoped)"
+    },
+    {
+      "id": "ANS-12228-R1044-S01",
+      "aliases": [
+        "P-15"
+      ],
+      "book": "12228",
+      "record": 1044,
+      "page": 383,
+      "quote": "أقل احتمالا لمخالفة الواقع",
+      "before": "رجيح المشهور على الشاذ بأن في الشاذ احتمالا لا يوجد في المشهور ومقتضى التعدي عن مورد النص في العلة وجوب الترجيح بكل ما يوجب كون أحد الخبرين ",
+      "after": " .\nومنها تعليلهم عليهم السلام لتقديم الخبر المخالف للعامة بأن الحق والرشد في خلافهم وأن ما وافقهم فيه التقية فإن هذه كلها قضايا غالبية لا دا",
+      "hash": "eb77a527ff1ac595299cb9f5b868a8e14f4eebc7b24e1287e31265b80d73d8dc",
+      "span": {
+        "start": 1826,
+        "end": 1852
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1048-S01",
+      "aliases": [
+        "P-16"
+      ],
+      "book": "12228",
+      "record": 1048,
+      "page": 385,
+      "quote": "لا يخلو عن مسامحة",
+      "before": "ون الحرمة أولى بالأخذ من الوجوب والأصل بناء على كونه من باب التعبد الظاهري وجعل المستقل المعتبر مطلقا خصوصا ما لا يؤثر في الخبر من المرجحات ",
+      "after": " .",
+      "hash": "28937a0b98a9c8428a96a27ad1a767c7adbfde734b5147c70abae84b9cac2912",
+      "span": {
+        "start": 476,
+        "end": 493
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1054-S01",
+      "aliases": [
+        "P-17"
+      ],
+      "book": "12228",
+      "record": 1054,
+      "page": 386,
+      "quote": "فإن الأقوى دلالة مقدم على ما كان أصح سندا وموافقا للكتاب ومشهور الرواية",
+      "before": ". وهذه الأنواع الثلاثة كلها متأخرة عن الترجيح باعتبار قوة الدلالة ",
+      "after": " بين الأصحاب لأن صفات الرواية لا تزيده على المتواتر وموافقة الكتاب لا تجعله أعلى من الكتاب وقد تقرر في محله تخصيص الكتاب والمتواتر بأخبار ال",
+      "hash": "de640f0a1ba6b29105239e01131b43913189ec53ddeb3389474a360d771ffebf",
+      "span": {
+        "start": 66,
+        "end": 137
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1056-S01",
+      "aliases": [
+        "P-18"
+      ],
+      "book": "12228",
+      "record": 1056,
+      "page": 388,
+      "quote": "مرجع التعارض بين النص والظاهر إلى التعارض بين أصالة الحقيقة في الظاهر ودليل حجية النص",
+      "before": "ورهما فيفرضان كالمتواترين ولا مانع عن فرض صدورهما حتى يحصل التعارض ولهذا لا يطرح الخبر الواحد الخاص بمعارضة العام المتواتر .\nوإن شئت قلت إن ",
+      "after": " ومن المعلوم ارتفاع الأصل بالدليل وكذا الكلام في الظاهر والأظهر",
+      "hash": "ec9c8dd4476ebba1da1d6b68ecce8c19c5a009db991dfd386f8b91ce664c5650",
+      "span": {
+        "start": 1502,
+        "end": 1587
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1058-S01",
+      "aliases": [
+        "P-19"
+      ],
+      "book": "12228",
+      "record": 1058,
+      "page": 390,
+      "quote": "والمسألة محل الإشكال",
+      "before": " معين للتخيير ولا يقاس حالهما على حال مقطوعي الصدور في الالتجاء إلى الجمع بينهما كما أشرنا إلى دفع ذلك عند الكلام في أولوية الجمع على الطرح ",
+      "after": " .\nوقد تلخص مما ذكرنا أن تقديم النص على الظاهر خارج عن مسألة الترجيح بحسب الدلالة إذ الظاهر لا يعارض النص حتى يرجح النص عليه نعم النص الظني ",
+      "hash": "17029c21bd3f74d0ee06c6ac467d96e53ee9c97bd75e33f4c610bfcf71af3572",
+      "span": {
+        "start": 909,
+        "end": 929
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1060-S01",
+      "aliases": [
+        "P-20"
+      ],
+      "book": "12228",
+      "record": 1060,
+      "page": 392,
+      "quote": "فلا ينبغي التأمل في أن المتعين تأويله",
+      "before": "لوجوب التعبد به إذ لا أثر في العمل يترتب عليه .\nوبالجملة إن الخبر الظني إذا دار الأمر بين طرح سنده وحمله وتأويله ",
+      "after": " ووجوب العمل على طبق التأويل ولا معنى لطرحه أو الحكم بصدوره تقية فرارا عن تأويله وسيجيء زيادة توضيح ذلك إن شاء الله .\nفلنرجع إلى ما كنا فيه ",
+      "hash": "c4cf0ca27a89939321db7b1ce93a0ae4f8b151ec886f7f0794371f3cb92eaf3b",
+      "span": {
+        "start": 113,
+        "end": 150
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R256-S01",
+      "aliases": [
+        "P-21"
+      ],
+      "book": "12228",
+      "record": 256,
+      "page": 79,
+      "quote": "الإنصاف أن أخبار التخيير حاكمة",
+      "before": "لمعين لحكم المسألة المتعارض فيها النصان بخلاف التخيير مع جريان تلك الأصول فإنه تخيير بين المتكافئين عند فقد دليل ثالث في موردهما هذا .\nولكن ",
+      "after": " على هذا الأصل وإن كان جاريا في المسألة الأصولية كما أنها حاكمة على تلك الأصول الجارية في المسألة الفرعية لأن مؤداها بيان حجية أحد المتعارضي",
+      "hash": "890e5d9743f3521f1449b38004227c72c0e778dc06c442a8a385518fb9e06019",
+      "span": {
+        "start": 841,
+        "end": 871
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R1025-S01",
+      "aliases": [
+        "P-22"
+      ],
+      "book": "12228",
+      "record": 1025,
+      "page": 371,
+      "quote": "في كل واجبين متزاحمين",
+      "before": "مطرد ",
+      "after": " .\nنعم لو كان الوجوب في أحدهما آكد والمطلوبية فيه أشد استقل العقل عند التزاحم بوجوب ترك غيره وكون وجوب الأهم مزاحما لوجوب غيره من دون عكس وك",
+      "hash": "2d43e1c085d5d87a88ef92b045e144e5e275898c2f08c9d139ec1d82e8bc17d4",
+      "span": {
+        "start": 5,
+        "end": 26
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-1571-R125-S01",
+      "aliases": [
+        "P-23"
+      ],
+      "book": "1571",
+      "record": 125,
+      "page": 72,
+      "quote": "فإن الجمع بين الحكمين في كلام واحد لمخاطب واحد",
+      "before": " السلام\n- وأنا حاضر - عن بيع العذرة ، فقال : إني رجل أبيع العذرة ، فما تقول ؟\nقال : حرام بيعها وثمنها ، وقال : لا بأس ببيع العذرة \" ( 1 ) .\n",
+      "after": " يدل على\nأن تعارض الأولين ليس إلا من حيث الدلالة ، فلا يرجع فيه إلى\nالمرجحات السندية أو الخارجية .\nوبه يدفع ما يقال : من أن العلاج في الخبري",
+      "hash": "fe31abaab384d9216c39f94f301bd414f956d52645a5b76db6c105dbdf9b3600",
+      "span": {
+        "start": 306,
+        "end": 352
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R955-S01",
+      "aliases": [
+        "NP-01"
+      ],
+      "book": "12228",
+      "record": 955,
+      "page": 336,
+      "quote": "وهذا معنى الحكومة كما سيجيء في باب التعارض",
+      "before": " في الشيء وإطلاقه مغيا بورود النهي المحكوم عليه بالدوام وعموم الأزمان فكان مفاد الاستصحاب نفي ما يقتضيه الأصل الآخر في مورد الشك لولا النهي ",
+      "after": " .\nولا فرق فيما ذكرنا بين الشبهة الحكمية والموضوعية بل الأمر في الشبهة الموضوعية أوضح لأن الاستصحاب الجاري فيها جار في الموضوع فيدخل في المو",
+      "hash": "60283ddbbd842c185823c500518ad48bf462163d86d0fac6fc4c4a9e5cfe621a",
+      "span": {
+        "start": 1440,
+        "end": 1482
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R954-S01",
+      "aliases": [
+        "NP-02"
+      ],
+      "book": "12228",
+      "record": 954,
+      "page": 335,
+      "quote": "فلا تعارض الاستصحاب ولا غيره من الأصول",
+      "before": "أما أصالة البراءة ",
+      "after": " والأدلة سواء كان مدركها العقل أو النقل .\nأما العقل فواضح لأن العقل لا يحكم بقبح العقاب إلا مع عدم الدليل على التكليف واقعا أو ظاهرا .\nوأما ",
+      "hash": "8cae8fea9d146cf84761d347e7a37b3292cbe72c7abe8c8c4bd8d39aa31cfb85",
+      "span": {
+        "start": 18,
+        "end": 56
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R968-S01",
+      "aliases": [
+        "NP-03"
+      ],
+      "book": "12228",
+      "record": 968,
+      "page": 339,
+      "quote": "تقديم الشك السببي وإجراء الاستصحاب فيه",
+      "before": "فإن كان الشك في أحدهما مسببا عن الشك في الآخر فاللازم ",
+      "after": " ورفع اليد عن الحالة السابقة للمستصحب الآخر مثاله استصحاب طهارة الماء المغسول به ثوب نجس فإن الشك في بقاء نجاسة الثوب وارتفاعها مسبب عن الشك",
+      "hash": "eefd2c6c682577422decfe2088aaae48fbefb2da98b74ac0ff8dc3ad499bef7f",
+      "span": {
+        "start": 54,
+        "end": 92
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R981-S01",
+      "aliases": [
+        "NP-04"
+      ],
+      "book": "12228",
+      "record": 981,
+      "page": 345,
+      "quote": "يحكم فيهما بالتساقط دون الترجيح والتخيير",
+      "before": "أما الأوليان ف",
+      "after": " فهنا دعويان .\nإحداهما عدم الترجيح بما يوجد مع أحدهما من المرجحات خلافا لجماعة ( قال في محكي تمهيد القواعد إذا تعارض أصلان عمل بالأرجح منهما",
+      "hash": "00dd3a987c8884f649e4dd3ab24b31ba5fb0384eec8f5a49fa897071c06da23a",
+      "span": {
+        "start": 14,
+        "end": 54
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R984-S01",
+      "aliases": [
+        "NP-05"
+      ],
+      "book": "12228",
+      "record": 984,
+      "page": 348,
+      "quote": "فيرجع إلى قواعد أخر غير الاستصحاب",
+      "before": "وجب نقض اليقين باليقين وجب ترتيب آثار الارتفاع على المرتفع الواقعي وترتيب آثار البقاء على الباقي الواقعي من دون ملاحظة الحالة السابقة فيهما ",
+      "after": " كما لو لم يكونا مسبوقين بحالة سابقة ولذا لا نفرق في حكم الشبهة المحصورة بين كون الحالة السابقة في المشتبهين هي الطهارة أو النجاسة وبين عدم ",
+      "hash": "828ad617db7e8ecdc8dda00705796df4d00a88bb1fdfcb310b3b1802989af718",
+      "span": {
+        "start": 520,
+        "end": 553
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R987-S01",
+      "aliases": [
+        "NP-06"
+      ],
+      "book": "12228",
+      "record": 987,
+      "page": 348,
+      "quote": "العلم الإجمالي بارتفاع أحد المستصحبين فيه غير مؤثر",
+      "before": ". فهو ما كان ",
+      "after": " شيئا فمخالفته لا توجب مخالفة عملية لحكم شرعي كما لو توضأ اشتباها بمائع مردد بين البول والماء فإنه يحكم ببقاء الحدث وطهارة الأعضاء استصحابا ",
+      "hash": "5ddd4f1c495c37b86c9c72cf55b147953b09ffec2316d5af36d4760e425a8b94",
+      "span": {
+        "start": 13,
+        "end": 63
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R990-S01",
+      "aliases": [
+        "NP-07"
+      ],
+      "book": "12228",
+      "record": 990,
+      "page": 349,
+      "quote": "لا يشمل اليقين الذي لا يترتب عليه",
+      "before": "ء المكلف دون الآخر بحيث لا يتوجه على المكلف تكليف منجز يترتب أثر شرعي عليه وفي الحقيقة هذا خارج عن تعارض الاستصحابين إذ قوله لا تنقض اليقين ",
+      "after": " في حق المكلف أثر شرعي بحيث لا تعلق له به أصلا كما إذا علم إجمالا بطرو الجنابة عليه أو على غيره وقد تقدم أمثلة ذلك .\nونظير هذا كثير مثل أنه ",
+      "hash": "c45fb9aee8dc3734c7237d0d0aaa0bf94ca8c89aa36a5690dfa6ba52b1a14f46",
+      "span": {
+        "start": 209,
+        "end": 242
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12227-R299-S01",
+      "aliases": [
+        "NP-08"
+      ],
+      "book": "12227",
+      "record": 299,
+      "page": 89,
+      "quote": "مناط الحجية والاعتبار في دلالة الألفاظ هو الظهور العرفي",
+      "before": "ولا يخفى أن في كلامه قدس سره على إجماله واشتباه المراد منه كما يظهر من المحشين مواقع النظر والتأمل .\nثم إنك قد عرفت أن ",
+      "after": " وهو كون الكلام بحيث يحمل عرفا على ذلك المعنى ولو بواسطة القرائن المقامية المكتنفة بالكلام فلا فرق بين إفادته الظن بالمراد وعدمها ولا بين وج",
+      "hash": "cdb1e10405b15dcf328332c18151efb85452686e2c558e3ffd8f13c666c514fd",
+      "span": {
+        "start": 119,
+        "end": 174
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12227-R308-S01",
+      "aliases": [
+        "NP-09"
+      ],
+      "book": "12227",
+      "record": 308,
+      "page": 94,
+      "quote": "والذي يقوى في النظر هو عدم الملازمة بين حجية الخبر وحجية الإجماع المنقول",
+      "before": "سند لأن مدعي الإجماع يحكي مدلوله ويرويه عن الإمام عليه السلام بلا واسطة ويدخل الإجماع ما يدخل الخبر من الأقسام ويلحقه ما يلحقه من الأحكام .\n",
+      "after": " وتوضيح ذلك يحصل بتقديم أمرين الأمر الأول أن الأدلة الخاصة التي أقاموها على حجية خبر العادل لا تدل إلا على حجية الإخبار عن حس لأن العمدة من ",
+      "hash": "d80c9c240e9079292f509244e622ad09e5f4b0c4b3de2ebaeec879a4c2ef630d",
+      "span": {
+        "start": 427,
+        "end": 499
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12228-R942-S01",
+      "aliases": [
+        "NP-10"
+      ],
+      "book": "12228",
+      "record": 942,
+      "page": 332,
+      "quote": "وإثبات حكومة أحدهما على الآخر في غاية الإشكال",
+      "before": "مجعولات بل يثبت بقاء الآثار السابقة .\nقلنا كذلك أصالة الصحة لا تثبت وقوع السبب وإنما تثبت حدوث آثار السبب وكيف كان فدفع التنافي بين الأصلين ",
+      "after": "",
+      "hash": "26cf58dbac19712e125bbcdb7031b25bb75ce162e3b33e5df5acc7a2566de51f",
+      "span": {
+        "start": 1310,
+        "end": 1355
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    },
+    {
+      "id": "ANS-12227-R282-S01",
+      "aliases": [
+        "NP-11"
+      ],
+      "book": "12227",
+      "record": 282,
+      "page": 83,
+      "quote": "فهما بمنزلة آيتين تعارضتا",
+      "before": " فلا يخلو إما أن نقول بتواتر القراءات كلها كما هو المشهور خصوصا في ما كان الاختلاف في المادة وإما أن لا نقول كما هو مذهب جماعة .\nفعلى الأول ",
+      "after": " لا بد من الجمع بينهما بحمل الظاهر على النص أو على الأظهر ومع التكافؤ لا بد من الحكم بالتوقف والرجوع إلى غيرهما .\nوعلى الثاني فإن ثبت جواز ا",
+      "hash": "e0b6906c512e022f671f426204bc9ae61083ea55151c64331108c569adc56daa",
+      "span": {
+        "start": 233,
+        "end": 258
+      },
+      "printEdition": "PRINT_EDITION_UNKNOWN",
+      "speaker": "Ansari"
+    }
+  ],
+  "rules": [
+    {
+      "id": "MR-ANS-JAM-QARINA",
+      "title": "جمع عرفی و اعتبار قرینه",
+      "priority": 1,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R999-S01",
+            "ANS-12228-R1000-S02",
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-07",
+            "P-09",
+            "P-17"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1000-S02",
+            "ANS-1571-R125-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-09",
+            "P-23"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R998-S01",
+            "ANS-12228-R1058-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-05",
+            "P-19"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "UNKNOWN",
+          "canonicalBackings": [
+            "ANS-1571-R125-S01"
+          ],
+          "adverseRefs": [
+            "CE-01"
+          ],
+          "legacyRefs": [
+            "P-23"
+          ],
+          "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-17"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R999-S01",
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-07",
+            "P-17"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [
+        "ANS-12227-R299-S01"
+      ],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-JAM-QARINA\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R999-S01, ANS-12228-R1000-S02, ANS-12228-R1054-S01 · مخالف: — · (legacy: P-07, P-09, P-17)\n- `activation`: **PARTIAL** · مثبت: ANS-12228-R1000-S02, ANS-1571-R125-S01 · مخالف: — · (legacy: P-09, P-23)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R998-S01, ANS-12228-R1058-S01 · مخالف: — · (legacy: P-05, P-19)\n- `exceptions`: **UNKNOWN** · مثبت: ANS-1571-R125-S01 · مخالف: CE-01 · (legacy: P-23)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1054-S01 · مخالف: — · (legacy: P-17)\n- `principle`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R999-S01, ANS-12228-R1054-S01 · مخالف: — · (legacy: P-07, P-17)\n- پشتوانه‌های اضافی v2: ANS-12227-R299-S01\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-JAM-QARINA.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-TARJIH-OPEN",
+      "title": "ترجیح و تعدی از مرجحات منصوص",
+      "priority": 2,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1025-S02",
+            "ANS-12228-R1042-S01",
+            "ANS-12228-R1044-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-13",
+            "P-14",
+            "P-15"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1025-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-13"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1025-S02",
+            "ANS-12228-R1048-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-13",
+            "P-16"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "UNKNOWN",
+          "canonicalBackings": [
+            "ANS-12228-R1042-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-14"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1044-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-15"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1025-S02",
+            "ANS-12228-R1044-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-13",
+            "P-15"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-TARJIH-OPEN\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1025-S02, ANS-12228-R1042-S01, ANS-12228-R1044-S01 · مخالف: — · (legacy: P-13, P-14, P-15)\n- `activation`: **PARTIAL** · مثبت: ANS-12228-R1025-S02 · مخالف: — · (legacy: P-13)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R1025-S02, ANS-12228-R1048-S01 · مخالف: — · (legacy: P-13, P-16)\n- `exceptions`: **UNKNOWN** · مثبت: ANS-12228-R1042-S01 · مخالف: — · (legacy: P-14)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1044-S01 · مخالف: — · (legacy: P-15)\n- `principle`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1025-S02, ANS-12228-R1044-S01 · مخالف: — · (legacy: P-13, P-15)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-TARJIH-OPEN.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-STOP-BOUND",
+      "title": "حدود توقف و ارجاء",
+      "priority": 3,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1011-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-11"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1011-S01",
+            "ANS-12228-R1058-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-11",
+            "P-19"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01",
+            "ANS-12228-R1011-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10",
+            "P-11"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "UNKNOWN",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1011-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-11"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1011-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-11"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-STOP-BOUND\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1011-S01 · مخالف: — · (legacy: P-11)\n- `activation`: **PARTIAL** · مثبت: ANS-12228-R1011-S01, ANS-12228-R1058-S01 · مخالف: — · (legacy: P-11, P-19)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R1010-S01, ANS-12228-R1011-S01 · مخالف: — · (legacy: P-10, P-11)\n- `exceptions`: **UNKNOWN** · مثبت: ANS-12228-R1010-S01 · مخالف: — · (legacy: P-10)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1011-S01 · مخالف: — · (legacy: P-11)\n- `principle`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1011-S01 · مخالف: — · (legacy: P-11)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-STOP-BOUND.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-AFTER-TASAQUT-B",
+      "title": "تعارض اصول و استصحابین",
+      "priority": 4,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R954-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-02"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R968-S01",
+            "ANS-12228-R981-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-03",
+            "NP-04"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R968-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-03"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R987-S01",
+            "ANS-12228-R990-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-06",
+            "NP-07"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R955-S01",
+            "ANS-12228-R981-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-01",
+            "NP-04"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R984-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "NP-05"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-AFTER-TASAQUT-B\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R954-S01 · مخالف: — · (legacy: NP-02)\n- `activation`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R968-S01, ANS-12228-R981-S01 · مخالف: — · (legacy: NP-03, NP-04)\n- `defeaters`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R968-S01 · مخالف: — · (legacy: NP-03)\n- `exceptions`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R987-S01, ANS-12228-R990-S01 · مخالف: — · (legacy: NP-06, NP-07)\n- `conflict_policy`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R955-S01, ANS-12228-R981-S01 · مخالف: — · (legacy: NP-01, NP-04)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R984-S01 · مخالف: — · (legacy: NP-05)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-AFTER-TASAQUT-B.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-DALALA-FIRST",
+      "title": "تقدم قوت دلالت بر سایر مرجحات",
+      "priority": 5,
+      "grade": "A-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1054-S01",
+            "ANS-12228-R1056-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-17",
+            "P-18"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1056-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-18"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1056-S01"
+          ],
+          "adverseRefs": [
+            "CE-06"
+          ],
+          "legacyRefs": [
+            "P-18"
+          ],
+          "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+        },
+        "exceptions": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1056-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-18"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1048-S01",
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-16",
+            "P-17"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-17"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [
+        "ANS-12227-R299-S01"
+      ],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-DALALA-FIRST\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **A-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1054-S01, ANS-12228-R1056-S01 · مخالف: — · (legacy: P-17, P-18)\n- `activation`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1056-S01 · مخالف: — · (legacy: P-18)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R1056-S01 · مخالف: CE-06 · (legacy: P-18)\n- `exceptions`: **PARTIAL** · مثبت: ANS-12228-R1056-S01 · مخالف: — · (legacy: P-18)\n- `conflict_policy`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1048-S01, ANS-12228-R1054-S01 · مخالف: — · (legacy: P-16, P-17)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1054-S01 · مخالف: — · (legacy: P-17)\n- پشتوانه‌های اضافی v2: ANS-12227-R299-S01\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-DALALA-FIRST.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-TAARUD-UNITY",
+      "title": "وحدت موضوع در تحقق تعارض",
+      "priority": 6,
+      "grade": "A-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R994-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-01"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R994-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-01"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R994-S01",
+            "ANS-12228-R994-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-01",
+            "P-02"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R256-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-21"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R994-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-02"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R994-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-01"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-TAARUD-UNITY\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **A-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R994-S01 · مخالف: — · (legacy: P-01)\n- `activation`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R994-S01 · مخالف: — · (legacy: P-01)\n- `defeaters`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R994-S01, ANS-12228-R994-S02 · مخالف: — · (legacy: P-01, P-02)\n- `exceptions`: **PARTIAL** · مثبت: ANS-12228-R256-S01 · مخالف: — · (legacy: P-21)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R994-S02 · مخالف: — · (legacy: P-02)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R994-S01 · مخالف: — · (legacy: P-01)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-TAARUD-UNITY.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-JAM-NO-UNIVERSAL",
+      "title": "ردّ کلیت «الجمع مهما أمکن»",
+      "priority": 7,
+      "grade": "A-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R997-S02",
+            "ANS-12228-R998-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-04",
+            "P-05"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R998-S01",
+            "ANS-12228-R999-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-05",
+            "P-07"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1000-S01",
+            "ANS-12228-R1000-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-08",
+            "P-09"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1000-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-09"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R998-S01",
+            "ANS-12228-R1000-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-05",
+            "P-08"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R998-S01",
+            "ANS-12228-R998-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-05",
+            "P-06"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-JAM-NO-UNIVERSAL\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **A-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R997-S02, ANS-12228-R998-S01 · مخالف: — · (legacy: P-04, P-05)\n- `activation`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R998-S01, ANS-12228-R999-S01 · مخالف: — · (legacy: P-05, P-07)\n- `defeaters`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1000-S01, ANS-12228-R1000-S02 · مخالف: — · (legacy: P-08, P-09)\n- `exceptions`: **PARTIAL** · مثبت: ANS-12228-R1000-S02 · مخالف: — · (legacy: P-09)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R998-S01, ANS-12228-R1000-S01 · مخالف: — · (legacy: P-05, P-08)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R998-S01, ANS-12228-R998-S02 · مخالف: — · (legacy: P-05, P-06)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-JAM-NO-UNIVERSAL.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-TAKHYIR-LAST",
+      "title": "تخییر پس از فحص کامل",
+      "priority": 8,
+      "grade": "A-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01",
+            "ANS-12228-R1016-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10",
+            "P-12"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1016-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-12"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01",
+            "ANS-12228-R256-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10",
+            "P-21"
+          ],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1016-S01",
+            "ANS-12228-R1025-S02"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-12",
+            "P-13"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1016-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-12"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [
+        "ANS-12227-R282-S01"
+      ],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-TAKHYIR-LAST\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **A-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1010-S01, ANS-12228-R1016-S01 · مخالف: — · (legacy: P-10, P-12)\n- `activation`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1016-S01 · مخالف: — · (legacy: P-12)\n- `defeaters`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1010-S01 · مخالف: — · (legacy: P-10)\n- `exceptions`: **PARTIAL** · مثبت: ANS-12228-R1010-S01, ANS-12228-R256-S01 · مخالف: — · (legacy: P-10, P-21)\n- `conflict_policy`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1016-S01, ANS-12228-R1025-S02 · مخالف: — · (legacy: P-12, P-13)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1016-S01 · مخالف: — · (legacy: P-12)\n- پشتوانه‌های اضافی v2: ANS-12227-R282-S01\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-TAKHYIR-LAST.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-AFTER-TASAQUT-A",
+      "title": "رجوع به اصول پس از سقوط طرق",
+      "priority": 9,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01",
+            "ANS-12228-R256-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10",
+            "P-21"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R994-S01",
+            "ANS-12228-R1010-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-01",
+            "P-10"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "PARTIAL",
+          "canonicalBackings": [],
+          "adverseRefs": [],
+          "legacyRefs": [],
+          "note": ""
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R256-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-21"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1010-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-10"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-AFTER-TASAQUT-A\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1010-S01, ANS-12228-R256-S01 · مخالف: — · (legacy: P-10, P-21)\n- `activation`: **PARTIAL** · مثبت: ANS-12228-R994-S01, ANS-12228-R1010-S01 · مخالف: — · (legacy: P-01, P-10)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R1010-S01 · مخالف: — · (legacy: P-10)\n- `exceptions`: **PARTIAL** · مثبت: — · مخالف: — · (legacy: —)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R256-S01 · مخالف: — · (legacy: P-21)\n- `principle`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1010-S01 · مخالف: — · (legacy: P-10)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-AFTER-TASAQUT-A.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    },
+    {
+      "id": "MR-ANS-JIHA-BOUND",
+      "title": "مرجحات جهتی و حمل بر تقیه",
+      "priority": 10,
+      "grade": "B-CANDIDATE",
+      "components": {
+        "scope": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1044-S01",
+            "ANS-12228-R1048-S01",
+            "ANS-12228-R1060-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-15",
+            "P-16",
+            "P-20"
+          ],
+          "note": ""
+        },
+        "activation": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1048-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-16"
+          ],
+          "note": ""
+        },
+        "defeaters": {
+          "status": "PARTIAL",
+          "canonicalBackings": [
+            "ANS-12228-R1060-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-20"
+          ],
+          "note": ""
+        },
+        "exceptions": {
+          "status": "UNKNOWN",
+          "canonicalBackings": [
+            "ANS-12228-R1056-S01"
+          ],
+          "adverseRefs": [
+            "CE-05"
+          ],
+          "legacyRefs": [
+            "P-18"
+          ],
+          "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+        },
+        "conflict_policy": {
+          "status": "INFERENTIALLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1042-S01",
+            "ANS-12228-R1054-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-14",
+            "P-17"
+          ],
+          "note": ""
+        },
+        "principle": {
+          "status": "DIRECTLY_SUPPORTED",
+          "canonicalBackings": [
+            "ANS-12228-R1060-S01"
+          ],
+          "adverseRefs": [],
+          "legacyRefs": [
+            "P-20"
+          ],
+          "note": ""
+        }
+      },
+      "additionalBackings": [],
+      "reviewHold": [
+        "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+        "print-edition collation for any locus relied on verbatim",
+        "CE-01 resolution for MR-ANS-JAM-QARINA"
+      ],
+      "dossierMarkdown": "# Revised Dossier — MR-ANS-JIHA-BOUND\n\n**وضعیت:** `HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW` · `RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE`\n- درجهٔ پیشنهادی پژوهشی: **B-CANDIDATE** · execution_allowed: `false`\n\n## شش جزء با پشتوانهٔ کانونی\n- `scope`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1044-S01, ANS-12228-R1048-S01, ANS-12228-R1060-S01 · مخالف: — · (legacy: P-15, P-16, P-20)\n- `activation`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1048-S01 · مخالف: — · (legacy: P-16)\n- `defeaters`: **PARTIAL** · مثبت: ANS-12228-R1060-S01 · مخالف: — · (legacy: P-20)\n- `exceptions`: **UNKNOWN** · مثبت: ANS-12228-R1056-S01 · مخالف: CE-05 · (legacy: P-18)\n- `conflict_policy`: **INFERENTIALLY_SUPPORTED** · مثبت: ANS-12228-R1042-S01, ANS-12228-R1054-S01 · مخالف: — · (legacy: P-14, P-17)\n- `principle`: **DIRECTLY_SUPPORTED** · مثبت: ANS-12228-R1060-S01 · مخالف: — · (legacy: P-20)\n\n## سابقهٔ اصلاح C4\nهمهٔ ارجاع‌ها از مسیر `legacy_ref → canonical_ref` در PROVENANCE_GRAPH_EDGES.json قابل بازسازی‌اند. احکام هویتی ممیزی قبلی (که با شناسه‌های منحرف صادر شده بودند) برای این پرونده منسوخ‌اند؛ وضعیت‌های پژوهشی v2 بدون ارتقای آماری حفظ شده‌اند.\n\n## داوری لازم\nر.ک. REVIEW_FORMS/MR-ANS-JIHA-BOUND.md و HUMAN_SCHOLARLY_REVIEW_PACKET_C4.md."
+    }
+  ],
+  "openNodes": [
+    "CE-01 OPEN_TENSION",
+    "OQ-C1-01 REFINED_OPEN",
+    "OQ-C1-02/03/07 open",
+    "OQ-C1-04 print edition BLOCKED"
+  ],
+  "books": [
+    {
+      "id": "12228",
+      "title": "Faraid al-Usul (Rasa'il), vol. 2",
+      "editionStatus": "PRINT_EDITION_UNKNOWN",
+      "sha256": "f9fbfee0e7d8217e08cb19d271ed124de84843e3ce8249bafbf06a05d2837a13"
+    },
+    {
+      "id": "12227",
+      "title": "Faraid al-Usul (Rasa'il), vol. 1",
+      "editionStatus": "PRINT_EDITION_UNKNOWN",
+      "sha256": "ae240fce2c85a4728a8c444331c83bec9671909bc361ab3f49dd92ae566f968b"
+    },
+    {
+      "id": "1571",
+      "title": "al-Makasib, vol. 1",
+      "editionStatus": "PRINT_EDITION_UNKNOWN",
+      "sha256": "2a741b118e03c5a62988601e54074d0793f450291b6e10692ec7e521a60f78a5"
+    }
+  ],
+  "reviewMode": "PRIMARY_RESEARCHER_SELF_REVIEW_NOT_INDEPENDENT",
+  "sourceCount": 34,
+  "ruleCount": 10
+}
