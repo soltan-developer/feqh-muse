@@ -125,7 +125,7 @@ def numbered_parts(raw):
 
 
 def seed(conn):
-    stats = {"issues": 2, "scholars": 1, "passages": 0, "events": {}, "evidence_nodes": {}, "rule_candidates": 0}
+    stats = {"issues": 2, "scholars": 1, "passages": 0, "events": {}, "evidence_nodes": {}, "evidence_relations": {}, "unverified_assessments": 0, "rule_candidates": 0}
     with conn.transaction():
         with conn.cursor() as c:
             scholar = frozen_insert(c, "scholars", SCHOLAR, {
@@ -224,18 +224,47 @@ def seed(conn):
                 if isinstance(nodes, dict):
                     nodes = [{"id": k, **(v if isinstance(v, dict) else {"label": str(v)})} for k, v in nodes.items()]
                 count = 0
+                ids_by_node = {}
                 for node in nodes:
                     if not isinstance(node, dict) or not node.get("id"):
                         continue
                     stable = "pilot." + issue + "." + str(node["id"])
-                    frozen_insert(c, "evidence_items", stable, {
+                    evid = frozen_insert(c, "evidence_items", stable, {
                         "stable_key": stable, "category": "other",
                         "statement": str(node.get("label") or node.get("claim") or node["id"]),
                         "issue_id": issue_ids[issue], "provenance_note": rel,
                         "properties": {"research_graph_node": node, "source_sha256": digest(file_text(rel)), "probative_validation": "unverified"}
                     })
+                    ids_by_node[str(node["id"])] = evid
+                    # A research catalog entry is not a scholar-specific appraisal.
+                    frozen_insert(c, "evidence_assessments", stable + "/unreviewed-import", {
+                        "evidence_id": evid, "assessor_label": "PHASE_B_IMPORT_NO_HUMAN_REVIEW",
+                        "source_authenticity": "unverified", "quote_match": "unverified",
+                        "semantic_entailment": "unverified", "probative_authority": "unverified"
+                    })
+                    stats["unverified_assessments"] += 1
                     count += 1
                 stats["evidence_nodes"][issue] = count
+                relation_count = 0
+                for edge in graph.get("edges", []):
+                    if isinstance(edge, list):
+                        if len(edge) != 3:
+                            raise ValueError("Malformed graph edge: " + repr(edge))
+                        src, original, dst = map(str, edge)
+                        edge_kind = "unclassified"
+                    else:
+                        src, original, dst = (str(edge["from"]), str(edge["relation"]), str(edge["to"]))
+                        edge_kind = str(edge.get("kind", "unclassified"))
+                    frozen_insert(c, "evidence_relations",
+                        issue + "/" + digest(json.dumps([src, original, dst, edge_kind], ensure_ascii=False)), {
+                        "issue_id": issue_ids[issue], "source_node_key": src, "target_node_key": dst,
+                        "relation_original": original, "relation_kind": edge_kind,
+                        "from_evidence_id": ids_by_node.get(src), "to_evidence_id": ids_by_node.get(dst),
+                        "provenance_file": rel, "provenance_sha256": digest(file_text(rel)),
+                        "assessment_status": "unverified"
+                    })
+                    relation_count += 1
+                stats["evidence_relations"][issue] = relation_count
             # Keep key unresolved questions as explicit, non-attributed hypotheses.
             for issue, key in [
                 ("ghabn", "IJ-SCOPE-BADHL"),
