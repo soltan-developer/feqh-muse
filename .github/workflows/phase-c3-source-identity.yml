@@ -1,0 +1,40 @@
+name: Feqh-Muse Phase C3 source identity gate
+on:
+  pull_request:
+    paths:
+      - 'phase_c/**'
+      - 'research/phase-c-final-ansari-qualification/**'
+      - '.github/workflows/phase-c3-source-identity.yml'
+  workflow_dispatch:
+
+jobs:
+  source-id-and-qualification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Muse C3 original research package
+        run: python research/phase-c-final-ansari-qualification/validate_package.py
+      - name: Preserve C2 original 9-rule research contract (no retroactive rewrite)
+        run: python -m phase_c.c2_compile --check --output /tmp/c2_original.json
+      - name: Compile C3's 10-rule hold-only review with explicit quotation checks
+        run: python -m phase_c.c3_research_audit --check --output /tmp/c3_research_review.json
+      - name: Source identity and mutation contract tests
+        run: python -m unittest phase_c.test_c3_research_audit phase_c.test_c2 -v
+      - name: Compile Phase C sources
+        run: python -m compileall -q phase_c
+      - name: Preserve locked original engine, C1, C2, Muse C3 research
+        run: |
+          git diff --exit-code 6a70fc9caf83451b963f0b7a144deb55129bb666 HEAD -- engine2/
+          git diff --exit-code 6a70fc9caf83451b963f0b7a144deb55129bb666 HEAD -- research/
+      - name: Locked engine Test 6
+        run: python engine2/run_test6.py
+      - name: Locked engine Test 8
+        run: python engine2/run_test8.py
+      - name: Mutation regression
+        run: python engine2/run_mutations.py
