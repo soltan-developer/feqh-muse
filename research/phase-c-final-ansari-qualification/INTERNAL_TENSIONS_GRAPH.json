@@ -1,0 +1,79 @@
+{
+ "nodes": [
+  {
+   "id": "T1",
+   "type": "tension",
+   "label": "CE-01: 'udhrah jam' — Makaseb adopts (conditional) vs Faraid rejects the universal maxim using the same pair",
+   "status": "OPEN_TENSION",
+   "priority": 1
+  },
+  {
+   "id": "T2",
+   "type": "tension",
+   "label": "X-UDH-3 / ijma' manqul: Makaseb uses manqul ijma' as jabir; Faraid v1 denies mulazama of its hujjiyya (NP-09)",
+   "status": "OPEN"
+  },
+  {
+   "id": "T3",
+   "type": "open_point",
+   "label": "OQ-C1-01: two individually-divertible zahirs — theoretical ishkal; practical layer rule-governed",
+   "status": "REFINED_OPEN"
+  },
+  {
+   "id": "T4",
+   "type": "open_point",
+   "label": "OQ-NEW-01: asalat al-sihha x istishab — 'ghayat al-ishkal' (NP-10)",
+   "status": "OPEN"
+  },
+  {
+   "id": "T5",
+   "type": "tension",
+   "label": "Tusi observes murajjihat between nass/zahir (CE-02) vs Ansari: nass/zahir is not ta'arud",
+   "status": "RECORDED"
+  },
+  {
+   "id": "T6",
+   "type": "tension",
+   "label": "Scholars' sira of tawqquf+asl vs Ansari's takhyir conclusion (CE-03, recorded by Ansari himself)",
+   "status": "RECORDED"
+  },
+  {
+   "id": "T7",
+   "type": "version_question",
+   "label": "P-20 Persian gloss authenticity (NP/OQ-NEW-02)",
+   "status": "OPEN"
+  }
+ ],
+ "edges": [
+  {
+   "from": "T1",
+   "to": "MR-ANS-JAM-QARINA",
+   "rel": "blocks_qualification_of"
+  },
+  {
+   "from": "T1",
+   "to": "MR-ANS-JAM-NO-UNIVERSAL",
+   "rel": "tests_scope_of"
+  },
+  {
+   "from": "T2",
+   "to": "MR-ANS-JAM-QARINA",
+   "rel": "limits_backing_of"
+  },
+  {
+   "from": "T3",
+   "to": "MR-ANS-STOP-BOUND",
+   "rel": "defines_stop_node_of"
+  },
+  {
+   "from": "T3",
+   "to": "MR-ANS-DALALA-FIRST",
+   "rel": "bounds"
+  },
+  {
+   "from": "T4",
+   "to": "MR-ANS-AFTER-TASAQUT",
+   "rel": "adjacent_open_point"
+  }
+ ]
+}
