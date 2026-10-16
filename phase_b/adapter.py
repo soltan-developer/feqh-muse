@@ -75,7 +75,7 @@ def run(conn, issue_id, scholar_id, methodology_profile_id, scenario_id,
             return _stop("STOP-INACTIVE-SCHOLAR", identifiers=ids, provenance=provenance)
         if issue_key != "khiyar.ghabn":
             return _stop("STOP-OUT-OF-DOMAIN", identifiers=ids, provenance=provenance,
-                         reason="Current locked executable engine contains no certified Udhrah rule")
+                         detail="Current locked executable engine contains no certified Udhrah rule")
         c.execute("""
             SELECT rs.id,rs.version_key,rs.engine_sha256,rs.rule_manifest_sha256
             FROM fiqh.rule_sets rs WHERE rs.profile_id=%s
