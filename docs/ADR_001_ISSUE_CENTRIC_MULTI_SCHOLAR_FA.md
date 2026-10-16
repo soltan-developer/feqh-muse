@@ -2,7 +2,7 @@
 
 **وضعیت: APPROVED DESIGN / NOT A CLAIM OF SCIENTIFIC VALIDATION**  
 **زمان تصویب:** مهر ۱۴۰۵؛ مبنای درخواست صاحب پروژه: «مسئله‌محوری + چندعالمی + موجودیت‌های جامع برای توسعه آینده».  
-**سند علمی حاکم:** `docs/UBER_SPEC_cognitive_architecture_v1.md` و `docs/IJTIHAD_ENGINE_CONTRACT_V3_FA.md`. در تعارض علمی این سند تابع آن دو است.
+**مرجع فنی اصلیِ شِما:** \`architecture/migrations/001_issue_centric_multischolar.sql\` و \`architecture/migrations/002_cross_scholar_integrity.sql\` (PostgreSQL، مدل ۴۸جدولی). فایل \`architecture/issue-centric-v1/schema.sql\` فقط **نمونه مستقل SQLite برای تست قابل‌حمل روابط** است و نباید به‌عنوان migration یا منبع حقیقت دیتابیس عملیاتی به کار رود. هر قابلیت جدید نخست باید در مدل PostgreSQL ثبت شود؛ نمونه SQLite صرفاً یک تصویر ناقص آموزشی است و معادل تمامی قیود PostgreSQL نیست.\n\n**سند علمی حاکم:** `docs/UBER_SPEC_cognitive_architecture_v1.md` و `docs/IJTIHAD_ENGINE_CONTRACT_V3_FA.md`. در تعارض علمی این سند تابع آن دو است.
 
 ## ۱) تصمیم قطعی
 
