@@ -1,0 +1,32 @@
+name: Feqh-Muse Phase C2 formal evidence contract
+on:
+  pull_request:
+    paths:
+      - 'research/phase-c-ansari-general-operators/**'
+      - 'phase_c/**'
+      - '.github/workflows/phase-c2-formalization.yml'
+  workflow_dispatch:
+jobs:
+  c2-formal-packet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit C1 citations and compile non-executable C2 packet
+        run: python -m phase_c.c2_compile --check --output /tmp/c2_review.json
+      - name: Contract tests including unknown, conflict, hold and operator mappings
+        run: python -m unittest phase_c.test_c2 -v
+      - name: Validate Python source
+        run: python -m compileall -q phase_c
+      - name: Locked historical engine untouched
+        run: git diff --exit-code aa0979245079b58aa02b90becf30657dac1ba184 HEAD -- engine2/
+      - name: Existing Test 6 and Test 8 regression
+        run: |
+          python engine2/run_test6.py
+          python engine2/run_test8.py
+          python engine2/run_mutations.py
