@@ -1,0 +1,93 @@
+{
+ "events_relinked": [
+  {
+   "event": "E-C1-01",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-02",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-03",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-04",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-05",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-06",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-07",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-08",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-09",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-C1-10",
+   "status": "relinked via canonical registry (C1 passage ids in true C1 sense)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-01",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-02",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-03",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-04",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-05",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  },
+  {
+   "event": "E-NEW-06",
+   "status": "relinked via canonical registry (NP ids)",
+   "note": ""
+  }
+ ],
+ "parallel_codings": [
+  {
+   "event": "E-C1-10",
+   "coding_variant_of": "pilot U1-U12",
+   "status": "kept as parallel coding, not an independent historical event"
+  }
+ ],
+ "components_turned_unknown": 0,
+ "note": "No event component lost its backing in C4; the drift was in the audit layer, not in the events' C1-sense references."
+}
