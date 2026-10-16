@@ -81,7 +81,7 @@
     const partsDone=PARTS.filter(([k])=>partValid(r.parts[k])).length;
     const overall=!!validDecision(r.decision) && r.reason.trim().length>=12 &&
       draft.reviewer.trim().length>=2;
-    return {partsDone,complete:partsDone===6 && overall,overall};
+    return {partsDone,complete:partsDone===6 && overall && !!r.submitted_at,overall};
   }
   function totalDone() {return DATA.rules.filter(r=>completion(r.id).complete).length;}
   function completionBadge(id) {
@@ -316,7 +316,7 @@
         const p=item.parts&&item.parts[key]?item.parts[key]:{};
         rec.parts[key]={decision:validDecision(p.outcome),reason:String(p.reason||'').slice(0,10000)};
       }
-      rec.updated_at=iso();rec.submitted_at=null;
+      rec.updated_at=item.updated_at||iso();rec.submitted_at=item.submitted_at||null;
     }
     save();
     $('reviewer-name').value=draft.reviewer;$('edition-note').value=draft.edition_note;
