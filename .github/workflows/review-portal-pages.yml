@@ -1,0 +1,28 @@
+name: Publish Scholar Review Portal (manual and public)
+# Manual only. IMPORTANT: This exposes bundled primary-source snippets to Pages visitors.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: scholar-review-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check review-portal/app.js && node review-portal/tests/smoke.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: review-portal
+      - id: deployment
+        uses: actions/deploy-pages@v4
