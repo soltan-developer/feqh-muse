@@ -187,6 +187,38 @@ class PhaseB(unittest.TestCase):
 
 
 
+    def test_13_append_only_trace_and_stop_record(self):
+        from phase_b.record_run import record
+        try:
+            with self.conn.transaction():
+                with self.conn.cursor() as c:
+                    c.execute("SELECT count(*) FROM fiqh.engine_runs")
+                    old = c.fetchone()[0]
+                outcome = record(self.conn, "khiyar.ghabn", "murtada-ansari",
+                                 "ansari-development", "ghabn.t8.core.development")
+                with self.conn.cursor() as c:
+                    c.execute("SELECT count(*),max(output_sha256) FROM fiqh.engine_runs")
+                    n, sha = c.fetchone()
+                    self.assertEqual(n, old + 1)
+                    self.assertEqual(sha, outcome["output_sha256"])
+                    c.execute("SELECT raw_output FROM fiqh.engine_runs WHERE id=%s",
+                              (outcome["run_id"],))
+                    self.assertEqual(c.fetchone()[0]["historical_attribution"], None)
+                udh = record(self.conn, "sale.adhrah", "murtada-ansari",
+                             "ansari-development", "udhrah.documentary.no-rule")
+                self.assertEqual(udh["verdict_state"], "out_of_domain")
+                with self.conn.cursor() as c:
+                    c.execute("SELECT status,trace FROM fiqh.run_steps WHERE run_id=%s",
+                              (udh["run_id"],))
+                    status, trace = c.fetchone()
+                    self.assertEqual(status, "stopped")
+                    self.assertEqual(trace["stop_id"], "STOP-OUT-OF-DOMAIN")
+                raise SyntheticRollback()
+        except SyntheticRollback:
+            pass
+
+
+
 class SyntheticRollback(Exception):
     pass
 
