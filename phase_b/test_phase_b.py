@@ -127,7 +127,7 @@ class PhaseB(unittest.TestCase):
                         c.execute("""INSERT INTO fiqh.positions(issue_id,scholar_id,profile_id,statement,position_kind)
                                      VALUES (%s,%s,%s,'SHOULD FAIL','hypothetical_prediction')""", (issue,ansari,version2))
                 self.assertEqual(run(self.conn, "khiyar.ghabn", "synthetic-test-only",
-                    "synthetic-profile", "ghabn.t8.core.development")["stop_id"], "STOP-INACTIVE-SCHOLAR")
+                    str(version1), "ghabn.t8.core.development")["stop_id"], "STOP-INACTIVE-SCHOLAR")
                 # Trigger a rollback of ALL synthetic data after assertions.
                 raise_rollback = True
                 if raise_rollback:
