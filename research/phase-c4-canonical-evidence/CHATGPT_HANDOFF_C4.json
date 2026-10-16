@@ -1,0 +1,607 @@
+{
+ "package": "phase-c4-canonical-evidence",
+ "status": "RESEARCH_ONLY / NOT_SCHOLARLY_APPROVED / NOT_EXECUTABLE",
+ "human_review_state": "NOT_PERFORMED",
+ "source_files": {
+  "12227": "ae240fce2c85a4728a8c444331c83bec9671909bc361ab3f49dd92ae566f968b",
+  "12228": "f9fbfee0e7d8217e08cb19d271ed124de84843e3ce8249bafbf06a05d2837a13",
+  "1571": "2a741b118e03c5a62988601e54074d0793f450291b6e10692ec7e521a60f78a5"
+ },
+ "canonical_passages": 34,
+ "canonical_catalog": "CANONICAL_PASSAGE_REGISTRY.jsonl",
+ "legacy_mapping": "C1_C3_CANONICAL_CROSSWALK.json (reversible: legacy -> canonical)",
+ "rules": [
+  {
+   "rule_key": "MR-ANS-TAARUD-UNITY",
+   "research_grade_proposal": "A-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R994-S01",
+      "ANS-12228-R994-S02"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R256-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R994-S02"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-JAM-NO-UNIVERSAL",
+   "research_grade_proposal": "A-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R997-S02",
+      "ANS-12228-R998-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R999-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1000-S01",
+      "ANS-12228-R1000-S02"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1000-S02"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R1000-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R998-S02"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-JAM-QARINA",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R999-S01",
+      "ANS-12228-R1000-S02",
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1000-S02",
+      "ANS-1571-R125-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R1058-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "canonical_backings": [
+      "ANS-1571-R125-S01"
+     ],
+     "adverse_refs": [
+      "CE-01"
+     ]
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R999-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-DALALA-FIRST",
+   "research_grade_proposal": "A-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1054-S01",
+      "ANS-12228-R1056-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "adverse_refs": [
+      "CE-06"
+     ]
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1048-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-TARJIH-OPEN",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1042-S01",
+      "ANS-12228-R1044-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1025-S02"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1048-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "canonical_backings": [
+      "ANS-12228-R1042-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1044-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1044-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-TAKHYIR-LAST",
+   "research_grade_proposal": "A-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R1016-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1016-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R256-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1016-S01",
+      "ANS-12228-R1025-S02"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1016-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-STOP-BOUND",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1011-S01",
+      "ANS-12228-R1058-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R1011-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-A",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R256-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R994-S01",
+      "ANS-12228-R1010-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "canonical_backings": [],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R256-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-JIHA-BOUND",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1044-S01",
+      "ANS-12228-R1048-S01",
+      "ANS-12228-R1060-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1048-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "canonical_backings": [
+      "ANS-12228-R1060-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "adverse_refs": [
+      "CE-05"
+     ]
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1042-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R1060-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-B",
+   "research_grade_proposal": "B-CANDIDATE",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R954-S01"
+     ],
+     "adverse_refs": []
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R968-S01",
+      "ANS-12228-R981-S01"
+     ],
+     "adverse_refs": []
+    },
+    "defeaters": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R968-S01"
+     ],
+     "adverse_refs": []
+    },
+    "exceptions": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R987-S01",
+      "ANS-12228-R990-S01"
+     ],
+     "adverse_refs": []
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R955-S01",
+      "ANS-12228-R981-S01"
+     ],
+     "adverse_refs": []
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "canonical_backings": [
+      "ANS-12228-R984-S01"
+     ],
+     "adverse_refs": []
+    }
+   },
+   "historical_admission": "HOLD",
+   "execution_allowed": false,
+   "hold_release_conditions": [
+    "independent human scholarly adjudication of every component (see REVIEW_FORMS)",
+    "print-edition collation for any locus relied on verbatim",
+    "CE-01 resolution for MR-ANS-JAM-QARINA"
+   ]
+  }
+ ],
+ "open_nodes": [
+  "CE-01 OPEN_TENSION",
+  "OQ-C1-01 REFINED_OPEN",
+  "OQ-C1-02/03/07 open",
+  "OQ-C1-04 print edition BLOCKED"
+ ],
+ "c3_deltas": "C3_BLOCKER_RESOLUTION_MATRIX.json",
+ "blind_test_data": "NONE — no keys in this package; ghabn/'udhrah are development/regression only"
+}

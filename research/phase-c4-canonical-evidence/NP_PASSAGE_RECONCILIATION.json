@@ -1,0 +1,14 @@
+{
+ "np_passages": "all 11 verified RAW at their own stated loci (canonical registry)",
+ "log_anchor_corrections": {
+  "NP-02": "anchor quoted NP-03 text",
+  "NP-03": "anchor quoted NP-04 text",
+  "NP-04": "anchor quoted NP-05 text",
+  "NP-05": "anchor quoted NP-08 text",
+  "NP-06": "anchor quoted NP-09 text",
+  "NP-07": "anchor quoted NP-08 text",
+  "NP-01": "anchor correct"
+ },
+ "effect_on_AFTER_TASAQUT_A_B": "none on substance: the candidates' backings were the passages themselves; only verification metadata (log anchors + CONFIRMED_STRING labels for NP-02..NP-07) was misbound and is corrected here",
+ "effect_on_hukuma_wurud_sabab_tasaqut_analysis": "none: the full-span reading (Faraid v2 pp.335-350) is unchanged; canonical ids now pin each claim to its record"
+}
