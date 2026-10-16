@@ -48,6 +48,7 @@ jobs:
         run: |
           psql -v ON_ERROR_STOP=1 -f architecture/migrations/001_issue_centric_multischolar.sql
           psql -v ON_ERROR_STOP=1 -f architecture/migrations/002_cross_scholar_integrity.sql
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/003_phase_b_evidence_relations.sql
       - name: Assert existing PostgreSQL contract
         run: psql -v ON_ERROR_STOP=1 -f architecture/tests/001_smoke.sql
       - name: Compile Phase B Python
