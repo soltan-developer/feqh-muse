@@ -1,0 +1,833 @@
+{
+ "version": "v3-canonical",
+ "status": "RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE",
+ "rules": [
+  {
+   "rule_key": "MR-ANS-TAARUD-UNITY",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-01"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-01"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-01",
+      "P-02"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S01",
+      "ANS-12228-R994-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-21"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R256-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-02"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-01"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "A-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-NO-UNIVERSAL",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-04",
+      "P-05"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R997-S02",
+      "ANS-12228-R998-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-05",
+      "P-07"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R999-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-08",
+      "P-09"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1000-S01",
+      "ANS-12228-R1000-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-09"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1000-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-05",
+      "P-08"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R1000-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-05",
+      "P-06"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R998-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "A-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-QARINA",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-07",
+      "P-09",
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R999-S01",
+      "ANS-12228-R1000-S02",
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-09",
+      "P-23"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1000-S02",
+      "ANS-1571-R125-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-05",
+      "P-19"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R998-S01",
+      "ANS-12228-R1058-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "legacy_refs": [
+      "P-23"
+     ],
+     "canonical_backings": [
+      "ANS-1571-R125-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false,
+     "adverse_refs": [
+      "CE-01"
+     ],
+     "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-07",
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R999-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false,
+   "additional_canonical_backings": [
+    "ANS-12227-R299-S01"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-DALALA-FIRST",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-17",
+      "P-18"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1054-S01",
+      "ANS-12228-R1056-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-18"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-18"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false,
+     "adverse_refs": [
+      "CE-06"
+     ],
+     "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-18"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-16",
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1048-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "A-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false,
+   "additional_canonical_backings": [
+    "ANS-12227-R299-S01"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-TARJIH-OPEN",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-13",
+      "P-14",
+      "P-15"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1042-S01",
+      "ANS-12228-R1044-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-13"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1025-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-13",
+      "P-16"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1048-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "legacy_refs": [
+      "P-14"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1042-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-15"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1044-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-13",
+      "P-15"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1025-S02",
+      "ANS-12228-R1044-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-TAKHYIR-LAST",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-10",
+      "P-12"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R1016-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-12"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1016-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-10"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-10",
+      "P-21"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R256-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-12",
+      "P-13"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1016-S01",
+      "ANS-12228-R1025-S02"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-12"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1016-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "A-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false,
+   "additional_canonical_backings": [
+    "ANS-12227-R282-S01"
+   ]
+  },
+  {
+   "rule_key": "MR-ANS-STOP-BOUND",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-11"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-11",
+      "P-19"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1011-S01",
+      "ANS-12228-R1058-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-10",
+      "P-11"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R1011-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "legacy_refs": [
+      "P-10"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-11"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-11"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1011-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-A",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-10",
+      "P-21"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01",
+      "ANS-12228-R256-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-01",
+      "P-10"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R994-S01",
+      "ANS-12228-R1010-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-10"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "PARTIAL",
+     "legacy_refs": [],
+     "canonical_backings": [],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-21"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R256-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-10"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1010-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-JIHA-BOUND",
+   "source": "C1 components relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-15",
+      "P-16",
+      "P-20"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1044-S01",
+      "ANS-12228-R1048-S01",
+      "ANS-12228-R1060-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-16"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1048-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "PARTIAL",
+     "legacy_refs": [
+      "P-20"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1060-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "UNKNOWN",
+     "legacy_refs": [
+      "P-18"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1056-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false,
+     "adverse_refs": [
+      "CE-05"
+     ],
+     "note": "CE refs moved to adverse basket in C4 (they were listed as component evidence in C1)."
+    },
+    "conflict_policy": {
+     "status": "INFERENTIALLY_SUPPORTED",
+     "legacy_refs": [
+      "P-14",
+      "P-17"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1042-S01",
+      "ANS-12228-R1054-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "P-20"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R1060-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-B",
+   "source": "v2 NP backings relinked via canonical registry",
+   "components": {
+    "scope": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-02"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R954-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "activation": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-03",
+      "NP-04"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R968-S01",
+      "ANS-12228-R981-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "defeaters": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-03"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R968-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "exceptions": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-06",
+      "NP-07"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R987-S01",
+      "ANS-12228-R990-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "conflict_policy": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-01",
+      "NP-04"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R955-S01",
+      "ANS-12228-R981-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    },
+    "principle": {
+     "status": "DIRECTLY_SUPPORTED",
+     "legacy_refs": [
+      "NP-05"
+     ],
+     "canonical_backings": [
+      "ANS-12228-R984-S01"
+     ],
+     "historical_admission": "HOLD",
+     "execution_allowed": false
+    }
+   },
+   "research_grade_proposal": "B-CANDIDATE",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "execution_allowed": false
+  }
+ ]
+}
