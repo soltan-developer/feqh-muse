@@ -1,0 +1,123 @@
+{
+ "audit": "C1_CRITICAL_AUDIT",
+ "auditor": "Muse (textual audit, not scholarly adjudication)",
+ "labels": [
+  "CONFIRMED_AS_TEXT",
+  "CONTEXT_LIMITED",
+  "MISATTRIBUTED",
+  "INSUFFICIENT",
+  "CONTRADICTED",
+  "NOT_VERIFIED"
+ ],
+ "claims": [
+  {
+   "claim_id": "P-01",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-02",
+   "audited_rating": "CONTEXT_LIMITED"
+  },
+  {
+   "claim_id": "P-03",
+   "audited_rating": "CONTEXT_LIMITED"
+  },
+  {
+   "claim_id": "P-04",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-05",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-06",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-07",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-08",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-09",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-10",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-11",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-12",
+   "audited_rating": "CONTEXT_LIMITED"
+  },
+  {
+   "claim_id": "P-13",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-14",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-15a",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-15b",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-16",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-17",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-18",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  },
+  {
+   "claim_id": "P-19",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-20",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-21",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-22",
+   "audited_rating": "NOT_VERIFIED"
+  },
+  {
+   "claim_id": "P-23",
+   "audited_rating": "CONFIRMED_AS_TEXT"
+  }
+ ],
+ "counts": {
+  "CONTEXT_LIMITED": 3,
+  "NOT_VERIFIED": 11,
+  "CONFIRMED_AS_TEXT": 10
+ },
+ "findings": [
+  "F-A1 quotation compression (P-02,P-03,P-12)",
+  "F-A2 'supported' = research witness only",
+  "F-A3 speaker discipline OK",
+  "F-A4 E-C1-10 is coding_variant_of pilot U-events",
+  "F-A5 CHRONOLOGY_UNKNOWN preserved",
+  "F-A6 C2 operator rebinding scientifically preferable"
+ ]
+}
