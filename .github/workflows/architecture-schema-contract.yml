@@ -20,5 +20,5 @@ jobs:
         run: python3 architecture/issue-centric-v1/test_schema.py
       - name: Confirm historical engine untouched
         run: |
-          git diff --exit-code origin/main -- engine2/ || true
+          git diff --exit-code 68e3aa07f35f8348dac4bce7bec0bee3d0549294 HEAD -- engine2/
           python3 engine2/run_test8.py
