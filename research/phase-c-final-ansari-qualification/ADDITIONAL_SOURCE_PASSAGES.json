@@ -1,0 +1,103 @@
+{
+ "passages": [
+  {
+   "passage_id": "NP-01",
+   "book_id": "12228",
+   "database_page": 336,
+   "claim": "istishab hukuma over bara'a riwaya",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-02",
+   "book_id": "12228",
+   "database_page": 337,
+   "claim": "bara'a/ishtighal/takhyir-asl: istishab warid",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-03",
+   "book_id": "12228",
+   "database_page": 342,
+   "claim": "sababi/masbabi: sababi prevails, 4 proofs, opponents recorded",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-04",
+   "book_id": "12228",
+   "database_page": 347,
+   "claim": "third-cause pair, suras 1-2: tasaqut, no tarjih, no takhyir",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-05",
+   "book_id": "12228",
+   "database_page": 348,
+   "claim": "after tasaqut: return to other rules of the locus",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-06",
+   "book_id": "12228",
+   "database_page": 348,
+   "claim": "sura 3: both operate when ilm ijmali inert",
+   "verification": "READ_IN_FULL",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-07",
+   "book_id": "12228",
+   "database_page": 349,
+   "claim": "sura 4: only effect-bearing asl is in scope",
+   "verification": "READ_IN_FULL",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-08",
+   "book_id": "12227",
+   "database_page": 89,
+   "claim": "zuhur 'urfi as manat; fatwa-shuhra opposes sudur not dalala",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-09",
+   "book_id": "12227",
+   "database_page": 94,
+   "claim": "ijma' manqul: no mulazama with khabar hujjiyya",
+   "verification": "CONFIRMED_STRING",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-10",
+   "book_id": "12228",
+   "database_page": 334,
+   "claim": "asalat al-sihha vs istishab: author's own 'ghayat al-ishkal'",
+   "verification": "READ_IN_FULL",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  },
+  {
+   "passage_id": "NP-11",
+   "book_id": "12227",
+   "database_page": 83,
+   "claim": "two qira'at: jam' nass/azhar; taka'fu' -> tawqquf + ruju'",
+   "verification": "READ_IN_FULL",
+   "speaker": "Ansari (own voice; opponents flagged inside NP-03)",
+   "print_edition": "UNKNOWN"
+  }
+ ]
+}

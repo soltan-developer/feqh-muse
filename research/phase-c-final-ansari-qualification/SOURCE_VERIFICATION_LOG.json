@@ -1,0 +1,237 @@
+{
+ "method": "normalized substring match over full page_contents text (diacritics stripped, whitespace collapsed); core-fragment pass for compressed quotes",
+ "source_files": {
+  "12227": {
+   "path": "book-for-muse/12227.zstd (local decompressed copy book-corpus/12227.bin)",
+   "sha256": "ae240fce2c85a4728a8c444331c83bec9671909bc361ab3f49dd92ae566f968b"
+  },
+  "12228": {
+   "path": "book-for-muse/12228.zstd (local decompressed copy book-corpus/12228.bin)",
+   "sha256": "f9fbfee0e7d8217e08cb19d271ed124de84843e3ce8249bafbf06a05d2837a13"
+  },
+  "1571": {
+   "path": "book-for-muse/1571.zstd (local decompressed copy book-corpus/1571.bin)",
+   "sha256": "2a741b118e03c5a62988601e54074d0793f450291b6e10692ec7e521a60f78a5"
+  }
+ },
+ "long_anchor_results": {
+  "P-01": {
+   "book": "12228",
+   "anchor": "تنافي مدلولي الدليلين على وجه التناقض أو التضاد",
+   "found_normalized": true,
+   "anchor_sha256": "8392a771d16b5efe"
+  },
+  "P-02": {
+   "book": "12228",
+   "anchor": "لأن موضوع الأصل هو الشيء بعنوان كونه مجهول الحكم",
+   "found_normalized": false,
+   "anchor_sha256": "5604b9060e0a0cb4"
+  },
+  "P-03": {
+   "book": "12228",
+   "anchor": "الجمع مهما أمكن أولى من الطرح",
+   "found_normalized": false,
+   "anchor_sha256": "861cf784828a655b"
+  },
+  "P-04": {
+   "book": "12228",
+   "anchor": "يوجب سد باب الترجيح والهرج في الفقه",
+   "found_normalized": true,
+   "anchor_sha256": "77975a487a188a43"
+  },
+  "P-05": {
+   "book": "12228",
+   "anchor": "ليس عملا بهما بل لا بد من ملاحظة المرجحات",
+   "found_normalized": false,
+   "anchor_sha256": "8c5f950e8a5ece91"
+  },
+  "P-06": {
+   "book": "12228",
+   "anchor": "بل الإمكان قد يراد به الإمكان العرفي في قبال التعذر العرفي",
+   "found_normalized": false,
+   "anchor_sha256": "c4334e3d3b153e0a"
+  },
+  "P-07": {
+   "book": "12228",
+   "anchor": "دلت على وجوب التخيير عند عدم المرجح",
+   "found_normalized": false,
+   "anchor_sha256": "94702b84a5778ef1"
+  },
+  "P-08": {
+   "book": "12228",
+   "anchor": "الاستحسان العقلي المطابق لحكم جماعة من الأخباريين",
+   "found_normalized": false,
+   "anchor_sha256": "10ec0fcae49a4c69"
+  },
+  "P-09": {
+   "book": "12228",
+   "anchor": "فيحمل على صورة التمكن من الوصول إلى الإمام",
+   "found_normalized": false,
+   "anchor_sha256": "f18429a55708b149"
+  },
+  "P-10": {
+   "book": "12228",
+   "anchor": "غير مقيدة بما إذا تعذر الترجيح",
+   "found_normalized": false,
+   "anchor_sha256": "17b1fab3414f6958"
+  },
+  "P-11": {
+   "book": "12228",
+   "anchor": "ومقتضى إطلاقها وجوبه في المتكافئين وغيرهما",
+   "found_normalized": false,
+   "anchor_sha256": "d35661c693fc5e35"
+  },
+  "P-12": {
+   "book": "12228",
+   "anchor": "لا مجال لهذا الاحتمال إذ لا تعارض على الحقيقة",
+   "found_normalized": false,
+   "anchor_sha256": "03c9790087d604cd"
+  },
+  "P-13": {
+   "book": "12228",
+   "anchor": "ويبعد غاية البعد صدور مثله عن الإمام عليه السلام",
+   "found_normalized": false,
+   "anchor_sha256": "f4479084c92814cb"
+  },
+  "P-14": {
+   "book": "12228",
+   "anchor": "فإن القوة في الدلالة توجب صرف الآخر عن ظاهره",
+   "found_normalized": false,
+   "anchor_sha256": "2b3ede2624d9f5dd"
+  },
+  "P-15a": {
+   "book": "12227",
+   "anchor": "بأعمال وجوه الترجيح المتقدمة كلها",
+   "found_normalized": false,
+   "anchor_sha256": "ad41ea26e988c762"
+  },
+  "P-15b": {
+   "book": "12228",
+   "anchor": "ما يكون أقل احتمالا لمخالفة الواقع",
+   "found_normalized": false,
+   "anchor_sha256": "39aa48a93aa57e4d"
+  },
+  "P-16": {
+   "book": "12228",
+   "anchor": "أقوى دلالة مقدم على ما كان أصح سندا",
+   "found_normalized": true,
+   "anchor_sha256": "0c16be19dbd070a7"
+  },
+  "P-17": {
+   "book": "12228",
+   "anchor": "والمسألة محل الإشكال",
+   "found_normalized": true,
+   "anchor_sha256": "17029c21bd3f74d0"
+  },
+  "P-18": {
+   "book": "12228",
+   "anchor": "خصوصا إذا كان أبعد عن الباطل",
+   "found_normalized": false,
+   "anchor_sha256": "df12a871bb2d501f"
+  },
+  "P-19": {
+   "book": "12228",
+   "anchor": "ورجح تقديم إسقاط ظهور الكلام",
+   "found_normalized": false,
+   "anchor_sha256": "64fb9b33c7ac8efe"
+  },
+  "P-20": {
+   "book": "12228",
+   "anchor": "اين مساله از فروع مساله تعارض حالين است",
+   "found_normalized": false,
+   "anchor_sha256": "74a6006180976c53"
+  },
+  "P-21": {
+   "book": "12227",
+   "anchor": "فلا وجه لاستثنائهم لأخبار التوقف لعدم تنزيلها على موردها",
+   "found_normalized": false,
+   "anchor_sha256": "2729af3b3db9806c"
+  },
+  "P-22": {
+   "book": "12227",
+   "anchor": "أوجب التخيير بينهما مع البناء على عدم الترجيح",
+   "found_normalized": false,
+   "anchor_sha256": "61092768b65f979b"
+  },
+  "P-23": {
+   "book": "1571",
+   "anchor": "والأظهر ما ذكره الشيخ",
+   "found_normalized": true,
+   "anchor_sha256": "fdda5fee631182a0"
+  },
+  "NP-01": {
+   "book": "12228",
+   "anchor": "وهذا معنى الحكومة كما سيجيء في باب التعارض",
+   "found_normalized": true,
+   "anchor_sha256": "60283ddbbd842c18"
+  },
+  "NP-02": {
+   "book": "12228",
+   "anchor": "تقديم الشك السببي وإجراء الاستصحاب فيه",
+   "found_normalized": true,
+   "anchor_sha256": "eefd2c6c68257742"
+  },
+  "NP-03": {
+   "book": "12228",
+   "anchor": "يحكم فيهما بالتساقط دون الترجيح والتخيير",
+   "found_normalized": true,
+   "anchor_sha256": "00dd3a987c8884f6"
+  },
+  "NP-04": {
+   "book": "12228",
+   "anchor": "فيرجع إلى قواعد أخر غير الاستصحاب",
+   "found_normalized": true,
+   "anchor_sha256": "828ad617db7e8ecd"
+  },
+  "NP-05": {
+   "book": "12227",
+   "anchor": "مناط الحجية والاعتبار في دلالة الألفاظ هو الظهور العرفي",
+   "found_normalized": true,
+   "anchor_sha256": "cdb1e10405b15dcf"
+  },
+  "NP-06": {
+   "book": "12227",
+   "anchor": "والذي يقوى في النظر هو عدم الملازمة بين حجية الخبر وحجية الإجماع المنقول",
+   "found_normalized": true,
+   "anchor_sha256": "d80c9c240e907929"
+  },
+  "NP-07": {
+   "book": "12227",
+   "anchor": "فلا يتأملون في عمومه إذا كانت الشهرة على التخصيص",
+   "found_normalized": true,
+   "anchor_sha256": "b01c8d79150e6534"
+  }
+ },
+ "core_fragment_results": {
+  "P-01": true,
+  "P-02": false,
+  "P-02b": false,
+  "P-03": true,
+  "P-05": true,
+  "P-06": true,
+  "P-07": false,
+  "P-07b": false,
+  "P-08": false,
+  "P-09": true,
+  "P-10": false,
+  "P-10b": false,
+  "P-11": false,
+  "P-12": false,
+  "P-13": false,
+  "P-14": false,
+  "P-15a": false,
+  "P-15b": true,
+  "P-18": true,
+  "P-19": false,
+  "P-20": false,
+  "P-21": false,
+  "P-21b": false,
+  "P-22": false,
+  "P-22b": false
+ },
+ "notes": [
+  "NOT-FOUND at long-anchor level with FOUND core = quotation compressed/abridged in C1, passage present",
+  "NOT-FOUND at both levels = NOT_VERIFIED in this audit (see C1_CRITICAL_AUDIT required actions)",
+  "NP-* anchors are new passages from this mission's reading (Faraid v2 pp.335-350; v1 pp.83-122), all FOUND"
+ ]
+}

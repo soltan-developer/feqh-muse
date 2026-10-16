@@ -1,0 +1,74 @@
+{
+ "events": [
+  {
+   "event_id": "E-NEW-01",
+   "locus": "12228 DB pp.335-337",
+   "claim": "istishab warid/hakim over bara'a, ishtighal, takhyir-asl",
+   "components_known": 11,
+   "unknown_components": [
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  },
+  {
+   "event_id": "E-NEW-02",
+   "locus": "12228 DB pp.338-344",
+   "claim": "sababi istishab prevails over masbabi",
+   "components_known": 11,
+   "unknown_components": [
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  },
+  {
+   "event_id": "E-NEW-03",
+   "locus": "12228 DB pp.345-348",
+   "claim": "third-cause pair suras 1-2: tasaqut, no tarjih/takhyir",
+   "components_known": 11,
+   "unknown_components": [
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  },
+  {
+   "event_id": "E-NEW-04",
+   "locus": "12228 DB pp.348-349",
+   "claim": "suras 3-4: both run / only effect-bearing runs",
+   "components_known": 8,
+   "unknown_components": [
+    "aqwal_detail",
+    "objections_detail",
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  },
+  {
+   "event_id": "E-NEW-05",
+   "locus": "12227 DB pp.87-89",
+   "claim": "zuhur 'urfi as manat; fatwa-shuhra opposes sudur not dalala",
+   "components_known": 8,
+   "unknown_components": [
+    "objections_detail",
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  },
+  {
+   "event_id": "E-NEW-06",
+   "locus": "12227 DB p.94",
+   "claim": "ijma' manqul: no mulazama with khabar hujjiyya",
+   "components_known": 7,
+   "unknown_components": [
+    "full_12_part_coding",
+    "printed_page"
+   ],
+   "coding_variant_of": null
+  }
+ ],
+ "parallel_codings": [
+  {
+   "event": "E-C1-10",
+   "coding_variant_of": "pilot U1-U12 (bay' al-'adhara)"
+  }
+ ]
+}

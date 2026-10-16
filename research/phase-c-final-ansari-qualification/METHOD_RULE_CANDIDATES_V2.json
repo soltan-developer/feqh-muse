@@ -1,0 +1,330 @@
+{
+ "version": "v2-research",
+ "status": "RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE",
+ "supersedes": "C1 OPERATOR_CANDIDATES.json (history preserved, not rewritten)",
+ "rules": [
+  {
+   "rule_key": "MR-ANS-TAARUD-UNITY",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "evidence-relation-audit",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "DIRECTLY_SUPPORTED",
+    "defeaters": "INFERENTIALLY_SUPPORTED",
+    "exceptions": "PARTIAL",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-01",
+    "P-02"
+   ],
+   "adverse_or_limiting_evidence": [],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "ARGUMENT_UNITS_WITHIN_ONE_TREATISE_PLUS_CROSS_WORK_CORROBORATION",
+   "notes": "P-02 quote is a paraphrase in C1; replace with exact wording.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-NO-UNIVERSAL",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "licensed-jam",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "DIRECTLY_SUPPORTED",
+    "defeaters": "INFERENTIALLY_SUPPORTED",
+    "exceptions": "PARTIAL",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-03",
+    "P-04",
+    "P-05",
+    "P-06"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-01"
+   ],
+   "previously_exposed_development_evidence": [
+    "P-23"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "ARGUMENT_UNITS_WITHIN_ONE_TREATISE_PLUS_CROSS_WORK_CORROBORATION",
+   "notes": "P-03 full form includes 'بين الدليلين'.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-QARINA",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "licensed-jam",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "components": {
+    "scope": "INFERENTIALLY_SUPPORTED",
+    "activation": "PARTIAL",
+    "defeaters": "PARTIAL",
+    "exceptions": "UNKNOWN",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "INFERENTIALLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-05",
+    "P-06",
+    "NP-08"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-01",
+    "CE-NEW-01"
+   ],
+   "previously_exposed_development_evidence": [
+    "P-23"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "Sub-claims JQ-a (qarinah/'urfi condition) and JQ-b (azhar selection). Sama'a application = RESEARCHER_HYPOTHESIS.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-DALALA-FIRST",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "dalala-scope-classifier",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "DIRECTLY_SUPPORTED",
+    "defeaters": "PARTIAL",
+    "exceptions": "PARTIAL",
+    "conflict_policy": "DIRECTLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-16",
+    "NP-08"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-02"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "independence_status": "ARGUMENT_UNITS_WITHIN_ONE_TREATISE_PLUS_CROSS_WORK_CORROBORATION",
+   "notes": "Bounded by OQ-C1-01 configuration.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-TARJIH-OPEN",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "tarjih-candidate-assessment",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "components": {
+    "scope": "INFERENTIALLY_SUPPORTED",
+    "activation": "PARTIAL",
+    "defeaters": "PARTIAL",
+    "exceptions": "UNKNOWN",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "INFERENTIALLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-15b",
+    "P-18"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-04",
+    "CE-06"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "P-15a/P-11 NOT_VERIFIED verbatim; add riwaya-shuhra vs fatwa-shuhra distinction (NP-08); foundation condition open; OQ-C1-07 open.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-TAKHYIR-LAST",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "takhyir-eligibility-gate",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "DIRECTLY_SUPPORTED",
+    "defeaters": "INFERENTIALLY_SUPPORTED",
+    "exceptions": "PARTIAL",
+    "conflict_policy": "DIRECTLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-09",
+    "NP-11"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-03"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "independence_status": "ARGUMENT_UNITS_WITHIN_ONE_TREATISE_PLUS_CROSS_WORK_CORROBORATION",
+   "notes": "QUOTE REPAIR REQUIRED: P-07 NOT_VERIFIED verbatim in audit; substance read in C1; re-extract before adjudication.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-STOP-BOUND",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "safe-abstention",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "components": {
+    "scope": "INFERENTIALLY_SUPPORTED",
+    "activation": "PARTIAL",
+    "defeaters": "PARTIAL",
+    "exceptions": "UNKNOWN",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "INFERENTIALLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-09",
+    "P-17"
+   ],
+   "adverse_or_limiting_evidence": [],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "Refined: stop attaches to the premise-node (OQ-C1-01 four-way analysis); surrounding practical rules still fire.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-A",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "practical-principle-domain",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "SPLIT_FROM_MR-ANS-AFTER-TASAQUT",
+   "components": {
+    "scope": "INFERENTIALLY_SUPPORTED",
+    "activation": "PARTIAL",
+    "defeaters": "PARTIAL",
+    "exceptions": "PARTIAL",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "INFERENTIALLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-07*",
+    "P-09"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-03"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "Evidence-route aftermath; *P-07 pending verbatim repair.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-B",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "practical-principle-domain",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "SPLIT_FROM_MR-ANS-AFTER-TASAQUT",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "DIRECTLY_SUPPORTED",
+    "defeaters": "DIRECTLY_SUPPORTED",
+    "exceptions": "DIRECTLY_SUPPORTED",
+    "conflict_policy": "DIRECTLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "NP-01",
+    "NP-02",
+    "NP-03",
+    "NP-04",
+    "NP-05",
+    "NP-06",
+    "NP-07"
+   ],
+   "adverse_or_limiting_evidence": [
+    "OPP-IN-TEXT-NP03"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-USUL-CONFLICT"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "Usul-conflict policy is division-governed (sababi priority; suras 1-4). Strongest dossier in v2; still candidate pending human review. OPP-IN-TEXT-NP03 = opponents recorded inside NP-03's own passage (Tusi, Muhaqqiq, 'Allama, Wafiya) — limiting evidence internal to the primary text.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JIHA-BOUND",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "issuance-assessment",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "components": {
+    "scope": "DIRECTLY_SUPPORTED",
+    "activation": "INFERENTIALLY_SUPPORTED",
+    "defeaters": "PARTIAL",
+    "exceptions": "UNKNOWN",
+    "conflict_policy": "INFERENTIALLY_SUPPORTED",
+    "principle": "DIRECTLY_SUPPORTED"
+   },
+   "primary_textual_backings": [
+    "P-18"
+   ],
+   "adverse_or_limiting_evidence": [
+    "CE-05",
+    "CE-07"
+   ],
+   "previously_exposed_development_evidence": [],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "independence_status": "INDEPENDENCE_UNVERIFIED",
+   "notes": "P-19 NOT_VERIFIED verbatim; CE-05 is comparative only, not a positive backing.",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  }
+ ]
+}

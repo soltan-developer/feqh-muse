@@ -1,0 +1,509 @@
+{
+ "package": "phase-c-final-ansari-qualification",
+ "status": "RESEARCH_ONLY — NOT_SCHOLARLY_APPROVED — NOT_EXECUTABLE",
+ "rules": [
+  {
+   "rule_key": "MR-ANS-TAARUD-UNITY",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "evidence-relation-audit",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-TAARUD-UNITY.md §2",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "source_span_refs": [
+    "P-01",
+    "P-02"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "exceptions": {
+    "status": "PARTIAL"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-NO-UNIVERSAL",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "licensed-jam",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-JAM-NO-UNIVERSAL.md §2",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "source_span_refs": [
+    "P-03",
+    "P-04",
+    "P-05",
+    "P-06"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "exceptions": {
+    "status": "PARTIAL"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-01"
+   ],
+   "previously_exposed_case_refs": [
+    "P-23"
+   ],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JAM-QARINA",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "licensed-jam",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-JAM-QARINA.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "source_span_refs": [
+    "P-05",
+    "P-06",
+    "NP-08"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "scope": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "PARTIAL"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "UNKNOWN"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-01",
+    "CE-NEW-01"
+   ],
+   "previously_exposed_case_refs": [
+    "P-23"
+   ],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-DALALA-FIRST",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "dalala-scope-classifier",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-DALALA-FIRST.md §2",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "source_span_refs": [
+    "P-16",
+    "NP-08"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "PARTIAL"
+   },
+   "conflict_policy": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-02"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-TARJIH-OPEN",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "tarjih-candidate-assessment",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-TARJIH-OPEN.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "source_span_refs": [
+    "P-15b",
+    "P-18"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "PARTIAL"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "UNKNOWN"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-04",
+    "CE-06"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-TAKHYIR-LAST",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "takhyir-eligibility-gate",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-TAKHYIR-LAST.md §2",
+   "research_grade_proposal": "A-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "source_span_refs": [
+    "P-09",
+    "NP-11"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA",
+    "G-V1-ZAWAHIR"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "exceptions": {
+    "status": "PARTIAL"
+   },
+   "conflict_policy": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-03"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-STOP-BOUND",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "safe-abstention",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-STOP-BOUND.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "REVISE",
+   "source_span_refs": [
+    "P-09",
+    "P-17"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "PARTIAL"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "UNKNOWN"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-A",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "practical-principle-domain",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-AFTER-TASAQUT-A.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "SPLIT_FROM_MR-ANS-AFTER-TASAQUT",
+   "source_span_refs": [
+    "P-07*",
+    "P-09"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "PARTIAL"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "PARTIAL"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-03"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-AFTER-TASAQUT-B",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "practical-principle-domain",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-AFTER-TASAQUT-B.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "SPLIT_FROM_MR-ANS-AFTER-TASAQUT",
+   "source_span_refs": [
+    "NP-01",
+    "NP-02",
+    "NP-03",
+    "NP-04",
+    "NP-05",
+    "NP-06",
+    "NP-07"
+   ],
+   "independent_witness_groups": [
+    "G-USUL-CONFLICT"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "exceptions": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "conflict_policy": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "NP-03 opponents recorded in-text"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  },
+  {
+   "rule_key": "MR-ANS-JIHA-BOUND",
+   "scholar_key": "murtada-ansari",
+   "methodology_profile_revision": "research-candidate-not-admitted",
+   "neutral_operator_key": "issuance-assessment",
+   "claim_text": "see RULE_DOSSIERS/MR-ANS-JIHA-BOUND.md §2",
+   "research_grade_proposal": "B-CANDIDATE",
+   "research_decision": "RETAIN_WITH_LIMITED_SCOPE",
+   "source_span_refs": [
+    "P-18"
+   ],
+   "independent_witness_groups": [
+    "G-KHATIMA"
+   ],
+   "scope": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "activation": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "defeaters": {
+    "status": "PARTIAL"
+   },
+   "exceptions": {
+    "status": "UNKNOWN"
+   },
+   "conflict_policy": {
+    "status": "INFERENTIALLY_SUPPORTED"
+   },
+   "principle": {
+    "status": "DIRECTLY_SUPPORTED"
+   },
+   "reasoning_event_refs": [],
+   "contrary_evidence_refs": [
+    "CE-05",
+    "CE-07"
+   ],
+   "previously_exposed_case_refs": [],
+   "unresolved_questions": [
+    "OQ-C1-01",
+    "OQ-C1-04"
+   ],
+   "human_review_requirements": [
+    "independent scholarly adjudication per component (HUMAN_REVIEW_FORM_TEMPLATE.md)"
+   ],
+   "source_manifest_sha256": "8e121a90b0321ea152ce3ec31d0dd42907d95bf0f44fce532c089124090ac167",
+   "historical_admission": "HOLD_FOR_INDEPENDENT_HUMAN_SCHOLARLY_REVIEW",
+   "may_execute_in_historical_engine": false
+  }
+ ]
+}
