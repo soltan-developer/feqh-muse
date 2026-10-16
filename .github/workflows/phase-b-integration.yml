@@ -1,0 +1,68 @@
+name: Feqh-Muse Phase B integration
+on:
+  pull_request:
+    paths:
+      - 'phase_b/**'
+      - 'architecture/**'
+      - 'engine2/**'
+      - '.github/workflows/phase-b-integration.yml'
+  workflow_dispatch:
+
+jobs:
+  phase-b-postgres:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: feqh_phase_b
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d feqh_phase_b"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/feqh_phase_b
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: feqh_phase_b
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PostgreSQL tooling and Python driver
+        run: |
+          python -m pip install "psycopg[binary]>=3.2,<4"
+          if ! command -v psql >/dev/null 2>&1; then
+            sudo apt-get update && sudo apt-get install -y postgresql-client
+          fi
+      - name: Install main database schema and integrity triggers
+        run: |
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/001_issue_centric_multischolar.sql
+          psql -v ON_ERROR_STOP=1 -f architecture/migrations/002_cross_scholar_integrity.sql
+      - name: Assert existing PostgreSQL contract
+        run: psql -v ON_ERROR_STOP=1 -f architecture/tests/001_smoke.sql
+      - name: Compile Phase B Python
+        run: python -m compileall -q phase_b
+      - name: Pilot import and repeatable integration contracts
+        run: |
+          python -m phase_b.pilot
+          python -m unittest phase_b.test_phase_b -v
+      - name: Verify CLI returns safe out-of-domain response
+        run: |
+          python -m phase_b.adapter --issue sale.adhrah --scenario udhrah.documentary.no-rule > /tmp/udhrah_out.json
+          python -c "import json; o=json.load(open('/tmp/udhrah_out.json')); assert o['stop_id']=='STOP-OUT-OF-DOMAIN'"
+      - name: Locked engine Test 6
+        run: python engine2/run_test6.py
+      - name: Locked engine Test 8
+        run: python engine2/run_test8.py
+      - name: Locked engine mutations
+        run: python engine2/run_mutations.py
