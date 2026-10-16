@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0d1726">
+  <meta name="description" content="کاربرگ شخصی و مستند داوری علمی قواعد روش اجتهادی شیخ انصاری.">
+  <title>میز داوری اجتهاد | Feqh Muse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="پرونده‌های پژوهشی">
+      <header class="brand">
+        <div class="brand-icon" aria-hidden="true">فـ</div>
+        <div><div class="brand-heading">میز داوری <span>اجتهاد</span></div><div class="brand-caption">فقه میوز · پژوهش شیخ انصاری</div></div>
+      </header>
+      <div class="side-section">فضای پژوهشگر <span class="side-label">PHASE C / REVIEW</span></div>
+      <div class="side-progress">
+        <div class="side-progress-heading"><span>پیشرفت داوری</span><strong id="side-progress-value">۰ از ۱۰</strong></div>
+        <div class="progress-track"><div class="progress-bar" id="side-progress-bar"></div></div>
+        <p id="side-progress-hint">نتیجه هر قاعده را پس از بررسی شش جزء ثبت کنید.</p>
+      </div>
+      <div class="nav-controls">
+        <label for="search-rule" class="sr-only">جست‌وجوی قاعده</label>
+        <input id="search-rule" type="search" placeholder="جست‌وجوی قاعده…" autocomplete="off">
+        <div class="filter-line" role="group" aria-label="فیلتر پرونده‌ها">
+          <button type="button" class="filter active" data-filter="all">همه</button>
+          <button type="button" class="filter" data-filter="incomplete">ناتمام</button>
+          <button type="button" class="filter" data-filter="completed">تکمیل</button>
+        </div>
+      </div>
+      <nav id="rule-list" class="rule-list" aria-label="فهرست قواعد"></nav>
+      <div class="sidebar-bottom"><span class="private-dot" aria-hidden="true"></span> ذخیره شخصی در همین مرورگر
+        <small>هیچ پاسخ شما به سرور فرستاده نمی‌شود.</small>
+      </div>
+    </aside>
+
+    <div class="main-column" id="main">
+      <header class="topbar">
+        <div class="topbar-heading"><button type="button" id="mobile-menu" class="icon-btn mobile-menu" aria-label="فهرست قواعد">☰</button>
+          <span class="breadcrumb">پژوهش شیخ انصاری <span>/</span> بررسی روش اجتهادی</span>
+        </div>
+        <div class="topbar-actions">
+          <span id="save-indicator" class="save-indicator" aria-live="polite">● ذخیره خودکار فعال</span>
+          <button type="button" class="secondary small-btn" id="theme-toggle" aria-label="تغییر روشنایی">☼ <span>نمایش</span></button>
+          <button type="button" class="primary small-btn" id="export-header">↓ دریافت گزارش</button>
+        </div>
+      </header>
+      <main class="workspace">
+        <section class="page-intro">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> محیط داوری پژوهشگر اصلی <span class="eyebrow-split">/</span> پرونده‌های C4</div>
+          <div class="intro-grid">
+            <div><h1>از متن تا <em>تشخیص علمی</em></h1>
+              <p>هر قاعده را بر اساس متن شیخ، شرایط فعال‌سازی، استثناها و شواهد مخالف بررسی کنید. رأی شما با دلیل ثبت می‌شود؛ بدون تغییر خودکار موتور اجتهادی.</p>
+            </div>
+            <div class="stats">
+              <div class="stat"><strong id="stat-total">۱۰</strong><span>پرونده</span></div>
+              <div class="stat"><strong id="stat-done">۰</strong><span>داوری تکمیل</span></div>
+              <div class="stat"><strong id="stat-left">۱۰</strong><span>باقی‌مانده</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="identity-card">
+          <div class="identity-icon" aria-hidden="true">✍</div>
+          <div class="identity-text"><strong>هویت داور و نسخه پژوهش</strong><span>اطلاعات شما در فایل خروجی ثبت خواهد شد. این فرایند «خودداوری پژوهشگر اصلی» است، نه داوری مستقل.</span></div>
+          <div class="identity-fields">
+            <label><span>نام پژوهشگر</span><input type="text" id="reviewer-name" placeholder="نام و نام خانوادگی"></label>
+            <label><span>چاپ/نسخه بررسی‌شده (اختیاری)</span><input type="text" id="edition-note" placeholder="مثلاً: چاپ … / هنوز بررسی نشده"></label>
+          </div>
+        </section>
+
+        <div class="research-banner" role="note">
+          <span aria-hidden="true">◇</span>
+          <div><strong>اطلاعات علمی هنوز تأیید نهایی نشده‌اند.</strong> چاپ سه منبع اصلی نامعلوم است؛ ۱۰ قاعده در وضعیت پژوهشی و غیرقابل‌اجرا هستند. انتخاب «تأیید» در این سایت فقط نظر ثبت‌شده شماست.</div>
+        </div>
+
+        <section id="rule-view" aria-live="polite" aria-label="پرونده در حال بررسی">
+          <div class="loading">در حال بارگذاری پرونده‌ها…</div>
+        </section>
+
+        <footer class="footer">
+          <span>Feqh Muse · Scholar Review Workspace</span>
+          <span>نسخه پژوهشی C4 <span class="footer-dot">·</span> داوری شخصی مستند</span>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="export-dialog" class="dialog">
+    <div class="dialog-inside">
+      <button class="icon-btn close-dialog" id="close-dialog" aria-label="بستن">×</button>
+      <div class="dialog-icon" aria-hidden="true">↗</div>
+      <h2>تحویل نتیجه داوری</h2>
+      <p>نسخه کامل JSON شامل نظر و استدلال شما برای همه قواعد است. آن را در گفت‌وگوی ChatGPT پیوست کنید تا مرحله فنی بعدی را ادامه دهیم.</p>
+      <div class="dialog-actions">
+        <button class="primary" id="download-json">دریافت JSON کامل</button>
+        <button class="secondary" id="download-md">دریافت گزارش Markdown</button>
+        <button class="secondary" id="copy-json">کپی JSON</button>
+        <button class="secondary" id="share-review">اشتراک‌گذاری فایل در موبایل</button>
+      </div>
+      <p class="dialog-footnote">سایت استاتیک است و ارسال مستقیم به GitHub یا ChatGPT ندارد؛ استفاده از خروجی و پیوست آن، راه امن و قابل پیگیری انتقال تصمیم‌های شماست.</p>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-input" type="file" accept=".json,application/json" hidden>
+  <script src="app.js" defer></script>
+</body>
+</html>
