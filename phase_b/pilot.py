@@ -5,6 +5,7 @@ Requires psycopg>=3. This is a NEW database seed; it does not upgrade an
 existing manually curated production corpus. All imports run in one transaction.
 """
 import hashlib
+import datetime
 import json
 import pathlib
 import re
@@ -69,7 +70,7 @@ def frozen_insert(cur, table, key, fields):
     cur.execute(
         "INSERT INTO fiqh." + table + " (" + column_list + ") VALUES (" +
         placeholders + ") ON CONFLICT DO NOTHING",
-        [jsonarg(row[c]) for c in cols]
+        [Jsonb(row[c]) if table == 'case_facts' and c == 'value' else jsonarg(row[c]) for c in cols]
     )
     cur.execute(
         "SELECT " + column_list + " FROM fiqh." + table + " WHERE id=%s",
@@ -208,7 +209,6 @@ def seed(conn):
                             "coding_source": rel
                         }
                         # Code normalization is not scientific confirmation.
-                        frozen_insert(c, "reasoning_parts", issue + "/" + eventkey + "/" + str(slot), {}) if False else None
                         c.execute("INSERT INTO fiqh.reasoning_parts (event_id,ordinal,content,assessment_status) VALUES (%s,%s,%s,'unverified') ON CONFLICT DO NOTHING", (eid, slot, Jsonb(content)))
                         c.execute("SELECT content FROM fiqh.reasoning_parts WHERE event_id=%s AND ordinal=%s", (eid, slot))
                         if c.fetchone()[0] != content:
@@ -286,7 +286,7 @@ def seed(conn):
                 "profile_id": profile, "version_key": "locked-engine2-dev-v1",
                 "engine_sha256": digest(file_text("engine2/engine_unified.py")),
                 "rule_manifest_sha256": manifest,
-                "frozen_at": "2026-10-15T00:00:00+00:00"
+                "frozen_at": datetime.datetime.fromisoformat("2026-10-15T00:00:00+00:00")
             })
             for rule in rules.values():
                 c.execute("INSERT INTO fiqh.rule_set_members (rule_set_id,rule_id) VALUES (%s,%s) ON CONFLICT DO NOTHING", (ruleset, rule))
