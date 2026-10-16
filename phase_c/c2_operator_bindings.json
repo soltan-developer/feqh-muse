@@ -1,0 +1,159 @@
+{
+  "schema_version": "phase-c2-formal-bindings-v1",
+  "scientific_status": "UNQUALIFIED_DESIGN_ONLY",
+  "note": "All predicate names are software-side questions; they are not propositions of Sheikh Ansari or inferred source facts.  C1 original operator bindings remain immutable. These override technical routing only.",
+  "entries": [
+    {
+      "rule_key": "MR-ANS-TAARUD-UNITY",
+      "neutral_operator_key": "evidence-relation-audit",
+      "proof_questions": [
+        "same_subject",
+        "same_time",
+        "same_respect",
+        "opposing_effects"
+      ],
+      "open_questions": [
+        "OQ-C1-02"
+      ],
+      "blocking_note": "Do not classify a conflict if any unity predicate is unknown.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-JAM-NO-UNIVERSAL",
+      "neutral_operator_key": "licensed-jam",
+      "proof_questions": [
+        "double_tawil_required",
+        "no_valid_qarina",
+        "urf_rejects_reconciliation"
+      ],
+      "open_questions": [
+        "OQ-C1-01",
+        "OQ-C1-06"
+      ],
+      "blocking_note": "Negative boundary; does not imply a universal preference for tarjih or tarh.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-JAM-QARINA",
+      "neutral_operator_key": "licensed-jam",
+      "proof_questions": [
+        "textual_qarina_documented",
+        "urf_accepts_reconciliation",
+        "defeaters_excluded"
+      ],
+      "open_questions": [
+        "OQ-C1-01",
+        "OQ-C1-06"
+      ],
+      "blocking_note": "C1 CE-01 and P-23 are previously exposed development material; do not treat as independent qualifying evidence.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-DALALA-FIRST",
+      "neutral_operator_key": "dalala-scope-classifier",
+      "proof_questions": [
+        "nass_zahir_relation_proven",
+        "issuance_premise_documented",
+        "scope_same"
+      ],
+      "open_questions": [
+        "OQ-C1-01",
+        "OQ-C1-02"
+      ],
+      "blocking_note": "Avoid extending claimed precedence to two equally plausible zahirs in the open-ishkal locus.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-TARJIH-OPEN",
+      "neutral_operator_key": "tarjih-candidate-assessment",
+      "proof_questions": [
+        "conflict_stable",
+        "merit_independently_licensed",
+        "duty_to_choose_one_evidence_established"
+      ],
+      "open_questions": [
+        "OQ-C1-03",
+        "OQ-C1-07"
+      ],
+      "blocking_note": "Do not use licensed-jam for tarjih; C1 finding is conditional on duty-to-act premise.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-TAKHYIR-LAST",
+      "neutral_operator_key": "takhyir-eligibility-gate",
+      "proof_questions": [
+        "qualified_conflict_persists",
+        "full_search_documented",
+        "no_admissible_merit",
+        "no_third_evidence"
+      ],
+      "open_questions": [
+        "OQ-C1-07"
+      ],
+      "blocking_note": "Eligibility to consider takhyir is not a verdict of permissibility.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-STOP-BOUND",
+      "neutral_operator_key": "safe-abstention",
+      "proof_questions": [
+        "stop_text_locus_identified",
+        "access_to_imam_context_proven",
+        "competing_akhbar_reviewed"
+      ],
+      "open_questions": [
+        "OQ-C1-01",
+        "OQ-C1-06"
+      ],
+      "blocking_note": "Do not generalize tawqquf narratives beyond documented conditions.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-AFTER-TASAQUT",
+      "neutral_operator_key": "practical-principle-domain",
+      "proof_questions": [
+        "tasaqut_lawful_under_selected_method",
+        "doubt_type_fixed",
+        "search_scope_complete",
+        "no_governing_akhbar"
+      ],
+      "open_questions": [
+        "OQ-C1-03"
+      ],
+      "blocking_note": "Exceptions source not extracted; currently cannot be qualified.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    },
+    {
+      "rule_key": "MR-ANS-JIHA-BOUND",
+      "neutral_operator_key": "issuance-assessment",
+      "proof_questions": [
+        "issuance_direction_relevant",
+        "qarina_supported",
+        "compatibility_vs_taqiyya_distinguished"
+      ],
+      "open_questions": [
+        "OQ-C1-06"
+      ],
+      "blocking_note": "Separate a directional murajjih from an unlicensed taqiyya explanation for a single report.",
+      "admission_policy": "NEVER_EXECUTE_UNTIL_INDEPENDENT_QUALIFICATION",
+      "unknown_action": "STOP_UNVERIFIED",
+      "counterfactual_policy": "DEV_ONLY_NO_HISTORICAL_ATTRIBUTION"
+    }
+  ]
+}
