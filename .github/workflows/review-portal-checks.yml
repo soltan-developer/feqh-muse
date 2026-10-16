@@ -1,0 +1,31 @@
+name: Feqh Muse Scholar Review Portal checks
+on:
+  pull_request:
+    paths:
+      - 'review-portal/**'
+      - '.github/workflows/review-portal-checks.yml'
+  push:
+    branches:
+      - 'feature/scholar-review-portal-v1'
+    paths:
+      - 'review-portal/**'
+      - '.github/workflows/review-portal-checks.yml'
+  workflow_dispatch:
+jobs:
+  static-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify JavaScript is syntactically valid
+        run: node --check review-portal/app.js
+      - name: Verify C4 sources, reviews, and static interface
+        run: node review-portal/tests/smoke.mjs
+      - name: Ensure research, locked engine and SQL remain unchanged
+        run: |
+          git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- research/
+          git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- engine2/
+          git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- architecture/migrations/
