@@ -31,3 +31,9 @@ jobs:
           git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- research/
           git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- engine2/
           git diff --exit-code 193fb87b5820785028fde631c720c40b7c743266 HEAD -- architecture/migrations/
+      - name: Package website for GitHub Pages upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: feqh-muse-review-portal
+          path: review-portal/
+          if-no-files-found: error
