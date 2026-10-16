@@ -1,0 +1,36 @@
+{
+  "schema_version": "phase-c3-nonexecuting-v2-routing",
+  "scientific_status": "DESIGN_ONLY_NO_AUTOMATIC_ADMISSION",
+  "retired_in_v2": {
+    "MR-ANS-AFTER-TASAQUT": "superseded-by-A/B; preserve original C1 and C2 trace; NEVER silently alias to one variant"
+  },
+  "replacements": [
+    {
+      "rule_key": "MR-ANS-AFTER-TASAQUT-A",
+      "parent_rule_key": "MR-ANS-AFTER-TASAQUT",
+      "neutral_operator_key": "practical-principle-domain",
+      "proof_questions": [
+        "conflicting_reports_nonprobative_under_selected_method",
+        "no_governing_resolution",
+        "practical_principle_domain_identified",
+        "relevant_third_evidence_checked"
+      ],
+      "uncertainty_action": "HOLD_SCIENTIFIC_QUALIFICATION",
+      "note": "Candidate for post-fall of evidentiary paths, not a universal selection order."
+    },
+    {
+      "rule_key": "MR-ANS-AFTER-TASAQUT-B",
+      "parent_rule_key": "MR-ANS-AFTER-TASAQUT",
+      "neutral_operator_key": "practical-principle-domain",
+      "proof_questions": [
+        "two_practical_principles_identified",
+        "causal_vs_third_origin_distinguished",
+        "ilm_ijmali_effect_tested",
+        "validity_subject_of_each_principle_checked",
+        "effect_bearing_exception_checked"
+      ],
+      "uncertainty_action": "HOLD_SCIENTIFIC_QUALIFICATION",
+      "note": "Candidate for usul-principle conflict: sababi/masbabi are not assumed to be universal tasāqut."
+    }
+  ]
+}
