@@ -49,7 +49,7 @@ def run(conn, issue_id, scholar_id, methodology_profile_id, scenario_id,
     with conn.cursor() as c:
         c.execute("""
             SELECT i.id,s.id,p.id,cs.id,i.stable_key,cs.stable_key,
-                   p.profile_key,p.revision,p.status
+                   p.profile_key,p.revision,p.status,cs.test_class,cs.fact_pattern
             FROM fiqh.issues i
             JOIN fiqh.cases cs ON cs.issue_id=i.id
             JOIN fiqh.methodology_profiles p ON true
@@ -63,7 +63,7 @@ def run(conn, issue_id, scholar_id, methodology_profile_id, scenario_id,
         found = c.fetchall()
         if len(found) != 1:
             return _stop("STOP-IDENTITY-OR-SCOPE-MISMATCH")
-        issue, scholar, profile, case, issue_key, case_key, profile_key, revision, profile_status = found[0]
+        issue, scholar, profile, case, issue_key, case_key, profile_key, revision, profile_status, test_class, scenario_meta = found[0]
         c.execute("SELECT stable_key FROM fiqh.scholars WHERE id=%s", (scholar,))
         scholar_key = c.fetchone()[0]
         ids = {"issue_id": str(issue), "scholar_id": str(scholar),
@@ -76,6 +76,9 @@ def run(conn, issue_id, scholar_id, methodology_profile_id, scenario_id,
         if issue_key != "khiyar.ghabn":
             return _stop("STOP-OUT-OF-DOMAIN", identifiers=ids, provenance=provenance,
                          detail="Current locked executable engine contains no certified Udhrah rule")
+        if test_class != "development" or scenario_meta.get("development_only") is not True:
+            return _stop("STOP-UNLICENSED-SCENARIO", identifiers=ids,
+                         provenance=provenance)
         c.execute("""
             SELECT rs.id,rs.version_key,rs.engine_sha256,rs.rule_manifest_sha256
             FROM fiqh.rule_sets rs WHERE rs.profile_id=%s
