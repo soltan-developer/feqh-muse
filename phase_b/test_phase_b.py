@@ -221,6 +221,46 @@ class PhaseB(unittest.TestCase):
 
 
 
+    def test_14_reject_non_development_case(self):
+        try:
+            with self.conn.transaction():
+                with self.conn.cursor() as c:
+                    c.execute("""UPDATE fiqh.cases SET test_class='historical'
+                                 WHERE stable_key='ghabn.t8.core.development'""")
+                out = run(self.conn, "khiyar.ghabn", "murtada-ansari",
+                          "ansari-development", "ghabn.t8.core.development")
+                self.assertEqual(out["stop_id"], "STOP-UNLICENSED-SCENARIO")
+                raise SyntheticRollback()
+        except SyntheticRollback:
+            pass
+
+    def test_15_ansari_profile_versions_not_interchangeable(self):
+        try:
+            with self.conn.transaction():
+                with self.conn.cursor() as c:
+                    c.execute("""SELECT id,scholar_id FROM fiqh.methodology_profiles
+                                 WHERE profile_key='ansari-development' AND revision=1""")
+                    old, scholar = c.fetchone()
+                    c.execute("""INSERT INTO fiqh.methodology_profiles
+                                 (scholar_id,profile_key,revision,parent_profile_id,
+                                  effective_period,status)
+                                 VALUES (%s,'ansari-development',2,%s,
+                                         'SYNTHETIC QA PERIOD ONLY','hypothesis')
+                                 RETURNING id""", (scholar,old))
+                    later = c.fetchone()[0]
+                # Explicit later version cannot inherit the older version's ruleset.
+                out = run(self.conn, "khiyar.ghabn", "murtada-ansari",
+                          str(later), "ghabn.t8.core.development")
+                self.assertEqual(out["stop_id"], "STOP-RULESET-NOT-FROZEN")
+                # Ambiguous profile key is refused rather than arbitrarily choosing.
+                out = run(self.conn, "khiyar.ghabn", "murtada-ansari",
+                          "ansari-development", "ghabn.t8.core.development")
+                self.assertEqual(out["stop_id"], "STOP-IDENTITY-OR-SCOPE-MISMATCH")
+                raise SyntheticRollback()
+        except SyntheticRollback:
+            pass
+
+
 class SyntheticRollback(Exception):
     pass
 
