@@ -1,7 +1,7 @@
 {
-  "schema_version": "phase-c-neutral-operators-v1",
+  "schema_version": "phase-c-neutral-operators-v2",
   "status": "DESIGN_ONLY_NOT_AUTHORITATIVE",
-  "notice": "These are generic, typed software operations. They contain no Ansari jurisprudential ruling, priority, school preference or permission to infer historical views. Every use must be linked to an independently qualified scholar-specific MethodRule.",
+  "notice": "These are generic, typed software operations. They contain no Ansari jurisprudential ruling, priority, school preference or permission to infer historical views. Every use must be linked to an independently qualified scholar-specific MethodRule. Two distinct operator contracts for tarjih and takhyir were added at C2 to prevent conflation with jam/abstention. Neither grants automatic juristic effect.",
   "operators": [
     {
       "key": "issue-scope-check",
@@ -165,6 +165,51 @@
         "open_questions"
       ],
       "refuse_if": []
+    },
+    {
+      "key": "tarjih-candidate-assessment",
+      "family": "conflict",
+      "inputs": [
+        "persisting_conflict",
+        "scholar_profile",
+        "candidate_merit",
+        "evidence_assessments",
+        "open_defeaters"
+      ],
+      "outputs": [
+        "merit_candidate_supported",
+        "merit_candidate_unverified",
+        "stop"
+      ],
+      "refuse_if": [
+        "no qualified scholar-specific rule",
+        "unreviewed probative criterion",
+        "unknown competing evidence"
+      ],
+      "note": "Neutral examination of proposed murajjih; never asserts wajub al-tarjih or extends beyond mansus without scholarly license."
+    },
+    {
+      "key": "takhyir-eligibility-gate",
+      "family": "conflict",
+      "inputs": [
+        "persisting_conflict",
+        "scholar_profile",
+        "search_scope",
+        "comparative_merits",
+        "third_evidence_state"
+      ],
+      "outputs": [
+        "eligibility_noted",
+        "eligibility_unverified",
+        "stop"
+      ],
+      "refuse_if": [
+        "search not complete",
+        "unresolved tarjih",
+        "methodology not qualified"
+      ],
+      "note": "Neutral eligibility predicate only; no juristic permission to choose a hadith."
     }
-  ]
+  ],
+  "previous_catalog": "phase-c-neutral-operators-v1"
 }
