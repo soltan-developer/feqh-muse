@@ -61,6 +61,12 @@ jobs:
         run: |
           python -m phase_b.adapter --issue sale.adhrah --scenario udhrah.documentary.no-rule > /tmp/udhrah_out.json
           python -c "import json; o=json.load(open('/tmp/udhrah_out.json')); assert o['stop_id']=='STOP-OUT-OF-DOMAIN'"
+      - name: Persist auditable safety probe
+        run: |
+          python -m phase_b.record_run --issue khiyar.ghabn --scenario ghabn.t8.core.development > /tmp/record.json
+          python -c "import json; x=json.load(open('/tmp/record.json')); assert len(x['output_sha256'])==64"
+          python -m phase_b.record_run --issue sale.adhrah --scenario udhrah.documentary.no-rule > /tmp/udhrah_record.json
+          python -c "import json; x=json.load(open('/tmp/udhrah_record.json')); assert x['verdict_state']=='out_of_domain'"
       - name: Locked engine Test 6
         run: python engine2/run_test6.py
       - name: Locked engine Test 8
