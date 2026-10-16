@@ -16,6 +16,7 @@ PostgreSQL 16+ پایگاه اصلی است. شِمای SQLite صرفاً مرج
 - کدگذاری مستقل A و B از غبن و U1 تا U12 بیع عذره، با ۱۲ جایگاه داده برای هر رخداد؛ جایگاه‌های استخراج‌نشده با برچسب صریح عدم احراز باقی می‌مانند. A و B دو گرانولاریتی از یک متن‌اند؛ جمع تعدادشان به معنای دو برابر بودن رخداد تاریخی نیست.
 - یال‌های گراف بدون تحریف معنایی در جدول جدید `evidence_relations` با رابطه اصلی، شناسه دو گره، هش منشأ و ارزیابی `unverified` نگهداری می‌شوند. ارزیابی‌های ماشینی اولیه در `evidence_assessments` نیز هر چهار محور را `unverified` می‌گذارند.
 - گره‌های گراف موجود به صورت `evidence_items` پژوهشی با `category=other` وارد می‌شوند؛ اعتبار مستقل، تعارض و ارزیابی حجیت از این انتقال حاصل نمی‌شود.
+- چهار موضع تفسیریِ محدود (دو موضع غبن و دو موضع بیع عذره)، فقط با عبارت دقیق بازیابی‌شده در متن پیکره، در `positions` و `position_sources` ثبت شده‌اند؛ همه `historical_interpretation` و `unreviewed` هستند، نه فتوای احراز‌شده.
 - گره‌های باز `IJ-SCOPE-BADHL`، `IJ-KHIYAR-SCOPE-BADHL` و `S-UDH-1..3` همچنان ادعاهای `unverified` هستند.
 - قواعد از `rules_v4.json` و `rules_t3.json` به همراه مشخصه هسته قدیمی فقط با `execution_layer=hypothesis`، `scientific_grade=C` و `reviewer_status=pending` وارد می‌شوند. هیچ قاعده‌ای در این import به `historical` ارتقا نمی‌یابد.
 
@@ -34,6 +35,8 @@ python -m phase_b.pilot  # آزمون عدم تکثیر
 python -m unittest phase_b.test_phase_b -v
 python -m phase_b.adapter --issue khiyar.ghabn --scholar murtada-ansari --profile ansari-development --scenario ghabn.t8.core.development
 python -m phase_b.adapter --issue sale.adhrah --scholar murtada-ansari --profile ansari-development --scenario udhrah.documentary.no-rule
+python -m phase_b.record_run --issue khiyar.ghabn --scenario ghabn.t8.core.development
+python -m phase_b.record_run --issue sale.adhrah --scenario udhrah.documentary.no-rule
 python engine2/run_test6.py
 python engine2/run_test8.py
 python engine2/run_mutations.py
@@ -53,7 +56,7 @@ python engine2/run_mutations.py
 
 ۱. متن مکاسب و رساله از روی پیکره پروژه آمده و تطبیق با چاپ کاغذی هنوز نیازمند داوری انسانی است.
 
-۲. جدول‌های `positions` و `human_reviews` بدون استناد داوری جدید پر نمی‌شوند؛ وجود عبارت یا گره تحلیلی برای ساخت موضع تاریخی کافی نیست.
+۲. چهار نمونه `positions` صرفاً تفسیرهای مستند به عبارت متن و **بدون تأیید انسانی جدید** هستند. `human_reviews` خالی است و هیچ نتیجه‌ای به رأی تاریخی قطعی ارتقا داده نشده است؛ سایر مواضع نیازمند استخراج و داوری مستقل‌اند.
 
 ۳. یال‌های `GRAPH_V2.json` و `GRAPH_UDHRAH_DOC.json` در جدول `evidence_relations` بدون تفسیر معنایی حفظ شده‌اند؛ تبدیل آنها به عملگرهای معتبر استدلال یا `reasoning_edges` نیازمند داوری مستقل است.
 
