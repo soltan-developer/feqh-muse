@@ -37,6 +37,8 @@ class PhaseB(unittest.TestCase):
             self.assertGreaterEqual(counts.get("research_coding_B", 0), 35)
             c.execute("SELECT count(*) FROM fiqh.reasoning_parts")
             self.assertEqual(c.fetchone()[0], 12 * sum(counts.values()))
+            c.execute("SELECT count(*) FROM fiqh.positions WHERE knowledge_status='unreviewed'")
+            self.assertEqual(c.fetchone()[0], 4)
             c.execute("SELECT count(*) FROM fiqh.source_passages WHERE capture_status='unverified'")
             self.assertEqual(c.fetchone()[0], self.first["passages"])
 
